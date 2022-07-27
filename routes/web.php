@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\TestimonialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +29,12 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', function (){
     return view('admin.admin-content.dashboard.index');
 });
+
+
+// ------------------------------- Testimonial -----------------------------
+
+Route::resource('admin/testimonial',"TestimonialController");
+
+// ------------------------------- Testimonial -----------------------------
 
 // --------------------------------------- Auth routes ----------------------------------------
