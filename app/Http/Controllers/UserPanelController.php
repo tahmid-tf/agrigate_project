@@ -9,4 +9,7 @@ class UserPanelController extends Controller
     public function index(){
         return view('user.homepage');
     }
+    public function solutions(){
+        return view('user.solutions');
+    }
 }

@@ -30,6 +30,11 @@ Route::get('/', "UserPanelController@index");
 
 // ============================== HOMEPAGE ===============
 
+// ===================== SOLUTION ======================
+
+Route::get('/solutions', "UserPanelController@solutions")->name('solutions');
+
+// ============================== SOLUTION ===============
 
 // --------------------------------------- Auth routes ----------------------------------------
 

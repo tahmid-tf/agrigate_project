@@ -9,7 +9,8 @@
     font-family: 'Montserrat', sans-serif;
     color: #255302;
 }
-a{
+
+a {
     color: #255302 !important;
 }
 
@@ -26,7 +27,7 @@ nav .navbar-nav li a:hover {
     text-decoration: underline;
     text-underline-offset: 5px;
     text-decoration-thickness: 2px;
-    text-decoration-color:  #38512E;
+    text-decoration-color: #38512E;
 
 }
 
@@ -38,30 +39,36 @@ nav .navbar-nav li a:hover {
     box-shadow: none;
 }
 
-.dropdown-menu{
-    background: #E2EFD9 !important ;
-}
-.dropdown-item:hover{
+.dropdown-menu {
     background: #E2EFD9 !important;
 }
+
+.dropdown-item:hover {
+    background: #E2EFD9 !important;
+}
+
 .dropdown:hover .dropdown-menu {
     display: block;
-    margin-top: 0; // remove the gap so it doesn't close
+    margin-top: 0;
+/ / remove the gap so it doesn 't close
 }
 
 /*=============== HOMEPAGE SECTION ===============*/
-.section-dark-green-bg{
+.section-dark-green-bg {
     background: #255302;
 }
-.section-light-green-bg{
+
+.section-light-green-bg {
     background: #E2EFD9;
 }
-.top-section-text-style{
+
+.top-section-text-style {
     color: #fff;
     font-weight: 700;
     font-size: 25px;
 }
-.heading-text-style{
+
+.heading-text-style {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
@@ -162,22 +169,24 @@ nav .navbar-nav li a:hover {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-    border-radius:60px;
+    border-radius: 60px;
 }
 
 /* Style the back side */
 .flip-card-back {
     color: white;
-    border-radius:60px;
+    border-radius: 60px;
     transform: rotateY(180deg);
 }
+
 .img-card {
     width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 60px;
 }
-.flipcard-text{
+
+.flipcard-text {
     color: #fff;
     margin-top: 1.8rem;
     font-weight: 500;
@@ -185,13 +194,14 @@ nav .navbar-nav li a:hover {
     text-align: justify;
     color: #fff;
 }
-.heading-text-style-2{
+
+.heading-text-style-2 {
     text-align: center;
     font-size: 35px;
     font-weight: 700;
 }
 
-.subtext-style{
+.subtext-style {
     font-size: 25px;
     font-weight: 700;
 }
@@ -223,9 +233,6 @@ article card .project-card {
     text-align: justify;
 }
 
-.hr-style {
-    background-color: #059c9a;
-}
 
 .card-img-top {
     object-fit: cover;
@@ -258,60 +265,70 @@ article card .project-card {
 .card-img-top {
     object-fit: cover;
 }
-.read-more:hover{
+
+.read-more:hover {
     text-decoration: none;
 }
-#news-card{
+
+#news-card {
     background: #E2EFD9;
     border-radius: 42px;
     width: 700px;
 }
-.news-image{
+
+.news-image {
     border-radius: 42px;
     margin-right: 5px;
     margin-left: 5px;
 }
+
 @media only screen and (max-width: 600px) {
-    #news-card{
+    #news-card {
         background: #E2EFD9;
         border-radius: 42px;
         width: 300px;
     }
 }
+
 @media screen and (min-device-width: 600px) and (max-device-width: 1000px) {
-    #news-card{
+    #news-card {
         background: #E2EFD9;
         border-radius: 42px;
         width: 500px;
     }
 }
-.facts-card{
+
+.facts-card {
     background-color: #E2EFD9 !important;
     border-radius: 42px !important;
-    height:320px;
+    height: 320px;
 }
 
-.card-image-top{
-    width:150px;
-    height:150px;
+.card-image-top {
+    width: 150px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
-.card-top-text{
+
+.card-top-text {
     font-weight: 700;
     font-size: 20px;
     text-align: center;
     margin-top: 2rem;
 }
-.card-bottom-text{
+
+.card-bottom-text {
     font-weight: 700;
     font-size: 30px;
     text-align: center;
 
 }
+
 .footer-style {
     background: #E2EFD9;
+    padding-top: 3rem;
 }
 
 .contact-us-text {
@@ -336,7 +353,8 @@ article card .project-card {
 }
 
 .initial-footer {
-    background: #E2EFD9;}
+    background: #E2EFD9;
+}
 
 .footer-text-p {
     color: white;
@@ -350,7 +368,6 @@ article card .project-card {
     }
 
     /* ---------- for covering the mobile space auto ----------------- */
-
     .map-div {
         margin-top: 10%;
         width: 300px;
@@ -376,19 +393,139 @@ article card .project-card {
     }
 
 }
-.footer-button{
+
+.footer-button {
     background: #255302;
     color: #fff;
-    width:120px;
+    width: 120px;
     border-radius: 42px;
     border: none;
 }
 
-.footer-text{
-    font-size:12px;
+.footer-text {
+    font-size: 12px;
     font-weight: 700;
 }
 
-.footer-link{
+.footer-link {
+    font-weight: 700;
+}
+
+/*--------Solutions----------------------------*/
+
+.subpages-heading {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subpages-heading-2 {
+    color: #255302;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.solutions-card {
+    background-color: #255302 !important;
+    border-radius: 42px !important;
+    padding: 2rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.solutions-card-text {
+    color: #E2EFD9;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.contract-farming-text {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: justify;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.text-style-1 {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.text-style-2 {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+.image-footer {
+    background: #255302;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+.advisory-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-align: justify;
+}
+
+.delivery-channels-text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.delivery-channels-text-2 {
+    font-weight: 500;
+}
+
+.delivery-channels-text-3 {
+    font-weight: 500;
+    color: #fff;
+}
+
+.tick-style {
+    color: #fff;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+}
+
+hr {
+    background-color: #fff;
+}
+
+@media only screen and  (max-device-width: 700px) {
+    .delivery-channels-text {
+        font-size: 12px;
+    }
+}
+
+.form-control{
+    border-radius: 20px !important;
+    padding: 1.6rem !important;
+}
+
+.form-text{
+    text-align: center !important;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.contact-submit-button{
+    background-color: #E2EFD9;
+    border-radius: 20px;
+    border:none;
+    width:140px;
     font-weight: 700;
 }
