@@ -511,21 +511,23 @@ hr {
     }
 }
 
-.form-control{
+.program-card{
     border-radius: 20px !important;
-    padding: 1.6rem !important;
+    background: #255302 !important;
+    border: none !important;
+    height: 380px;
 }
-
-.form-text{
-    text-align: center !important;
-    font-weight: 700;
-    font-size: 16px;
+.program-card-bottom{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
-
-.contact-submit-button{
-    background-color: #E2EFD9;
-    border-radius: 20px;
-    border:none;
-    width:140px;
+.program-card-title{
+    color: #fff;
+    font-size: 20px;
     font-weight: 700;
+    text-align: center;
+}
+.program-card-image{
+    border-radius: 20px !important;
+    height:250px;
 }

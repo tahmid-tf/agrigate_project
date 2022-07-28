@@ -12,4 +12,7 @@ class UserPanelController extends Controller
     public function solutions(){
         return view('user.solutions');
     }
+    public function AgrigateCenter(){
+        return view('user.agrigate-center');
+    }
 }

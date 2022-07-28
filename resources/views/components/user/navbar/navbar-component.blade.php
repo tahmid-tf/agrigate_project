@@ -24,7 +24,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ route('solutions') }}">Solution For Farmers</a>
                     <div class="dropdown-divider" style="border-color:#38512E;">></div>
-                    <a class="dropdown-item" href="#">Agrigate
+                    <a class="dropdown-item" href="{{ route('agrigate-center') }}">Agrigate
                         Center</a>
                 </div>
             </li>

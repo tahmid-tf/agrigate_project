@@ -33,6 +33,8 @@ Route::get('/', "UserPanelController@index");
 // ===================== SOLUTION ======================
 
 Route::get('/solutions', "UserPanelController@solutions")->name('solutions');
+Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->name('agrigate-center');
+
 
 // ============================== SOLUTION ===============
 
