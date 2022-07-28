@@ -109,6 +109,11 @@ jQuery(document).ready(function ($) {
                 items: 4,
                 // nav: true,
                 loop: false,
+            },
+            1900:{
+                items: 5,
+                // nav: true,
+                loop: false,
             }
         },
         responsiveRefreshRate: 200,
