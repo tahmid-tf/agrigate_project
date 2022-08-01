@@ -35,10 +35,10 @@
                 <a class="nav-link" href="#">App</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
+                <a class="nav-link" href="{{ route('team') }}">Team</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Financial Inclusion</a>
+                <a class="nav-link" href="{{ route('financial-inclusion') }}">Financial Inclusion</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Careers</a>

@@ -34,9 +34,22 @@ Route::get('/', "UserPanelController@index");
 
 Route::get('/solutions', "UserPanelController@solutions")->name('solutions');
 Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->name('agrigate-center');
-
-
 // ============================== SOLUTION ===============
+
+// ===================== FINANCIAL INCLUSION ======================
+
+Route::get('/financial-inclusion', "UserPanelController@FinancialInclusion")->name('financial-inclusion');
+Route::get('/apply-for-bank-account', "UserPanelController@ApplyForBankAccount")->name('bank-account');
+Route::get('/apply-for-agri-loan', "UserPanelController@ApplyForAgriLoan")->name('agri-loan');
+Route::get('/apply-for-agri-insurance', "UserPanelController@ApplyForAgriInsurance")->name('agri-insurance');
+
+// ================================ FINANCIAL INCLUSION ============
+
+// ===================== TEAM ======================
+
+Route::get('/team', "UserPanelController@Team")->name('team');
+
+// ============================== HOMEPAGE ===============
 
 // --------------------------------------- Auth routes ----------------------------------------
 

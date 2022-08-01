@@ -15,4 +15,19 @@ class UserPanelController extends Controller
     public function AgrigateCenter(){
         return view('user.agrigate-center');
     }
+    public function FinancialInclusion(){
+        return view('user.financial-inclusion');
+    }
+    public function ApplyForBankAccount(){
+        return view('user.apply-for-bank-account');
+    }
+    public function ApplyForAgriLoan(){
+        return view('user.apply-for-agri-loan');
+    }
+    public function ApplyForAgriInsurance(){
+        return view('user.apply-for-agri-insurance');
+    }
+    public function Team(){
+        return view('user.team');
+    }
 }
