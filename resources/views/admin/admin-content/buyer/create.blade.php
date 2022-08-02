@@ -25,6 +25,7 @@
                         <option value="b">Buyers</option>
                         <option value="dp">Development Partners</option>
                         <option value="i">Institution Partners</option>
+                        <option value="sp">Service Photo</option>
                     </select>
                 </div>
 

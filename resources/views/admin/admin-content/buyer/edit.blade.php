@@ -27,6 +27,7 @@
                         <option value="b" @if($buyer->tag == 'b') selected @endif>Buyers</option>
                         <option value="dp" @if($buyer->tag == 'dp') selected @endif>Development Partners</option>
                         <option value="i" @if($buyer->tag == 'i') selected @endif>Institution Partners</option>
+                        <option value="sp" @if($buyer->tag == 'sp') selected @endif>Service Photo</option>
                     </select>
                 </div>
 
