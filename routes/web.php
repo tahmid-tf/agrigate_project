@@ -23,6 +23,21 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+//----------------------------------------User routes ----------------------------------------
+
+// ===================== HOMEPAGE======================
+
+Route::get('/', "UserPanelController@index");
+
+// ============================== HOMEPAGE ===============
+
+// ===================== SOLUTION ======================
+
+Route::get('/solutions', "UserPanelController@solutions")->name('solutions');
+Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->name('agrigate-center');
+
+
+// ============================== SOLUTION ===============
 
 // --------------------------------------- Auth routes ----------------------------------------
 
