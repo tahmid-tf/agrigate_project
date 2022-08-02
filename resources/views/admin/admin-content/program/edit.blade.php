@@ -5,7 +5,7 @@
     <hr>
 
     <div>
-        <form action="{{ route('testimonial.update',$testimonial->id) }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('program.update',$program->id) }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             @method('put')
             <form>
@@ -14,7 +14,7 @@
                     <label for="exampleInputEmail1">Enter Title (BN)</label>
                     <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
                            placeholder="Enter title" name="title_bn"
-                           class="form-control @error('title_bn') is-invalid @enderror" value="{{ $testimonial->title_bn }}">
+                           class="form-control @error('title_bn') is-invalid @enderror" value="{{ $program->title_bn }}">
                 </div>
 
                 @error('title_bn')
@@ -26,7 +26,7 @@
                     <label for="exampleInputEmail1">Enter Title</label>
                     <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
                            placeholder="Enter title" name="title_en"
-                           class="form-control @error('title_en') is-invalid @enderror" value="{{ $testimonial->title_en }}">
+                           class="form-control @error('title_en') is-invalid @enderror" value="{{ $program->title_en }}">
                 </div>
 
                 @error('title_en')
@@ -40,29 +40,6 @@
                 </div>
 
                 @error('image')
-                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
-                @enderror
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Content (BN)</label>
-                    <textarea name="content_bn" id="" cols="30" rows="10"
-                              class="@error('content_bn') is-invalid @enderror form-control"
-                              placeholder="Enter achievement content">{{ $testimonial->content_bn }}</textarea>
-                </div>
-
-                @error('content_bn')
-                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
-                @enderror
-
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Content</label>
-                    <textarea name="content_en" id="" cols="30" rows="10"
-                              class="@error('content_en') is-invalid @enderror form-control"
-                              placeholder="Enter achievement content">{{ $testimonial->content_en }}</textarea>
-                </div>
-
-                @error('content_en')
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 

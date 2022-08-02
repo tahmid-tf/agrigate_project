@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Testimonial;
+use App\News;
 use Illuminate\Http\Request;
 
-class TestimonialController extends Controller
+class NewsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::all();
-        return view('admin.admin-content.testimonial.index', compact('testimonials'));
+        $news = News::all();
+        return view('admin.admin-content.news.index', compact('news'));
     }
 
     /**
@@ -25,20 +25,17 @@ class TestimonialController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.testimonial.create');
+        return view('admin.admin-content.news.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-
-//        dd($request->all());
-
         $inputs = \request()->validate([
             'title_bn' => 'required',
             'title_en' => 'required',
@@ -51,7 +48,7 @@ class TestimonialController extends Controller
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Testimonial::create($inputs);
+        News::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -59,10 +56,10 @@ class TestimonialController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function show(Testimonial $testimonial)
+    public function show(News $news)
     {
         //
     }
@@ -70,22 +67,22 @@ class TestimonialController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function edit(Testimonial $testimonial)
+    public function edit(News $news)
     {
-        return view('admin.admin-content.testimonial.edit',compact('testimonial'));
+        return view('admin.admin-content.news.edit',compact('news'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Testimonial $testimonial
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Testimonial $testimonial)
+    public function update(Request $request, News $news)
     {
         $inputs = \request()->validate([
             'title_bn' => 'required',
@@ -98,25 +95,25 @@ class TestimonialController extends Controller
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         } else {
-            $inputs['image'] = $testimonial->image;
+            $inputs['image'] = $news->image;
         }
 
-        $testimonial->update($inputs);
+        $news->update($inputs);
         session()->flash('create', 'Data Updated Successfully');
-        return redirect()->route('testimonial.index');
+        return redirect()->route('news.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\News  $news
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Testimonial $testimonial)
+    public function destroy(News $news)
     {
-        $testimonial->delete();
+        $news->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("testimonial.index");
+        return redirect()->route("news.index");
     }
 }

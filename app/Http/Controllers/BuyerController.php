@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Testimonial;
+use App\Buyer;
 use Illuminate\Http\Request;
 
-class TestimonialController extends Controller
+class BuyerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::all();
-        return view('admin.admin-content.testimonial.index', compact('testimonials'));
+        $buyers = Buyer::all();
+        return view('admin.admin-content.buyer.index', compact('buyers'));
     }
 
     /**
@@ -25,33 +25,27 @@ class TestimonialController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.testimonial.create');
+        return view('admin.admin-content.buyer.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-
-//        dd($request->all());
-
         $inputs = \request()->validate([
-            'title_bn' => 'required',
-            'title_en' => 'required',
-            'content_bn' => 'required',
-            'content_en' => 'required',
             'image' => 'required|mimes:jpeg,jpg,png',
+            'tag' => 'required',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Testimonial::create($inputs);
+        Buyer::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -59,10 +53,10 @@ class TestimonialController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\Buyer  $buyer
      * @return \Illuminate\Http\Response
      */
-    public function show(Testimonial $testimonial)
+    public function show(Buyer $buyer)
     {
         //
     }
@@ -70,53 +64,50 @@ class TestimonialController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\Buyer  $buyer
      * @return \Illuminate\Http\Response
      */
-    public function edit(Testimonial $testimonial)
+    public function edit(Buyer $buyer)
     {
-        return view('admin.admin-content.testimonial.edit',compact('testimonial'));
+        return view('admin.admin-content.buyer.edit',compact('buyer'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Testimonial $testimonial
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Buyer  $buyer
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Testimonial $testimonial)
+    public function update(Request $request, Buyer $buyer)
     {
         $inputs = \request()->validate([
-            'title_bn' => 'required',
-            'title_en' => 'required',
-            'content_bn' => 'required',
-            'content_en' => 'required',
             'image' => 'mimes:jpeg,jpg,png',
+            'tag' => 'required',
         ]);
 
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         } else {
-            $inputs['image'] = $testimonial->image;
+            $inputs['image'] = $buyer->image;
         }
 
-        $testimonial->update($inputs);
+        $buyer->update($inputs);
         session()->flash('create', 'Data Updated Successfully');
-        return redirect()->route('testimonial.index');
+        return redirect()->route('buyer.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\Buyer  $buyer
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Testimonial $testimonial)
+    public function destroy(Buyer $buyer)
     {
-        $testimonial->delete();
+        $buyer->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("testimonial.index");
+        return redirect()->route("buyer.index");
     }
 }

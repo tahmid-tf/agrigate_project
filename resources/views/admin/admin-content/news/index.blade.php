@@ -20,7 +20,7 @@
         <tbody>
 
         <?php $id = 0 ?>
-        @foreach($testimonials as $testimonial)
+        @foreach($news as $testimonial)
             <tr>
                 <td>{{ $id += 1 }}</td>
                 <td>{{ $testimonial->title_en }}</td>
@@ -28,9 +28,9 @@
                 <td>{{ $testimonial->title_bn }}</td>
                 <td>{!! $testimonial->content_bn !!}</td>
                 <td><img src="{{ asset('storage/'.$testimonial->image) }}" alt="" style="width: 100px"></td>
-                <td><a href="{{ route('testimonial.edit',$testimonial->id) }}" class="btn btn-info">Update</a></td>
+                <td><a href="{{ route('news.edit',$testimonial->id) }}" class="btn btn-info">Update</a></td>
                 <td>
-                    <form action="{{ route('testimonial.destroy',$testimonial->id) }}" method="post">
+                    <form action="{{ route('news.destroy',$testimonial->id) }}" method="post">
                         {{ csrf_field() }}
                         @method('delete')
                         <input type="submit" value="Delete" class="btn btn-danger">

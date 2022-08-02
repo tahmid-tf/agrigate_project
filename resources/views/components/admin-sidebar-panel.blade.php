@@ -1,5 +1,11 @@
 {{-- ------------------------------------------ Testimonial ------------------------------------------------ --}}
 
+<!-- Heading -->
+<div class="sidebar-heading">
+    Home
+</div>
+
+
 <!-- Nav Item - Pages Collapse Menu -->
 <li class="nav-item">
     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
@@ -17,3 +23,159 @@
 </li>
 
 {{-- ------------------------------------------ Testimonial ------------------------------------------------ --}}
+
+
+{{-- ------------------------------------------ News ------------------------------------------------ --}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#news"
+       aria-expanded="true" aria-controls="news">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>News</span>
+    </a>
+    <div id="news" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Testimonials</h6>
+            <a class="collapse-item" href="{{ route('news.create') }}">Create news</a>
+            <a class="collapse-item" href="{{ route('news.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ News ------------------------------------------------ --}}
+
+
+{{-- ------------------------------------------------------- Source from us -------------------------------------------------------------- --}}
+
+<div class="sidebar-heading">
+    Source from us
+</div>
+
+
+{{-- ------------------------------------------ crops ------------------------------------------------ --}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Crops"
+       aria-expanded="true" aria-controls="news">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Crops</span>
+    </a>
+    <div id="Crops" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Crops</h6>
+            <a class="collapse-item" href="{{ route('crop.create') }}">Create info</a>
+            <a class="collapse-item" href="{{ route('crop.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ crops ------------------------------------------------ --}}
+
+
+{{-- ------------------------------------------ Processing and trades ------------------------------------------------ --}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#processing"
+       aria-expanded="true" aria-controls="news">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Processing and trades</span>
+    </a>
+    <div id="processing" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Crops</h6>
+            <a class="collapse-item" href="{{ route('processing.create') }}">Create info</a>
+            <a class="collapse-item" href="{{ route('processing.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ Processing and trades ------------------------------------------------ --}}
+
+{{-- ------------------------------------------ Buyers ------------------------------------------------ --}}
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Buyers"
+       aria-expanded="true" aria-controls="news">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Buyers and Partners</span>
+    </a>
+    <div id="Buyers" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Buyers</h6>
+            <a class="collapse-item" href="{{ route('buyer.create') }}">Create info</a>
+            <a class="collapse-item" href="{{ route('buyer.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ Buyers ------------------------------------------------ --}}
+
+{{-- -------------------------------------------------------- Source from us -------------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------------- Work with us -------------------------------------------------------------- --}}
+
+
+{{-- ------------------------------------------ Our Partners ------------------------------------------------ --}}
+
+<!-- Heading -->
+<div class="sidebar-heading">
+    Work with us
+</div>
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#partner"
+       aria-expanded="true" aria-controls="news">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Partners</span>
+    </a>
+    <div id="partner" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Buyers</h6>
+            <a class="collapse-item" href="{{ route('partner.create') }}">Create info</a>
+            <a class="collapse-item" href="{{ route('partner.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ Our Partners ------------------------------------------------ --}}
+
+
+
+{{-- -------------------------------------------------------- Work with us -------------------------------------------------------------- --}}
+
+{{-- -------------------------------------------------------- Agrigate center -------------------------------------------------------------- --}}
+
+
+{{-- ------------------------------------------ Program ------------------------------------------------ --}}
+
+<!-- Heading -->
+<div class="sidebar-heading">
+    Agrigate Center
+</div>
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Program"
+       aria-expanded="true" aria-controls="news">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Program</span>
+    </a>
+    <div id="Program" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Buyers</h6>
+            <a class="collapse-item" href="{{ route('program.create') }}">Create info</a>
+            <a class="collapse-item" href="{{ route('program.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ Programme ------------------------------------------------ --}}
+
+
+
+{{-- -------------------------------------------------------- Agrigate center -------------------------------------------------------------- --}}

@@ -4,7 +4,7 @@
     <hr>
 
     <div>
-        <form action="{{ route('testimonial.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('program.store') }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <form>
 
@@ -39,29 +39,6 @@
                 </div>
 
                 @error('image')
-                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
-                @enderror
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Content (BN)</label>
-                    <textarea name="content_bn" id="" cols="30" rows="10"
-                              class="@error('content_bn') is-invalid @enderror form-control"
-                              placeholder="Enter achievement content"></textarea>
-                </div>
-
-                @error('content_bn')
-                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
-                @enderror
-
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Enter Content</label>
-                    <textarea name="content_en" id="" cols="30" rows="10"
-                              class="@error('content_en') is-invalid @enderror form-control"
-                              placeholder="Enter achievement content"></textarea>
-                </div>
-
-                @error('content_en')
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 

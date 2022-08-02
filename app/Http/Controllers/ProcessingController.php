@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Testimonial;
+use App\Processing;
 use Illuminate\Http\Request;
 
-class TestimonialController extends Controller
+class ProcessingController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class TestimonialController extends Controller
      */
     public function index()
     {
-        $testimonials = Testimonial::all();
-        return view('admin.admin-content.testimonial.index', compact('testimonials'));
+        $processing = Processing::all();
+        return view('admin.admin-content.processing.index', compact('processing'));
     }
 
     /**
@@ -25,20 +25,17 @@ class TestimonialController extends Controller
      */
     public function create()
     {
-        return view('admin.admin-content.testimonial.create');
+        return view('admin.admin-content.processing.create');
     }
 
     /**
      * Store a newly created resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
-
-//        dd($request->all());
-
         $inputs = \request()->validate([
             'title_bn' => 'required',
             'title_en' => 'required',
@@ -51,7 +48,7 @@ class TestimonialController extends Controller
             $inputs['image'] = \request('image')->store('photos');
         }
 
-        Testimonial::create($inputs);
+        Processing::create($inputs);
         session()->flash('create', 'Data Created Successfully');
         return redirect()->back();
     }
@@ -59,10 +56,10 @@ class TestimonialController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\Processing  $processing
      * @return \Illuminate\Http\Response
      */
-    public function show(Testimonial $testimonial)
+    public function show(Processing $processing)
     {
         //
     }
@@ -70,22 +67,23 @@ class TestimonialController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\Processing  $processing
      * @return \Illuminate\Http\Response
      */
-    public function edit(Testimonial $testimonial)
+    public function edit(Processing $processing)
     {
-        return view('admin.admin-content.testimonial.edit',compact('testimonial'));
+        return view('admin.admin-content.processing.edit',compact('processing'));
+
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param \Illuminate\Http\Request $request
-     * @param \App\Testimonial $testimonial
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Processing  $processing
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Testimonial $testimonial)
+    public function update(Request $request, Processing $processing)
     {
         $inputs = \request()->validate([
             'title_bn' => 'required',
@@ -98,25 +96,25 @@ class TestimonialController extends Controller
         if (request('image')) {
             $inputs['image'] = \request('image')->store('photos');
         } else {
-            $inputs['image'] = $testimonial->image;
+            $inputs['image'] = $processing->image;
         }
 
-        $testimonial->update($inputs);
+        $processing->update($inputs);
         session()->flash('create', 'Data Updated Successfully');
-        return redirect()->route('testimonial.index');
+        return redirect()->route('processing.index');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param \App\Testimonial $testimonial
+     * @param  \App\Processing  $processing
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Testimonial $testimonial)
+    public function destroy(Processing $processing)
     {
-        $testimonial->delete();
+        $processing->delete();
         session()->flash('delete', 'Data Deleted Successfully');
 
-        return redirect()->route("testimonial.index");
+        return redirect()->route("processing.index");
     }
 }
