@@ -26,8 +26,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // ===================== HOMEPAGE======================
 
-Route::get('/', "UserPanelController@index");
+Route::get('/', "UserPanelController@index")->name('homepage');
 Route::get('/source-from-us', "UserPanelController@Source")->name('source');
+Route::get('/work-with-us', "UserPanelController@Work")->name('work');
+
 
 // ============================== HOMEPAGE ===============
 
@@ -51,6 +53,14 @@ Route::get('/apply-for-agri-insurance', "UserPanelController@ApplyForAgriInsuran
 Route::get('/team', "UserPanelController@Team")->name('team');
 
 // ============================== TEAM ===============
+
+// ===================== Career ======================
+
+Route::get('/career', "UserPanelController@Career")->name('career');
+Route::get('/apply-now', "UserPanelController@ApplyNow")->name('apply-now');
+
+
+// ============================== Career ===============
 
 // --------------------------------------- Auth routes ----------------------------------------
 

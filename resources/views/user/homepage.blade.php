@@ -36,15 +36,12 @@
             </div>
             <div class="col-lg-4 col-md-6">
                 <img src="{{ asset('images/image 3.png') }}" class="d-block mx-auto img-fluid">
-                <p class="text-center top-section-text-style">Work with Us</p>
-
+                <a href="{{ route('work') }}"><p class="text-center top-section-text-style">Work with Us</p></a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <img src="{{ asset('images/image 1.png') }}" class="d-block mx-auto img-fluid">
-                <p class="text-center top-section-text-style">Grow with Us</p>
-
+                <a href="{{ route('solutions') }}"><p class="text-center top-section-text-style">Grow with Us</p></a>
             </div>
-
         </div>
     </div>
 </section>

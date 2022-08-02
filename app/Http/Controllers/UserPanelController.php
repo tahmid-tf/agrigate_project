@@ -33,4 +33,14 @@ class UserPanelController extends Controller
     public function Source(){
         return view('user.source-from-us');
     }
+    public function Work(){
+        return view('user.work-with-us');
+    }
+
+    public function Career(){
+        return view('user.career');
+    }
+    public function ApplyNow(){
+        return view('user.apply-now');
+    }
 }
