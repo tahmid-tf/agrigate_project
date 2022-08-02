@@ -441,7 +441,17 @@ article card .project-card {
     font-weight: 700;
     text-align: justify;
 }
-
+.solutions-card-text-2 {
+    color: #255302;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: justify;
+}
+.source-image{
+    border-radius: 42px !important;
+    height:240px !important;
+    margin-top:25px;
+}
 .contract-farming-text {
     font-size: 14px;
     font-weight: 700;
@@ -554,4 +564,12 @@ hr {
     color: #fff;
     margin-bottom: 1rem;
     font-weight: 500;
+}
+.crops-text{
+    text-align: center;
+    font-weight: 700;
+}
+.crops-image{
+    border-radius: 60px;
+    height: 300px;
 }

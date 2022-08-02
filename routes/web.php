@@ -27,6 +27,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 // ===================== HOMEPAGE======================
 
 Route::get('/', "UserPanelController@index");
+Route::get('/source-from-us', "UserPanelController@Source")->name('source');
 
 // ============================== HOMEPAGE ===============
 
@@ -49,7 +50,7 @@ Route::get('/apply-for-agri-insurance', "UserPanelController@ApplyForAgriInsuran
 
 Route::get('/team', "UserPanelController@Team")->name('team');
 
-// ============================== HOMEPAGE ===============
+// ============================== TEAM ===============
 
 // --------------------------------------- Auth routes ----------------------------------------
 

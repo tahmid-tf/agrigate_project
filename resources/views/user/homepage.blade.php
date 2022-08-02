@@ -32,7 +32,7 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <img src="{{ asset('images/image 2.png') }}" class="d-block mx-auto img-fluid">
-                <p class="text-center top-section-text-style">Source from Us</p>
+                <a href="{{ route('source') }}"><p class="text-center top-section-text-style">Source from Us</p></a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <img src="{{ asset('images/image 3.png') }}" class="d-block mx-auto img-fluid">

@@ -30,4 +30,7 @@ class UserPanelController extends Controller
     public function Team(){
         return view('user.team');
     }
+    public function Source(){
+        return view('user.source-from-us');
+    }
 }
