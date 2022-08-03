@@ -24,6 +24,28 @@
 
 {{-- ------------------------------------------ Testimonial ------------------------------------------------ --}}
 
+{{-- ------------------------------------------ Testimonial ------------------------------------------------ --}}
+
+<!-- Heading -->
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Goal"
+       aria-expanded="true" aria-controls="Goal">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Goal</span>
+    </a>
+    <div id="Goal" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Testimonials</h6>
+            <a class="collapse-item" href="{{ route('goal.create') }}">Create testimonials</a>
+            <a class="collapse-item" href="{{ route('goal.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ Testimonial ------------------------------------------------ --}}
+
 
 {{-- ------------------------------------------ News ------------------------------------------------ --}}
 
@@ -207,6 +229,31 @@
 </li>
 
 {{-- ------------------------------------------ Team ------------------------------------------------ --}}
+
+{{-- ------------------------------------------ Career ------------------------------------------------ --}}
+
+<!-- Heading -->
+<div class="sidebar-heading">
+    Career
+</div>
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Career"
+       aria-expanded="true" aria-controls="Career">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Career</span>
+    </a>
+    <div id="Career" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Career</h6>
+            <a class="collapse-item" href="{{ route('career.create') }}">Create info</a>
+            <a class="collapse-item" href="{{ route('career.index') }}">View All Info</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ Career ------------------------------------------------ --}}
 
 
 

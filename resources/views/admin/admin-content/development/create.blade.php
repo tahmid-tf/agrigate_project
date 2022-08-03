@@ -1,6 +1,6 @@
 @extends('admin.admin-panel.main')
 @section('content')
-    <h4>Add Buyer Contents</h4>
+    <h4>Add Development Contents</h4>
     <hr>
 
     <div>

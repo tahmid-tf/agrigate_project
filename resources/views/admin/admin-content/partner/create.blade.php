@@ -1,6 +1,6 @@
 @extends('admin.admin-panel.main')
 @section('content')
-    <h4>Add Testimonials Contents</h4>
+    <h4>Add Partner Contents</h4>
     <hr>
 
     <div>

@@ -41,59 +41,71 @@ Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->
 
 // ----------------------------------------------------------------- Auth routes ----------------------------------------------------------------------------------
 
-Route::get('/dashboard', function (){
+Route::get('/dashboard', function () {
     return view('admin.admin-content.dashboard.index');
 });
 
+// ------------------------------- Goal -----------------------------
+
+Route::resource('admin/goal', "GoalController");
+
+// ------------------------------- Goal -----------------------------
+
 
 // ------------------------------- Testimonial -----------------------------
 
-Route::resource('admin/testimonial',"TestimonialController");
+Route::resource('admin/testimonial', "TestimonialController");
 
 // ------------------------------- Testimonial -----------------------------
 
 
 // ------------------------------- News -----------------------------
 
-Route::resource('admin/news',"NewsController");
+Route::resource('admin/news', "NewsController");
 
 // ------------------------------- News -----------------------------
 
 // ------------------------------- Crops -----------------------------
 
-Route::resource('admin/crop',"CropController");
+Route::resource('admin/crop', "CropController");
 
 // ------------------------------- Crops -----------------------------
 
 // ------------------------------- Processing -----------------------------
 
-Route::resource('admin/processing',"ProcessingController");
+Route::resource('admin/processing', "ProcessingController");
 
 // ------------------------------- Processing -----------------------------
 
 // ------------------------------- Buyers and partners -----------------------------
 
-Route::resource('admin/buyer',"BuyerController");
+Route::resource('admin/buyer', "BuyerController");
 
 // ------------------------------- Buyers and partners -----------------------------
 
 // ------------------------------- Partners -----------------------------
 
-Route::resource('admin/partner',"PartnerController");
+Route::resource('admin/partner', "PartnerController");
 
 // ------------------------------- Partners -----------------------------
 
 // ------------------------------- Program -----------------------------
 
-Route::resource('admin/program',"ProgramController");
+Route::resource('admin/program', "ProgramController");
 
 // ------------------------------- Program -----------------------------
 
 // ------------------------------- Team -----------------------------
 
-Route::resource('admin/team',"TeamController");
+Route::resource('admin/team', "TeamController");
 
 // ------------------------------- Team -----------------------------
+
+// ------------------------------- Career -----------------------------
+
+Route::resource('admin/career', "CareerController");
+
+// ------------------------------- Career -----------------------------
 
 
 // ----------------------------------------------------------------- Auth routes ----------------------------------------------------------------------------------

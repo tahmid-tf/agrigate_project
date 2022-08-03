@@ -1,10 +1,10 @@
 @extends('admin.admin-panel.main')
 @section('content')
-    <h4>Add Program Contents</h4>
+    <h4>Add Goals Contents</h4>
     <hr>
 
     <div>
-        <form action="{{ route('program.store') }}" method="post" enctype="multipart/form-data">
+        <form action="{{ route('goal.store') }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
             <form>
 
@@ -31,6 +31,17 @@
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Hex color</label>
+                    <input type="text" id="exampleInputEmail1" aria-describedby="emailHelp"
+                           placeholder="Enter title" name="hex_color"
+                           class="form-control @error('hex_color') is-invalid @enderror">
+                </div>
+
+                @error('hex_color')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
 
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Enter image</label>
@@ -39,6 +50,29 @@
                 </div>
 
                 @error('image')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Content (BN)</label>
+                    <textarea name="content_bn" id="" cols="30" rows="10"
+                              class="@error('content_bn') is-invalid @enderror form-control"
+                              placeholder="Enter achievement content"></textarea>
+                </div>
+
+                @error('content_bn')
+                <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
+                @enderror
+
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Enter Content</label>
+                    <textarea name="content_en" id="" cols="30" rows="10"
+                              class="@error('content_en') is-invalid @enderror form-control"
+                              placeholder="Enter achievement content"></textarea>
+                </div>
+
+                @error('content_en')
                 <div class="alert alert-danger" style="margin-top: 10px">{{ $message }}</div>
                 @enderror
 

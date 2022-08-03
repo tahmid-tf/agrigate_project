@@ -1,7 +1,7 @@
 @extends('admin.admin-panel.main')
 
 @section('content')
-    <h4>View All Photo Info</h4>
+    <h4>View All Testimonial Info</h4>
     <hr>
 
     <table id="example" class="display" style="width:100%">
