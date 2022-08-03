@@ -66,7 +66,7 @@
                 <section class="section-light-green-bg py-4">
                     <div class="slider-section">
                         <div class="container-fluid">
-                            <div id="owl-demo-2" class="owl-carousel">
+                            <div id="owl-demo-4" class="owl-carousel">
                                 <article class="thumbnail item mb-4">
                                     <div class="card program-card" style="width: 18rem;">
                                         <img class="card-img-top program-card-image" src="{{ asset('images/program-1.png') }}" alt="">
@@ -97,7 +97,7 @@
         </div>
 
     </div>
-</section>
+</div>
 
 <section class="section-light-green-bg">
     <div class="section-dark-green-bg py-2">
