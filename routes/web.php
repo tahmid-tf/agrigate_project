@@ -41,6 +41,10 @@ Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->
 
 // ----------------------------------------------------------------- Auth routes ----------------------------------------------------------------------------------
 
+
+Route::middleware('auth')->group(function (){
+
+
 Route::get('/dashboard', function () {
     return view('admin.admin-content.dashboard.index');
 });
@@ -107,5 +111,6 @@ Route::resource('admin/career', "CareerController");
 
 // ------------------------------- Career -----------------------------
 
+});
 
 // ----------------------------------------------------------------- Auth routes ----------------------------------------------------------------------------------
