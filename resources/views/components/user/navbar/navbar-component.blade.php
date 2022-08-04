@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg navbar-light pb-0" style="background: #E2EFD9">
 
     <!--Navbar Logo-->
@@ -7,7 +6,8 @@
     </a>
 
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -18,8 +18,9 @@
             </li>
 
             <li class="nav-item dropdown">
-                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   Solutions
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Solutions
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ route('solutions') }}">Solution For Farmers</a>
@@ -43,6 +44,25 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('career') }}">Careers</a>
             </li>
+
+
+            {{--  ----------------------------------- language ( under construction ) ---------------------------------------- --}}
+
+            <li class="nav-item">
+                <a class="nav-link" style="text-decoration: none">
+                    <div class="language-div">
+                        <button onclick="window.location='{{ route('test',1) }}'"
+                            class="language-btn">EN |
+                        </button>
+                        <button
+                            class="language-btn" onclick="window.location='{{ route('test',2) }}'"> &nbsp;BN
+                        </button>
+                    </div>
+                </a>
+            </li>
+
+
+            {{--  ----------------------------------- language ( under construction ) ---------------------------------------- --}}
 
 
         </ul>

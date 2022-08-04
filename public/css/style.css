@@ -15,6 +15,24 @@ a {
 }
 
 
+/*--------------- EN BN button -------------- */
+
+.language-div {
+    display: flex;
+}
+
+.language-btn {
+    border: none;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+
+/*--------------- EN BN button -------------- */
+
+
 /*=============== NAVBAR ===============*/
 
 nav .navbar-nav li a {
@@ -275,20 +293,20 @@ article card .project-card {
 
 #news-card {
     background: #E2EFD9;
-    border-radius: 42px;
+    border-radius: 16px;
     width: 700px;
 }
 
 .news-image {
-    border-radius: 42px;
-    margin-right: 5px;
-    margin-left: 5px;
+    border-radius: 29px;
+    /*margin-right: 10px;*/
+    margin-left: -6px;
 }
 
 @media only screen and (max-width: 600px) {
     #news-card {
         background: #E2EFD9;
-        border-radius: 42px;
+        border-radius: 16px;
         width: 300px;
     }
 }
@@ -296,7 +314,7 @@ article card .project-card {
 @media screen and (min-device-width: 600px) and (max-device-width: 1000px) {
     #news-card {
         background: #E2EFD9;
-        border-radius: 42px;
+        border-radius: 16px;
         width: 500px;
     }
 }
@@ -566,10 +584,12 @@ hr {
     width: 300px !important;
     height: 140px;
 }
-.service-card-image{
+
+.service-card-image {
     width: 170px !important;
     height: 400px;
 }
+
 .team-heading {
     background: #255302;
     width: 250px;
@@ -652,7 +672,7 @@ hr {
     background-color: #E2EFD9;
     border-radius: 60px;
     margin-bottom: 2rem;
-    height:44px;
+    height: 44px;
 }
 
 .purpose-texts-style {
@@ -660,10 +680,12 @@ hr {
     font-size: 14px;
     font-weight: 700;
 }
-@media only screen and (max-width:510px){
+
+@media only screen and (max-width: 510px) {
     .purpose-points {
         display: none;
     }
+
     .purpose-texts {
         height: 100%;
         border-radius: 20px;
@@ -673,10 +695,12 @@ hr {
         margin-top: 10px;
     }
 }
-@media only screen and (min-width: 850px) and (max-width:1017px) {
+
+@media only screen and (min-width: 850px) and (max-width: 1017px) {
     .purpose-points {
         display: none !important;
     }
+
     .purpose-texts {
         height: 100%;
     }

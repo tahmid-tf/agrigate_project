@@ -15,6 +15,12 @@ use App\Http\Controllers\TestimonialController;
 |
 */
 
+
+Route::get('test/{id}', function ($id){
+    return $id;
+})->name('test');
+
+
 Route::get('/', function () {
     return view('welcome');
 });
