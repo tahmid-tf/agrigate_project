@@ -29,9 +29,11 @@ nav .navbar-nav li a:hover {
     text-decoration-thickness: 2px;
     text-decoration-color: #38512E;
 }
-.nav-link{
+
+.nav-link {
     margin-right: 1rem;
 }
+
 .navbar-light .navbar-toggler {
     border-color: #fff;
 }
@@ -442,17 +444,20 @@ article card .project-card {
     font-weight: 700;
     text-align: justify;
 }
+
 .solutions-card-text-2 {
     color: #255302;
     font-size: 14px;
     font-weight: 700;
     text-align: justify;
 }
-.source-image{
+
+.source-image {
     border-radius: 42px !important;
-    height:240px !important;
-    margin-top:25px;
+    height: 240px !important;
+    margin-top: 25px;
 }
+
 .contract-farming-text {
     font-size: 14px;
     font-weight: 700;
@@ -522,27 +527,31 @@ hr {
     }
 }
 
-.program-card{
+.program-card {
     border-radius: 20px !important;
     background: #255302 !important;
     border: none !important;
     height: 380px;
 }
-.program-card-bottom{
+
+.program-card-bottom {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
-.program-card-title{
+
+.program-card-title {
     color: #fff;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
 }
-.program-card-image{
+
+.program-card-image {
     border-radius: 20px !important;
-    height:250px;
+    height: 250px;
 }
-.finance-buttons{
+
+.finance-buttons {
     background: #255302;
     width: 250px;
     height: 80px;
@@ -552,11 +561,16 @@ hr {
     margin-bottom: 1rem;
     font-weight: 500;
 }
-.finance-card-image{
-    width:300px !important;
+
+.finance-card-image {
+    width: 300px !important;
     height: 140px;
 }
-.team-heading{
+.service-card-image{
+    width: 170px !important;
+    height: 400px;
+}
+.team-heading {
     background: #255302;
     width: 250px;
     height: 50px;
@@ -566,7 +580,8 @@ hr {
     margin-bottom: 1rem;
     font-weight: 500;
 }
-.team-heading-2{
+
+.team-heading-2 {
     background: #255302;
     width: 350px;
     height: 50px;
@@ -576,33 +591,39 @@ hr {
     margin-bottom: 1rem;
     font-weight: 500;
 }
-.crops-text{
+
+.crops-text {
     text-align: center;
     font-weight: 700;
 }
-.crops-image{
+
+.crops-image {
     border-radius: 60px;
     height: 300px;
 }
-.career-card{
+
+.career-card {
     height: 300px !important;
     border-radius: 20px !important;
     background: #255302 !important;
 }
-.career-heading{
+
+.career-heading {
     color: #fff;
     font-weight: 700;
     margin-top: 20px;
     font-size: 20px;
 
 }
-.career-subheading{
+
+.career-subheading {
     color: #fff;
     font-weight: 700;
     margin-top: 170px;
     font-size: 20px;
 }
-.apply-now-button{
+
+.apply-now-button {
     background: #255302;
     width: 250px;
     height: 50px;
@@ -611,4 +632,56 @@ hr {
     color: #fff;
     margin-bottom: 1rem;
     font-weight: 700;
+}
+
+.purpose-points {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: #255302;
+    border: none;
+}
+
+.purpose-bullet-point {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.purpose-texts {
+    background-color: #E2EFD9;
+    border-radius: 60px;
+    margin-bottom: 2rem;
+    height:44px;
+}
+
+.purpose-texts-style {
+    color: #255302;
+    font-size: 14px;
+    font-weight: 700;
+}
+@media only screen and (max-width:510px){
+    .purpose-points {
+        display: none;
+    }
+    .purpose-texts {
+        height: 100%;
+        border-radius: 20px;
+    }
+
+    .purpose-texts-style {
+        margin-top: 10px;
+    }
+}
+@media only screen and (min-width: 850px) and (max-width:1017px) {
+    .purpose-points {
+        display: none !important;
+    }
+    .purpose-texts {
+        height: 100%;
+    }
+
+    .purpose-texts-style {
+        margin-top: 10px;
+    }
 }

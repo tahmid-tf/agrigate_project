@@ -32,6 +32,21 @@ class UserPanelController extends Controller
 
     /*------------------------------- Solutions-----------------*/
 
+    /*------------------- About Us  ----------------------------*/
+
+    public function AboutUs(){
+        return view('user.about-us');
+    }
+    /*------------------------------- About Us  ---------------*/
+
+    /*------------------- APP ----------------------------*/
+
+    public function App(){
+        return view('user.app');
+    }
+    /*------------------------------- APP  ---------------*/
+
+
     /*------------------- Financial Inclusion ----------------------------*/
 
     public function FinancialInclusion(){

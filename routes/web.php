@@ -40,6 +40,14 @@ Route::get('/solutions', "UserPanelController@solutions")->name('solutions');
 Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->name('agrigate-center');
 // ============================== SOLUTION ===============
 
+// ===================== ABOUT US ======================
+Route::get('/about-us', "UserPanelController@AboutUs")->name('about');
+// ================================ ABOUT US ==============
+
+// ===================== APP ======================
+Route::get('/app', "UserPanelController@App")->name('app');
+// ================================ APP ==============
+
 // ===================== FINANCIAL INCLUSION ======================
 
 Route::get('/financial-inclusion', "UserPanelController@FinancialInclusion")->name('financial-inclusion');
