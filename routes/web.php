@@ -40,6 +40,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', "UserPanelController@index")->name('homepage');
 Route::get('/source-from-us', "UserPanelController@Source")->name('source');
 Route::get('/work-with-us', "UserPanelController@Work")->name('work');
+Route::get('/news', "UserPanelController@News")->name('news');
+Route::get('/single-news', "UserPanelController@SingleNews")->name('single-news');
 
 
 // ============================== HOMEPAGE ===============
