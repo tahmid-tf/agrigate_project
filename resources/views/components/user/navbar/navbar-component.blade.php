@@ -51,11 +51,11 @@
             <li class="nav-item">
                 <a class="nav-link" style="text-decoration: none">
                     <div class="language-div">
-                        <button onclick="window.location='{{ route('test',1) }}'"
+                        <button onclick="window.location='{{ route('lang','en') }}'"
                             class="language-btn">EN |
                         </button>
                         <button
-                            class="language-btn" onclick="window.location='{{ route('test',2) }}'"> &nbsp;BN
+                            class="language-btn" onclick="window.location='{{ route('lang','bn') }}'"> &nbsp;BN
                         </button>
                     </div>
                 </a>

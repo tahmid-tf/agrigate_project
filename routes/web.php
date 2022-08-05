@@ -16,14 +16,18 @@ use App\Http\Controllers\TestimonialController;
 */
 
 
-Route::get('test/{id}', function ($id){
-    return $id;
-})->name('test');
+//Route::get('/tt', function () {
+//    return view('welcome');
+//});
 
+// --------------------------------- language translation ---------------------------------------------
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('lang/{lang}', function ($lang) {
+    session()->put('locale',$lang);
+    return redirect()->back();
+})->name('lang');
+
+// --------------------------------- language translation ---------------------------------------------
 
 Auth::routes();
 
@@ -80,72 +84,72 @@ Route::get('/apply-now', "UserPanelController@ApplyNow")->name('apply-now');
 // ----------------------------------------------------------------- Auth routes ----------------------------------------------------------------------------------
 
 
-Route::middleware('auth')->group(function (){
+Route::middleware('auth')->group(function () {
 
 
-Route::get('/dashboard', function () {
-    return view('admin.admin-content.dashboard.index');
-});
+    Route::get('/dashboard', function () {
+        return view('admin.admin-content.dashboard.index');
+    });
 
 // ------------------------------- Goal -----------------------------
 
-Route::resource('admin/goal', "GoalController");
+    Route::resource('admin/goal', "GoalController");
 
 // ------------------------------- Goal -----------------------------
 
 
 // ------------------------------- Testimonial -----------------------------
 
-Route::resource('admin/testimonial', "TestimonialController");
+    Route::resource('admin/testimonial', "TestimonialController");
 
 // ------------------------------- Testimonial -----------------------------
 
 
 // ------------------------------- News -----------------------------
 
-Route::resource('admin/news', "NewsController");
+    Route::resource('admin/news', "NewsController");
 
 // ------------------------------- News -----------------------------
 
 // ------------------------------- Crops -----------------------------
 
-Route::resource('admin/crop', "CropController");
+    Route::resource('admin/crop', "CropController");
 
 // ------------------------------- Crops -----------------------------
 
 // ------------------------------- Processing -----------------------------
 
-Route::resource('admin/processing', "ProcessingController");
+    Route::resource('admin/processing', "ProcessingController");
 
 // ------------------------------- Processing -----------------------------
 
 // ------------------------------- Buyers and partners -----------------------------
 
-Route::resource('admin/buyer', "BuyerController");
+    Route::resource('admin/buyer', "BuyerController");
 
 // ------------------------------- Buyers and partners -----------------------------
 
 // ------------------------------- Partners -----------------------------
 
-Route::resource('admin/partner', "PartnerController");
+    Route::resource('admin/partner', "PartnerController");
 
 // ------------------------------- Partners -----------------------------
 
 // ------------------------------- Program -----------------------------
 
-Route::resource('admin/program', "ProgramController");
+    Route::resource('admin/program', "ProgramController");
 
 // ------------------------------- Program -----------------------------
 
 // ------------------------------- Team -----------------------------
 
-Route::resource('admin/team', "TeamController");
+    Route::resource('admin/team', "TeamController");
 
 // ------------------------------- Team -----------------------------
 
 // ------------------------------- Career -----------------------------
 
-Route::resource('admin/career', "CareerController");
+    Route::resource('admin/career', "CareerController");
 
 // ------------------------------- Career -----------------------------
 
