@@ -44,6 +44,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('career') }}">Careers</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('news') }}">News</a>
+            </li>
+
 
 
             {{--  ----------------------------------- language ( under construction ) ---------------------------------------- --}}
