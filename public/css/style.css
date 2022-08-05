@@ -76,7 +76,7 @@ nav .navbar-nav li a:hover {
 
 /*=============== HOMEPAGE SECTION ===============*/
 .section-dark-green-bg {
-    background: #255302;
+    background: #254302;
 }
 
 .section-light-green-bg {
@@ -296,7 +296,11 @@ article card .project-card {
     border-radius: 16px;
     width: 700px;
 }
-
+#news-card-2{
+    background: #E2EFD9;
+    border-radius: 16px;
+    width: 900px;
+}
 .news-image {
     border-radius: 29px;
     /*margin-right: 10px;*/
@@ -309,10 +313,20 @@ article card .project-card {
         border-radius: 16px;
         width: 300px;
     }
+    #news-card-2{
+        background: #E2EFD9;
+        border-radius: 16px;
+        width: 300px;
+    }
 }
 
 @media screen and (min-device-width: 600px) and (max-device-width: 1000px) {
     #news-card {
+        background: #E2EFD9;
+        border-radius: 16px;
+        width: 500px;
+    }
+    #news-card-2 {
         background: #E2EFD9;
         border-radius: 16px;
         width: 500px;
@@ -708,4 +722,12 @@ hr {
     .purpose-texts-style {
         margin-top: 10px;
     }
+}
+
+.news-button{
+    background-color: #E2EFD9;
+    border-radius: 20px;
+    border:none;
+    width:180px;
+    font-weight: 700;
 }

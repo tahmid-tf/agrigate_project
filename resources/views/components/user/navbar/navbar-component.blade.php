@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light pb-0" style="background: #E2EFD9">
 
     <!--Navbar Logo-->
-    <a href="#" class="navbar-brand">
+    <a href="{{ route('homepage') }}" class="navbar-brand">
         <img src="{{ asset('images/Agrigate-Logos.png') }}" alt="Logo">
     </a>
 

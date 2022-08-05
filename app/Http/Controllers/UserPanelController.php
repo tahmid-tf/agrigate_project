@@ -16,6 +16,13 @@ class UserPanelController extends Controller
     public function Work(){
         return view('user.work-with-us');
     }
+    public function News(){
+        return view('user.news');
+    }
+   public function SingleNews(){
+       return view('user.single-news');
+
+   }
     /*--------------------------------------Home-----------*/
 
     /*------------------- Solutions----------------------------*/
