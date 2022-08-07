@@ -14,13 +14,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="{{ route('homepage') }}">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ route('homepage') }}">@lang('navbar.Home') <span class="sr-only">(current)</span></a>
             </li>
 
             <li class="nav-item dropdown">
                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-                    Solutions
+                    @lang('navbar.Solutions')
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="{{ route('solutions') }}">Solution For Farmers</a>
@@ -30,20 +30,24 @@
                 </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('about') }}">About Us</a>
+                <a class="nav-link" href="{{ route('about') }}">@lang('navbar.About')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('app') }}">App</a>
+                <a class="nav-link" href="{{ route('app') }}">@lang('navbar.App')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('team') }}">Team</a>
+                <a class="nav-link" href="{{ route('team') }}">@lang('navbar.Team')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('financial-inclusion') }}">Financial Inclusion</a>
+                <a class="nav-link" href="{{ route('financial-inclusion') }}">@lang('navbar.Financial Inclusion')</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('career') }}">Careers</a>
+                <a class="nav-link" href="{{ route('career') }}">@lang('navbar.Careers')</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ route('news') }}">@lang('navbar.News')</a>
+            </li>
+
 
 
             {{--  ----------------------------------- language ( under construction ) ---------------------------------------- --}}
