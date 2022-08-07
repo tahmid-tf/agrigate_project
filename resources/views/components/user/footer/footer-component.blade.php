@@ -7,7 +7,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
                     <div>
                         <div class="text-center">
-                            <button class="footer-button px-2 py-2">Contact Us</button>
+                            <button class="footer-button px-2 py-2">@lang('navbar.Contact Us')</button>
                         </div>
                        <div class="mt-3 d-flex justify-content-center align-items-center">
                            <p class="footer-text">
@@ -32,7 +32,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
                     <div>
                         <div class="text-center">
-                            <button class="footer-button px-2 py-2">Location</button>
+                            <button class="footer-button px-2 py-2">@lang('navbar.Location')</button>
                         </div>
                         <div class="mt-3">
                             <div class="map-div">
@@ -47,7 +47,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-12 mb-4">
                     <div>
                         <div class="text-center">
-                            <button class="footer-button px-2 py-2">Socials</button>
+                            <button class="footer-button px-2 py-2">@lang('navbar.Socials')</button>
                         </div>
                         <div class="mt-3">
                             <div class="d-flex justify-content-center align-items-center mb-2">

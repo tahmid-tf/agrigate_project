@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@lang('home.agrigate')</title>
+    <title>@lang('navbar.Agrigate')</title>
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" media="all"/>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -32,22 +32,22 @@
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <img src="{{ asset('images/image 2.png') }}" class="d-block mx-auto img-fluid">
-                <a href="{{ route('source') }}"><p class="text-center top-section-text-style">Source from Us</p></a>
+                <a href="{{ route('source') }}"><p class="text-center top-section-text-style">@lang('home.Source from Us')</p></a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <img src="{{ asset('images/image 3.png') }}" class="d-block mx-auto img-fluid">
-                <a href="{{ route('work') }}"><p class="text-center top-section-text-style">Work with Us</p></a>
+                <a href="{{ route('work') }}"><p class="text-center top-section-text-style">@lang('home.Work with Us')</p></a>
             </div>
             <div class="col-lg-4 col-md-6">
                 <img src="{{ asset('images/image 1.png') }}" class="d-block mx-auto img-fluid">
-                <a href="{{ route('solutions') }}"><p class="text-center top-section-text-style">Grow with Us</p></a>
+                <a href="{{ route('solutions') }}"><p class="text-center top-section-text-style">@lang('home.Grow with Us')</p></a>
             </div>
         </div>
     </div>
 </section>
 
 <section class="section-light-green-bg py-4">
-    <p class="text-center heading-text-style px-2">Our initiative aligns with the Sustainable Development Goals:</p>
+    <p class="text-center heading-text-style px-2">@lang('home.Our initiative aligns with the Sustainable Development Goals:')</p>
     <div>
         <section class="section-dark-green-bg py-4">
             <div class="slider-section">
@@ -124,7 +124,7 @@
     </div>
 </section>
 <section class="section-light-green-bg py-4">
-    <p class="text-center heading-text-style-2">Facts & Figures/(Our Impact)</p>
+    <p class="text-center heading-text-style-2">@lang('home.Facts & Figures/(Our Impact)')</p>
     <section class="section-dark-green-bg py-4">
         <div class="container">
             <div class="row">
@@ -140,7 +140,7 @@
                 </div>
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Livestock Farmers Onboarded</h5>
+                        <h5 class="card-top-text">@lang('home.Livestock Farmers Onboarded')</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-2.png') }}" alt="">
                         <div class="card-body">
@@ -150,8 +150,7 @@
                 </div>
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Input Sellers
-                            Onboarded</h5>
+                        <h5 class="card-top-text">@lang('home.Input Sellers Onboarded')</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-3.png') }}" alt="">
                         <div class="card-body">
@@ -161,7 +160,7 @@
                 </div>
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Advisory service provided</h5>
+                        <h5 class="card-top-text">@lang('home.Advisory service provided')</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-4.png') }}" alt="">
                         <div class="card-body">
@@ -175,8 +174,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Soil Testing
-                            (pH & Moisture)</h5>
+                        <h5 class="card-top-text">@lang('home.Soil Testing (pH & Moisture)')</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-5.png') }}" alt="">
                         <div class="card-body">
@@ -186,7 +184,7 @@
                 </div>
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Grain Moisture Test</h5>
+                        <h5 class="card-top-text">@lang('home.Grain Moisture Test')</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-6.png') }}" alt="">
                         <div class="card-body">
@@ -201,7 +199,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Corn Sourcing</h5>
+                        <h5 class="card-top-text">@lang('home.Corn Sourcing')</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-7.png') }}" alt="">
                         <div class="card-body">
@@ -211,7 +209,7 @@
                 </div>
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Soyabean Sourcing</h5>
+                        <h5 class="card-top-text">@lang('home.Soyabean Sourcing')</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-8.png') }}" alt="">
                         <div class="card-body">
@@ -226,7 +224,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Bank Account Opening</h5>
+                        <h5 class="card-top-text">@lang('home.Bank Account Opening')</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-9.png') }}" alt="">
                         <div class="card-body">
@@ -236,7 +234,7 @@
                 </div>
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
-                        <h5 class="card-top-text">Paid Directly into Farmer's Account</h5>
+                        <h5 class="card-top-text">@lang("home.Paid Directly into Farmer's Account")</h5>
 
                         <img class="card-image-top img-fluid" src="{{ asset('images/facts-10.png') }}" alt="">
                         <div class="card-body">
@@ -260,25 +258,25 @@
 <!-- Where We Work-->
 
 <section class="section-light-green-bg py-4">
-    <p class="text-center heading-text-style-2">Where we work?</p>
+    <p class="text-center heading-text-style-2">@lang('home.Where we work?')</p>
     <div class="container mt-5">
         <div class="row">
             <div class="col-lg-4">
-                <p class="subtext-style text-center">Regions</p>
+                <p class="subtext-style text-center">@lang('home.Regions')</p>
                 <img src="{{ asset('images/map.png') }}" class="img-fluid d-block mx-auto"
                      style="height:200px;">
                 <p class="subtext-style text-center">2</p>
             </div>
 
             <div class="col-lg-4">
-                <p class="subtext-style text-center">Districts</p>
+                <p class="subtext-style text-center">@lang('home.Districts')</p>
                 <img src="{{ asset('images/map.png') }}" class="img-fluid d-block mx-auto"
                      style="height:200px;">
                 <p class="subtext-style text-center">5</p>
             </div>
 
             <div class="col-lg-4">
-                <p class="subtext-style text-center">Agrigate Centres</p>
+                <p class="subtext-style text-center">@lang('home.Agrigate Centres')</p>
                 <img src="{{ asset('images/agrigate-center.png') }}" class="img-fluid d-block mx-auto"
                      style="height:200px;">
                 <p class="subtext-style text-center">3</p>
@@ -288,7 +286,7 @@
 </section>
 
 <section class="section-light-green-bg py-4">
-    <p class="text-center heading-text-style-2">Testimonials</p>
+    <p class="text-center heading-text-style-2">@lang('home.Testimonials')</p>
     <section class="section-dark-green-bg py-4">
         <div class="slider-section">
             <div class="container-fluid">
@@ -399,7 +397,7 @@
 
 </section>
 <section class="section-light-green-bg py-4">
-    <p class="text-center heading-text-style-2">News</p>
+    <p class="text-center heading-text-style-2">@lang('navbar.News')</p>
     <section class="section-dark-green-bg py-4">
         <div class="mx-auto mb-3" id="news-card">
             <div class="row">
@@ -430,7 +428,7 @@
         </div>
         <div class="text-center">
             <a href="{{ route('news') }}">
-                <button type="button" class="news-button py-2">View All News</button>
+                <button type="button" class="news-button py-2">@lang('home.View All News')</button>
             </a>
         </div>
     </section>

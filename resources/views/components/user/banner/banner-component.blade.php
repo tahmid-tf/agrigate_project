@@ -1,3 +1,7 @@
 <div class="bg-banner">
-    <img src="{{ asset('images/Component 1.png') }}" class="img-fluid" style="object-fit: cover; width:100%;">
+    @if(\Illuminate\Support\Facades\Session::get('locale') == "en")
+        <img src="{{ asset('images/Component 1.png') }}" class="img-fluid" style="object-fit: cover; width:100%;">
+    @else
+        <img src="{{ asset('images/Component_Bangla.png') }}" class="img-fluid" style="object-fit: cover; width:100%;">
+    @endif
 </div>

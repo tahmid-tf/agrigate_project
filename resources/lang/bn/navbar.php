@@ -2,6 +2,8 @@
 
 return [
 
+    'Agrigate' => 'এগ্রিগেট',
+
     'Home' => 'হোম',
     'Solutions' => 'সমাধান সমূহ',
     'About' => 'আমাদের সম্পর্কে জানুন',
@@ -11,5 +13,10 @@ return [
     'Solution For Farmers' => 'কৃষকদের জন্য সমাধান',
     'Careers' => 'ক্যারিয়ার',
     'News' => 'খবর',
+
+    'Contact Us' => 'যোগাযোগ করুন',
+    'Location' => 'ঠিকানা',
+    'Socials' => 'সামাজিক মাধ্যম
+',
 
 ];
