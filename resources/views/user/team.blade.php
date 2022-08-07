@@ -46,35 +46,30 @@
     <div>
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4">
-                    <div class="card program-card mx-auto " style="width: 18rem;">
-                        <img class="card-img-top program-card-image" src="{{ asset('images/director-1.png') }}" alt="">
-                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                            <h6 class="text-white text-right">Munazzeel Riasat ACCA, CIA</h6>
-                            <h6 class="text-white text-right mb-3">Managing Director & CEO</h6>
-                            <div class="d-flex justify-content-end">
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/fb.png") }}" style="width:35px; height:25px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/in.png") }}"  style="width:20px; height:20px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/mail.png") }}"  style="width:20px; height:20px;"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 mb-4 mt-4">
-                    <div class="card program-card mx-auto" style="width: 18rem;">
-                        <img class="card-img-top program-card-image" src="{{ asset('images/director-2.png') }}" alt="">
-                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                            <h6 class="text-white text-right">Muhammed Sajjad Hossain Chowdhury</h6>
-                            <h6 class="text-white text-right mb-3">Managing Director & CEO</h6>
-                            <div class="d-flex justify-content-end">
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/fb.png") }}" style="width:35px; height:25px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/in.png") }}"  style="width:20px; height:20px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/mail.png") }}"  style="width:20px; height:20px;"></a></div>
+                @foreach($directors as $director)
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4">
+                        <div class="card program-card mx-auto " style="width: 18rem;">
+                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$director->image) }}"
+                                 alt="">
+                            <div class="card-body program-card-bottom section-dark-green-bg" style="">
+                                <h6 class="text-white text-right">{{ \App\User::language_change($director->title_en,$director->title_bn) }}</h6>
+                                <h6 class="text-white text-right mb-3">{{ \App\User::language_change($director->position_en,$director->position_bn) }}</h6>
+                                <div class="d-flex justify-content-end">
+                                    <div class="mr-2"><a href="{{ $director->fb }}" target="_blank"><img
+                                                src="{{ asset("images/icons/fb.png") }}"
+                                                style="width:35px; height:25px;"></a></div>
+                                    <div class="mr-2"><a href="{{ $director->ln }}"><img
+                                                src="{{ asset("images/icons/in.png") }}"
+                                                style="width:20px; height:20px;"></a></div>
+                                    <div class="mr-2"><a href="mailto:{{$director->g }}"><img
+                                                src="{{ asset("images/icons/mail.png") }}"
+                                                style="width:20px; height:20px;"></a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </div>
@@ -88,51 +83,31 @@
     <div>
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 col-md-6 mb-4 mt-4">
-                    <div class="card program-card mx-auto" style="width: 18rem;">
-                        <img class="card-img-top program-card-image" src="{{ asset('images/advisor-1.png') }}" alt="">
-                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                            <h6 class="text-white text-right">Muhammed Ali</h6>
-                            <h6 class="text-white text-right mb-3">Chief Advisor</h6>
-                            <div class="d-flex justify-content-end">
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/fb.png") }}" style="width:35px; height:25px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/in.png") }}"  style="width:20px; height:20px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/mail.png") }}"  style="width:20px; height:20px;"></a></div>
+
+                @foreach($advisors as $advisor)
+                    <div class="col-lg-4 col-md-6 mb-4 mt-4">
+                        <div class="card program-card mx-auto" style="width: 18rem;">
+                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$advisor->image) }}"
+                                 alt="">
+                            <div class="card-body program-card-bottom section-dark-green-bg" style="">
+                                <h6 class="text-white text-right">{{ \App\User::language_change($advisor->title_en,$advisor->title_bn) }}</h6>
+                                <h6 class="text-white text-right mb-3">{{ \App\User::language_change($advisor->position_en,$advisor->position_bn) }}</h6>
+                                <div class="d-flex justify-content-end">
+                                    <div class="mr-2"><a href="{{ $advisor->fb }}"><img
+                                                src="{{ asset("images/icons/fb.png") }}"
+                                                style="width:35px; height:25px;"></a></div>
+                                    <div class="mr-2"><a href="{{ $advisor->ln }}"><img
+                                                src="{{ asset("images/icons/in.png") }}"
+                                                style="width:20px; height:20px;"></a></div>
+                                    <div class="mr-2"><a href="mailto:{{ $advisor->g }}"><img
+                                                src="{{ asset("images/icons/mail.png") }}"
+                                                style="width:20px; height:20px;"></a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
 
-                <div class="col-lg-4 col-md-6 mb-4 mt-4">
-                    <div class="card program-card mx-auto" style="width: 18rem;">
-                        <img class="card-img-top program-card-image" src="{{ asset('images/advisor-2.png') }}" alt="">
-                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                            <h6 class="text-white text-right">Dr. M Nazrul Islam</h6>
-                            <h6 class="text-white text-right mb-3">Advisor, Agriculture</h6>
-                            <div class="d-flex justify-content-end">
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/fb.png") }}" style="width:35px; height:25px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/in.png") }}"  style="width:20px; height:20px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/mail.png") }}"  style="width:20px; height:20px;"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 mb-4 mt-4">
-                    <div class="card program-card mx-auto" style="width: 18rem;">
-                        <img class="card-img-top program-card-image" src="{{ asset('images/advisor-3.png') }}" alt="">
-                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                            <h6 class="text-white text-right">Syed Roquibul Ahsan</h6>
-                            <h6 class="text-white text-right mb-3">Advisor, IT</h6>
-                            <div class="d-flex justify-content-end">
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/fb.png") }}" style="width:35px; height:25px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/in.png") }}"  style="width:20px; height:20px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/mail.png") }}"  style="width:20px; height:20px;"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -146,35 +121,31 @@
     <div>
         <div class="container">
             <div class="row d-flex justify-content-center">
-                <div class="col-lg-4 col-md-6 mb-4 mt-4">
-                    <div class="card program-card mx-auto" style="width: 18rem;">
-                        <img class="card-img-top program-card-image" src="{{ asset('images/team-1.png') }}" alt="">
-                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                            <h6 class="text-white text-right">B.M. Hasibul Hasan</h6>
-                            <h6 class="text-white text-right mb-3">Head of Business</h6>
-                            <div class="d-flex justify-content-end">
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/fb.png") }}" style="width:35px; height:25px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/in.png") }}"  style="width:20px; height:20px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/mail.png") }}"  style="width:20px; height:20px;"></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-4 col-md-6 mb-4 mt-4">
-                    <div class="card program-card mx-auto" style="width: 18rem;">
-                        <img class="card-img-top program-card-image" src="{{ asset('images/team-2.png') }}" alt="">
-                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                            <h6 class="text-white text-right">K.M. Nafiul Akbar</h6>
-                            <h6 class="text-white text-right mb-3">Product Manager, IT</h6>
-                            <div class="d-flex justify-content-end">
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/fb.png") }}" style="width:35px; height:25px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/in.png") }}"  style="width:20px; height:20px;"></a></div>
-                                <div class="mr-2"><a href=""><img src="{{ asset("images/icons/mail.png") }}"  style="width:20px; height:20px;"></a></div>
+                @foreach($teams as $team)
+                    <div class="col-lg-4 col-md-6 mb-4 mt-4">
+                        <div class="card program-card mx-auto" style="width: 18rem;">
+                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$team->image) }}"
+                                 alt="">
+                            <div class="card-body program-card-bottom section-dark-green-bg" style="">
+                                <h6 class="text-white text-right">{{ \App\User::language_change($team->title_en,$team->title_bn) }}</h6>
+                                <h6 class="text-white text-right mb-3">{{ \App\User::language_change($team->position_en,$team->position_bn) }}</h6>
+                                <div class="d-flex justify-content-end">
+                                    <div class="mr-2"><a href="{{ $team->fb }}"><img
+                                                src="{{ asset("images/icons/fb.png") }}"
+                                                style="width:35px; height:25px;"></a></div>
+                                    <div class="mr-2"><a href="{{ $team->ln }}"><img
+                                                src="{{ asset("images/icons/in.png") }}"
+                                                style="width:20px; height:20px;"></a></div>
+                                    <div class="mr-2"><a href="mailto:{{ $team->g }}"><img
+                                                src="{{ asset("images/icons/mail.png") }}"
+                                                style="width:20px; height:20px;"></a></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
+
 
             </div>
         </div>

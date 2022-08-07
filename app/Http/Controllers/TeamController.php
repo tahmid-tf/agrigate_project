@@ -91,7 +91,7 @@ class TeamController extends Controller
         $inputs = \request()->validate([
             'title_bn' => 'required',
             'title_en' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png',
             'position_bn' => 'required',
             'position_en' => 'required',
             'fb' => 'required',

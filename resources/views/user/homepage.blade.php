@@ -53,68 +53,26 @@
             <div class="slider-section">
                 <div class="container-fluid">
                     <div id="owl-demo-2" class="owl-carousel">
+
+                        @foreach($goals as $goal)
                         <article class="thumbnail item mb-4">
                             <div class="flip-card">
                                 <div class="flip-card-inner">
                                     <div class="flip-card-front">
-                                        <img src="{{ asset('images/goal-1.png') }}" class="img-card" alt="">
+                                        <img src="{{ asset('storage/'.$goal->image) }}" class="img-card" alt="">
                                     </div>
-                                    <div class="flip-card-back" style="background-color: #ec1c2c;">
+                                    <div class="flip-card-back" style="background-color: {{ $goal->hex_color }};">
                                         <div class="container">
-                                            <p class="flipcard-text">Agrigate provides the quality services, inputs to
-                                                the farmers to boost their incomes grow, consumers increase their
-                                                consumption of manufactured goods and services faster than their
-                                                consumption of food. Paradoxically, the process is usually accompanied
-                                                by rising incomes and a lower incidence of poverty among those who
-                                                depend on agriculture for a living.</p>
+                                            <p class="flipcard-text">
+                                                {!! \App\User::language_change($goal->content_en,$goal->content_bn) !!}
+
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </article>
-
-                        <article class="thumbnail item mb-4">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="{{ asset('images/goal-2.png') }}" class="img-card" alt="">
-                                    </div>
-                                    <div class="flip-card-back" style="background-color: #cd9b18;">
-                                        <div class="container">
-                                            <p class="flipcard-text">Agrigate provides the quality services, inputs to
-                                                the farmers to boost their incomes grow, consumers increase their
-                                                consumption of manufactured goods and services faster than their
-                                                consumption of food. Paradoxically, the process is usually accompanied
-                                                by rising incomes and a lower incidence of poverty among those who
-                                                depend on agriculture for a living.</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-                        <article class="thumbnail item mb-4">
-                            <div class="flip-card">
-                                <div class="flip-card-inner">
-                                    <div class="flip-card-front">
-                                        <img src="{{ asset('images/goal-3.png') }}" class="img-card" alt="">
-                                    </div>
-                                    <div class="flip-card-back" style="background-color: #8f1838;">
-                                        <div class="container">
-                                            <p class="flipcard-text">Agrigate provides the quality services, inputs to
-                                                the farmers to boost their incomes grow, consumers increase their
-                                                consumption of manufactured goods and services faster than their
-                                                consumption of food. Paradoxically, the process is usually accompanied
-                                                by rising incomes and a lower incidence of poverty among those who
-                                                depend on agriculture for a living.</p>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-                        </article>
+                        @endforeach
                     </div>
                     <!-- #owl-demo-2 -->
                 </div>
@@ -314,79 +272,6 @@
 
                     @endforeach
 
-                    {{--                    <article class="card project-card thumbnail item mb-4"--}}
-                    {{--                             style="background: #E2EFD9; border-radius:60px;">--}}
-                    {{--                        <div class="container mt-4">--}}
-                    {{--                            <img src="{{ asset('images/testimonial-2.png') }}"--}}
-                    {{--                                 class="d-block mx-auto slider-image img-fluid"--}}
-                    {{--                                 style="width:200px; height:200px;"/>--}}
-                    {{--                        </div>--}}
-
-                    {{--                        <div class="caption p-4">--}}
-                    {{--                            <h4 class="card-subheading">Corn Trader, Dinajpur</h4>--}}
-                    {{--                            <p class="card-text">--}}
-                    {{--                                My name is Md. Mozammel Haque. I am a corn trader from Mukundpur union in--}}
-                    {{--                                Birganj upazila of Dinajpur district. I have been involved in this business for--}}
-                    {{--                                the past few years. In light of this, I have decided to do business with--}}
-                    {{--                                Agrigate this year. I collect corn from selected farmers of Agrigate and deliver--}}
-                    {{--                                them to the purchasing center. I am really happy to do business with Agrigate.--}}
-                    {{--                                First of all, their product collection method is very advanced and their--}}
-                    {{--                                transaction is very good. They transact through banks very quickly. I am very--}}
-                    {{--                                happy to have all the opportunities. Hopefully business with Agrigate will--}}
-                    {{--                                continue in the future. </p>--}}
-                    {{--                        </div>--}}
-                    {{--                    </article>--}}
-
-                    {{--                    <article class="card project-card thumbnail item mb-4"--}}
-                    {{--                             style="background: #E2EFD9; border-radius:60px;">--}}
-                    {{--                        <div class="container mt-4">--}}
-                    {{--                            <img src="{{ asset('images/testimonial-1.png') }}"--}}
-                    {{--                                 class="d-block mx-auto slider-image img-fluid"--}}
-                    {{--                                 style="width:200px; height:200px;"/>--}}
-                    {{--                        </div>--}}
-
-                    {{--                        <div class="caption p-4">--}}
-                    {{--                            <h4 class="card-subheading">Farmer, Lalmonirhat</h4>--}}
-                    {{--                            <p class="card-text">--}}
-                    {{--                                I am Md. Ariful Islam. I am a farmer from Dakshin Sindurna village in Sindurna--}}
-                    {{--                                union of Hatibandha upazila in Lalmonirhat district. Since I planted the corn--}}
-                    {{--                                this season, Agrigate's field officers have extended a helping hand to me. They--}}
-                    {{--                                informed me about the modern maize cultivation method and gave me instructions--}}
-                    {{--                                on how much fertilizer is required for the soil by testing the soil of my land--}}
-                    {{--                                for free which helped me to get high yield this time. Agrigate also arranges for--}}
-                    {{--                                bank accounts to be opened for marginal farmers like us at a cost of Tk 10 only.--}}
-                    {{--                                Thinking of all these opportunities, I sell my corn directly to Agrigate. This--}}
-                    {{--                                time I got advice from Agrigate about cultivating maize crop and also got fair--}}
-                    {{--                                price by selling products to them. Payment through my bank account in a very--}}
-                    {{--                                short time after delivery of goods to them which is very secure for me. I look--}}
-                    {{--                                forward to working with them as a contract farmer in the future, accepting all--}}
-                    {{--                                agricultural assistance from Agrigate, especially modern farming methods, high--}}
-                    {{--                                quality seeds, fertilizers, pesticides and financial assistance. I hope I can--}}
-                    {{--                                make a financial profit by selling my products through Agrigate InshaAllah.--}}
-                    {{--                            </p>--}}
-                    {{--                        </div>--}}
-                    {{--                    </article>--}}
-
-                    {{--                    <article class="card project-card thumbnail item mb-4"--}}
-                    {{--                             style="background: #E2EFD9; border-radius:60px;">--}}
-                    {{--                        <div class="container mt-4">--}}
-                    {{--                            <img src="{{ asset('images/testimonial-2.png') }}"--}}
-                    {{--                                 class="d-block mx-auto slider-image img-fluid" style="width:200px; height:200px;"/>--}}
-                    {{--                        </div>--}}
-
-                    {{--                        <div class="caption p-4">--}}
-                    {{--                            <h4 class="card-subheading">Corn Trader, Dinajpur</h4>--}}
-                    {{--                            <p class="card-text">--}}
-                    {{--                                My name is Md. Mozammel Haque. I am a corn trader from Mukundpur union in Birganj--}}
-                    {{--                                upazila of Dinajpur district. I have been involved in this business for the past few--}}
-                    {{--                                years. In light of this, I have decided to do business with Agrigate this year. I--}}
-                    {{--                                collect corn from selected farmers of Agrigate and deliver them to the purchasing--}}
-                    {{--                                center. I am really happy to do business with Agrigate. First of all, their product--}}
-                    {{--                                collection method is very advanced and their transaction is very good. They transact--}}
-                    {{--                                through banks very quickly. I am very happy to have all the opportunities. Hopefully--}}
-                    {{--                                business with Agrigate will continue in the future. </p>--}}
-                    {{--                        </div>--}}
-                    {{--                    </article>--}}
 
 
                 </div>
@@ -401,33 +286,23 @@
 <section class="section-light-green-bg py-4">
     <p class="text-center heading-text-style-2">News</p>
     <section class="section-dark-green-bg py-4">
-        <div class="mx-auto mb-3" id="news-card">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="card-body mt-3">
-                        <h5 class="subtext-style">UCB signs deal with Agrigate Network</h5>
-                        <a href="{{ route('single-news') }}" class="read-more"><p>Read more...</p></a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="{{ asset('images/news-1.png') }}" class="news-image px-2 mt-4 mb-4 img-fluid">
-                </div>
-            </div>
-        </div>
 
+        @foreach($news as $news)
         <div class="mx-auto mb-3" id="news-card">
             <div class="row">
                 <div class="col-md-8">
                     <div class="card-body mt-3">
-                        <h5 class="subtext-style">UCB signs deal with Agrigate Network</h5>
-                        <a href="{{ route('single-news') }}" class="read-more"><p>Read more...</p></a>
+                        <h5 class="subtext-style">{{ \App\User::language_change($news->title_en,$news->title_bn) }}</h5>
+                        <a href="{{ route('single-news', $news->id) }}" class="read-more"><p>Read more...</p></a>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <img src="{{ asset('images/news-1.png') }}" class="news-image px-2 mt-4 mb-4 img-fluid">
+                    <img src="{{ asset('storage/'.$news->image) }}" class="news-image px-2 mt-4 mb-4 img-fluid">
                 </div>
             </div>
         </div>
+        @endforeach
+
         <div class="text-center">
             <a href="{{ route('news') }}">
                 <button type="button" class="news-button py-2">View All News</button>

@@ -36,24 +36,20 @@
 
 <section>
     <div class="section-light-green-bg py-2">
+
+        @if($news != null)
+
         <div class="container mt-5">
-            <h5 class="subtext-style">UCB signs deal with Agrigate Network</h5>
+            <h5 class="subtext-style">{{ \App\User::language_change($news->title_en,$news->title_bn) }}</h5>
             <h6>12 August, 2022 </h6>
             <div class="mt-3 mb-3">
-                <img src="{{ asset('images/news-1.png') }}" class="img-fluid">
+                <img src="{{ asset('storage/'.$news->image)  }}" class="img-fluid">
             </div>
             <div>
-                <p class="solutions-card-text-2">
-                    For a farmer to produce, farmers need seeds, fertilizers, services and crop protection products,
-                    plus the advisory services that allows there to make good use of the inputs and get a crop that is
-                    marketable. Because when products are sold, farmers get the income that can be re-invested in the
-                    next cycle. Together they should make sure that farmers have what they need to produce: inputs can
-                    be sold on credit and processors can give inputs on credit to secure supply; the larger the company
-                    the less issues they have to obtain financing from a financial institution. Farmers will invest
-                    their saved income from the last season and might need an agricultural insurance to make sure they
-                    can deliver on their commitments to the input companies and off takers. </p>
+                <p class="solutions-card-text-2">{!!  \App\User::language_change($news->content_en,$news->content_bn) !!} </p>
             </div>
         </div>
+        @endif
     </div>
 </section>
 
