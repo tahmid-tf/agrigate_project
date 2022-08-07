@@ -36,4 +36,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    public static function language_change($lang1, $lang2)
+    {
+        if (session('locale') == "en") {
+            return $lang1;
+        } elseif (session('locale') == "bn") {
+            return $lang2;
+        }
+
+        return $lang1;
+    }
 }
