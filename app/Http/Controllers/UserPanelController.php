@@ -2,7 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Buyer;
+use App\Partner;
+use App\Processing;
+use App\Program;
+use App\Team;
 use App\Testimonial;
+use App\Goal;
+use App\News;
+use App\Crop;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -10,29 +18,39 @@ class UserPanelController extends Controller
     /*-------------------Home----------------------------*/
     public function index()
     {
+        $goals= Goal::all();
         $testimonials = Testimonial::all();
-        return view('user.homepage', compact('testimonials'));
+        $news= News::skip(0)->take(2)->get();
+        return view('user.homepage', compact('testimonials', 'goals','news'));
     }
 
     public function Source()
     {
-        return view('user.source-from-us');
+        $crops= Crop::all();
+        $processings = Processing::all();
+        $buyers = Buyer::where('tag','b')->get();
+
+        return view('user.source-from-us',compact('crops','processings','buyers'));
     }
 
     public function Work()
     {
-        return view('user.work-with-us');
+        $partners= Partner::all();
+        $dev_partners = Buyer::where('tag','dp')->get();
+
+        return view('user.work-with-us',compact('partners','dev_partners'));
     }
 
     public function News()
     {
-        return view('user.news');
+        $news = News::all();
+        return view('user.news',compact('news'));
     }
 
-    public function SingleNews()
+    public function SingleNews($id)
     {
-        return view('user.single-news');
-
+        $news = News::find($id);
+        return view('user.single-news', compact('news'));
     }
     /*--------------------------------------Home-----------*/
 
@@ -47,7 +65,8 @@ class UserPanelController extends Controller
     /* Agrigate Center */
     public function AgrigateCenter()
     {
-        return view('user.agrigate-center');
+        $programs= Program::all();
+        return view('user.agrigate-center',compact('programs'));
     }
 
     /*------------------------------- Solutions-----------------*/
@@ -97,7 +116,12 @@ class UserPanelController extends Controller
 
     public function Team()
     {
-        return view('user.team');
+
+        $directors=Team::where('tag','d')->get();
+        $advisors=Team::where('tag','a')->get();
+        $teams=Team::where('tag','t')->get();
+
+        return view('user.team',compact('directors','advisors','teams'));
     }
     /*---------------------------- Team ----------------------*/
 
@@ -105,6 +129,8 @@ class UserPanelController extends Controller
 
     public function Career()
     {
+
+        $careers= Career::all();
         return view('user.career');
     }
 

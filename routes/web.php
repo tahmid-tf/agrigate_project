@@ -42,7 +42,7 @@ Route::get('/', "UserPanelController@index")->name('homepage');
 Route::get('/source-from-us', "UserPanelController@Source")->name('source');
 Route::get('/work-with-us', "UserPanelController@Work")->name('work');
 Route::get('/news', "UserPanelController@News")->name('news');
-Route::get('/single-news', "UserPanelController@SingleNews")->name('single-news');
+Route::get('/single-news/{id}', "UserPanelController@SingleNews")->name('single-news');
 
 
 // ============================== HOMEPAGE ===============
@@ -89,10 +89,15 @@ Route::get('/apply-now', "UserPanelController@ApplyNow")->name('apply-now');
 
 Route::middleware('auth')->group(function () {
 
+    Route::get('log_out', function (){
+        \auth()->logout();
+        return redirect('/');
+    })->name('logout');
+
 
     Route::get('/dashboard', function () {
         return view('admin.admin-content.dashboard.index');
-    });
+    })->name('admin.dashboard');
 
 // ------------------------------- Goal -----------------------------
 

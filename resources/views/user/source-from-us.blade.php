@@ -43,8 +43,12 @@
                 <div class="col-lg-6">
                     <div class="card solutions-card">
                         <p class="solutions-card-text">
-                            Agrigate produces and sources high-quality seed from small & large-scale farmers. Agrigate approach a premium quality supply of Maize, Soybeans, Seasame, Mustard, Lentil, Mungbean and Groundnuts.
-                            We supply seeds to a wide range of customers and organizations. You can find our seeds at leading agrodealers across Bangladesh. We are sourcing quality output through direct purchase.                        </p>
+                            Agrigate produces and sources high-quality seed from small & large-scale farmers. Agrigate
+                            approach a premium quality supply of Maize, Soybeans, Seasame, Mustard, Lentil, Mungbean and
+                            Groundnuts.
+                            We supply seeds to a wide range of customers and organizations. You can find our seeds at
+                            leading agrodealers across Bangladesh. We are sourcing quality output through direct
+                            purchase. </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -62,34 +66,14 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 mb-4">
-                    <h3 class="crops-text">Maize</h3>
-                    <img src="{{ asset('images/maize.png') }}" class="crops-image img-fluid d-block mx-auto">
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h3 class="crops-text">Soybean</h3>
-                    <img src="{{ asset('images/soybean.png') }}" class="crops-image img-fluid d-block mx-auto">
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h3 class="crops-text">Ground Nuts</h3>
-                    <img src="{{ asset('images/nuts.png') }}" class="crops-image img-fluid d-block mx-auto">
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h3 class="crops-text">Sesame</h3>
-                    <img src="{{ asset('images/sesame.png') }}" class="crops-image img-fluid d-block mx-auto">
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h3 class="crops-text">Mungbeans</h3>
-                    <img src="{{ asset('images/mungbeans.png') }}" class="crops-image img-fluid d-block mx-auto">
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h3 class="crops-text">Mustard</h3>
-                    <img src="{{ asset('images/mustard.png') }}" class="crops-image img-fluid d-block mx-auto">
-                </div>
-                <div class="col-lg-3 mb-4">
-                    <h3 class="crops-text">Black Cumin</h3>
-                    <img src="{{ asset('images/cumin.png') }}" class="crops-image img-fluid d-block mx-auto">
-                </div>
+
+                @foreach($crops as $crop)
+                    <div class="col-lg-3 mb-4">
+                        <h3 class="crops-text">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h3>
+                        <img src="{{ asset('storage/'.$crop->image) }}" class="crops-image img-fluid d-block mx-auto">
+                    </div>
+                @endforeach
+
             </div>
         </div>
     </div>
@@ -102,7 +86,11 @@
     <div>
         <div class="section-light-green-bg py-4">
             <div class="container">
-                <p class="solutions-card-text-2">Agrigate works with agro-processors, outgrower networks and traders looking for specific quantities and consistent supplies of premium outputs. We listen to our client’s requirements and work with breeders and research institutes to develop the seed to meet the right crop characteristics. Through networks of smallholder farmers, we can grow and process what you need.</p>
+                <p class="solutions-card-text-2">Agrigate works with agro-processors, outgrower networks and traders
+                    looking for specific quantities and consistent supplies of premium outputs. We listen to our
+                    client’s requirements and work with breeders and research institutes to develop the seed to meet the
+                    right crop characteristics. Through networks of smallholder farmers, we can grow and process what
+                    you need.</p>
 
             </div>
         </div>
@@ -111,24 +99,44 @@
 </div>
 <section class="section-dark-green-bg">
     <div>
-        <div class="row ml-0 mr-0">
-            <div class="col-lg-6 mb-4">
-                <img src="{{ asset('images/work-with-farmer.png') }}" class="img-fluid">
-            </div>
-            <div class="col-lg-6 mt-5">
-                <p class="subpages-heading">Working With Farmers</p>
-                <p class="solutions-card-text">Agrigate works with selected farmers community to grow their crops and creating a market for farmers. Agrigate works with other institutional buyers that want hassle free sourcing for output. Agrigate can be contracted at the start of the season with specific seed requirement to be produced. We use our network of growers to bulk up the output needed.</p>
-            </div>
-        </div>
-        <div class="row ml-0 mr-0">
-            <div class="col-lg-6 mt-5">
-                <p class="subpages-heading">Working with Buyers</p>
-                <p class="solutions-card-text">Direct Purchase: Agrigate produces a number of crop varieties, if you are interested in any of the varieties here to be sold both quality declared output, we are more than happy to supply. Please refer to the products page to see.</p>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <img src="{{ asset('images/buyers.png') }}" class="img-fluid">
-            </div>
-        </div>
+
+        @foreach($processings as $processing)
+            @if($processing->id%2==1)
+
+                <div class="row ml-0 mr-0">
+                    <div class="col-lg-6 mb-4">
+                        <img src="{{ asset('storage/'.$processing->image) }}"
+                             class="d-sm-block mx-auto processing-image img-fluid">
+                    </div>
+                    <div class="col-lg-6 mt-5">
+                        <div style="padding-right: 2rem; padding-left: 2rem;">
+                            <p class="subpages-heading">{{ \App\User::language_change($processing->title_en,$processing->title_bn) }}</p>
+                            <p class="solutions-card-text">
+                                {!! \App\User::language_change($processing->content_en,$processing->content_bn) !!}
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            @elseif($processing->id%2==0)
+
+                <div class="row ml-0 mr-0">
+                    <div class="col-lg-6 mt-5">
+                        <div style="padding-right: 2rem; padding-left: 2rem;">
+                            <p class="subpages-heading">{{ \App\User::language_change($processing->title_en,$processing->title_bn) }}</p>
+                            <p class="solutions-card-text">
+                                {!! \App\User::language_change($processing->content_en,$processing->content_bn) !!}
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <img src="{{ asset('storage/'.$processing->image) }}"
+                             class="d-sm-block mx-auto img-fluid processing-image">
+                    </div>
+                </div>
+            @endif
+        @endforeach
 
     </div>
 </section>
@@ -154,26 +162,14 @@
                     <div class="slider-section">
                         <div class="container-fluid">
                             <div id="owl-demo-5" class="owl-carousel">
+
+                                @foreach($buyers as $buyer)
                                 <article class="thumbnail item mb-4">
                                     <div>
-                                        <img class="finance-card-image" src="{{ asset('images/astha.png') }}" alt="">
+                                        <img class="finance-card-image" src="{{ asset('storage/'.$buyer->image) }}" alt="">
                                     </div>
                                 </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/eco.png') }}" alt="">
-                                    </div>
-                                </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/rrp.png') }}" alt="">
-                                    </div>
-                                </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/buyer.png') }}" alt="">
-                                    </div>
-                                </article>
+                                @endforeach
 
                             </div>
                             <!-- #owl-demo-2 -->
@@ -188,9 +184,9 @@
 </div>
 
 <style>
-    .contact-bg-2{
+    .contact-bg-2 {
         background-image: url("{{ asset('images/cover-bg-2.png') }}");
-        background-color:  #E2EFD9 ;
+        background-color: #E2EFD9;
         object-fit: cover;
         background-repeat: no-repeat;
     }

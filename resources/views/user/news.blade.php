@@ -34,33 +34,22 @@
 </section>
 
 <section class="section-dark-green-bg py-4">
-    <div class="mx-auto mb-3" id="news-card-2">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card-body mt-3">
-                    <h5 class="subtext-style">UCB signs deal with Agrigate Network</h5>
-                    <a href="{{ route('single-news') }}" class="read-more"><p>Read more...</p></a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <img src="{{ asset('images/news-1.png') }}" class="news-image px-2 mt-4 mb-4 img-fluid">
-            </div>
-        </div>
-    </div>
 
-    <div class="mx-auto mb-3" id="news-card-2">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card-body mt-3">
-                    <h5 class="subtext-style">UCB signs deal with Agrigate Network</h5>
-                    <a href="{{ route('single-news') }}" class="read-more"><p>Read more...</p></a>
+    @foreach($news as $news)
+        <div class="mx-auto mb-3" id="news-card-2">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card-body mt-3">
+                        <h5 class="subtext-style">{{ \App\User::language_change($news->title_en,$news->title_bn) }}</h5>
+                        <a href="{{ route('single-news', $news->id) }}" class="read-more"><p>Read more...</p></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ asset('storage/'.$news->image) }}" class="news-image px-2 mt-4 mb-4 img-fluid">
                 </div>
             </div>
-            <div class="col-md-4">
-                <img src="{{ asset('images/news-1.png') }}" class="news-image px-2 mt-4 mb-4 img-fluid">
-            </div>
         </div>
-    </div>
+    @endforeach
 </section>
 
 

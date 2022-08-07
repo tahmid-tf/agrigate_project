@@ -42,6 +42,8 @@
     </div>
     <div class="container">
         <div class="row">
+
+            @foreach($careers as $career)
             <div class="col-lg-4 mb-4"mb-4>
                 <div class="card career-card">
                     <div class="container">
@@ -50,51 +52,7 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card career-card">
-                    <div class="container">
-                        <p class="career-heading">Market Development Officer</p>
-                        <a href="{{ route('apply-now') }}"><p class="career-subheading">Read More...</p></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card career-card">
-                    <div class="container">
-                        <p class="career-heading">Market Development Officer</p>
-                        <a href="{{ route('apply-now') }}"><p class="career-subheading">Read More...</p></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card career-card">
-                    <div class="container">
-                        <p class="career-heading">Market Development Officer</p>
-                        <a href="{{ route('apply-now') }}"><p class="career-subheading">Read More...</p></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card career-card">
-                    <div class="container">
-                        <p class="career-heading">Market Development Officer</p>
-                        <a href="{{ route('apply-now') }}"><p class="career-subheading">Read More...</p></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 mb-4">
-                <div class="card career-card">
-                    <div class="container">
-                        <p class="career-heading">Market Development Officer</p>
-                        <a href="{{ route('apply-now') }}"><p class="career-subheading">Read More...</p></a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>

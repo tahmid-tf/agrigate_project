@@ -41,7 +41,11 @@
         <div class="container">
             <div class="card solutions-card">
                 <p class="solutions-card-text">
-                    Agrigate is a social enterprise that works directly in the field of impoverished communities. We delight in seeing households impacted and lives change for the better. In this regard we are always open for partnership and collaboration for multi-facets of our model or parts that feed to it. Below are some of the avenues that we have partnered worked with other partners and opportunities to work with us.
+                    Agrigate is a social enterprise that works directly in the field of impoverished communities. We
+                    delight in seeing households impacted and lives change for the better. In this regard we are always
+                    open for partnership and collaboration for multi-facets of our model or parts that feed to it. Below
+                    are some of the avenues that we have partnered worked with other partners and opportunities to work
+                    with us.
                 </p>
             </div>
         </div>
@@ -52,7 +56,8 @@
         <p class="subpages-heading">Services Provided by Agrigate Center</p>
     </div>
     <div>
-        <img src="{{ asset('images/agri-services.png') }}" class="img-fluid d-block mx-auto" style="height:400px; width:400px;">
+        <img src="{{ asset('images/agri-services.png') }}" class="img-fluid d-block mx-auto"
+             style="height:400px; width:400px;">
     </div>
 </section>
 
@@ -66,26 +71,19 @@
                 <section class="section-light-green-bg py-4">
                     <div class="slider-section">
                         <div class="container-fluid">
-                            <div id="owl-demo-4" class="owl-carousel">
-                                <article class="thumbnail item mb-4">
-                                    <div class="card program-card" style="width: 18rem;">
-                                        <img class="card-img-top program-card-image" src="{{ asset('images/program-1.png') }}" alt="">
-                                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                                            <h5 class="program-card-title">Farmer's Meeting</h5>
+                            <div id="owl-demo-5" class="owl-carousel">
+                                @foreach($programs as $program)
+                                    <article class="thumbnail item mb-4">
+                                        <div class="card program-card" style="width: 18rem;">
+                                            <img class="card-img-top program-card-image"
+                                                 src="{{ asset('storage/'.$program->image) }}" alt="">
+                                            <div class="card-body program-card-bottom section-dark-green-bg" style="">
+                                                <h5 class="program-card-title">{{ \App\User::language_change($program->title_en,$program->title_bn) }}</h5>
 
+                                            </div>
                                         </div>
-                                    </div>
-                                </article>
-
-
-                                <article class="thumbnail item mb-4">
-                                    <div class="card program-card" style="width: 18rem;">
-                                        <img class="card-img-top program-card-image" src="{{ asset('images/program-2.png') }}" alt="">
-                                        <div class="card-body program-card-bottom section-dark-green-bg" style="">
-                                            <h5 class="program-card-title">Farmers’ Training Programs</h5>
-                                        </div>
-                                    </div>
-                                </article>
+                                    </article>
+                                @endforeach
 
                             </div>
                             <!-- #owl-demo-2 -->
@@ -109,9 +107,9 @@
     </div>
 </section>
 <style>
-    .contact-bg-2{
+    .contact-bg-2 {
         background-image: url("{{ asset('images/cover-bg-2.png') }}");
-        background-color:  #E2EFD9 ;
+        background-color: #E2EFD9;
         object-fit: cover;
         background-repeat: no-repeat;
     }

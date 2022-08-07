@@ -56,35 +56,44 @@
         <p class="subpages-heading">Our Partners</p>
     </div>
     <div>
-        <div class="row ml-0 mr-0">
-            <div class="col-lg-6 mb-4">
-                <img src="{{ asset('images/input-sellers.png') }}" class="img-fluid">
-            </div>
-            <div class="col-lg-6 mt-5">
-                <div class="team-heading mx-auto">
-                    <p class="subpages-heading mt-1">Input Sellers</p>
-                </div>
-                <p class="solutions-card-text-2">Agrigate works with selected farmers community to grow their crops and
-                    creating a market for farmers. Agrigate works with other institutional buyers that want hassle free
-                    sourcing for output. Agrigate can be contracted at the start of the season with specific seed
-                    requirement to be produced. We use our network of growers to bulk up the output needed.</p>
-            </div>
-        </div>
-        <div class="row ml-0 mr-0">
+        @foreach($partners as $partner)
+            @if($partner->id%2==1)
 
-            <div class="col-lg-6 mt-5">
-                <div class="team-heading-2 mx-auto">
-                    <p class="subpages-heading mt-1">Rural Entrepreneur</p>
+                <div class="row ml-0 mr-0">
+                    <div class="col-lg-6 mb-4">
+                        <img src="{{ asset('storage/'.$partner->image) }}"
+                             class="d-sm-block mx-auto processing-image img-fluid">
+                    </div>
+                    <div class="col-lg-6 mt-5">
+                        <div class="team-heading mx-auto">
+                            <p class="subpages-heading mt-1">{{ \App\User::language_change($partner->title_en,$partner->title_bn) }}</p>
+                        </div>
+                        <div style="padding-right: 2rem; padding-left: 2rem;">
+                            <p class="solutions-card-text-2">{!! \App\User::language_change($partner->content_en,$partner->content_bn) !!}</p>
+
+                        </div>
+                    </div>
                 </div>
-                <p class="solutions-card-text-2">Through us to build a bridge between local buyers of contract farmers
-                    and other buyers so that they can buy and sell products directly from farmers. Agrigate has created
-                    a platform for them so that they can avail loan facility from Banks for purchasing their
-                    products.</p>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <img src="{{ asset('images/rural.png') }}" class="img-fluid">
-            </div>
-        </div>
+            @elseif($partner->id%2==0)
+
+                <div class="row ml-0 mr-0">
+
+                    <div class="col-lg-6 mt-5">
+                        <div class="team-heading-2 mx-auto">
+                            <p class="subpages-heading mt-1">{{ \App\User::language_change($partner->title_en,$partner->title_bn) }}</p>
+                        </div>
+                        <div style="padding-right: 2rem; padding-left: 2rem;">
+                            <p class="solutions-card-text-2">{!! \App\User::language_change($partner->content_en,$partner->content_bn) !!}</p>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <img src="{{ asset('storage/'.$partner->image) }}"
+                             class="d-sm-block mx-auto processing-image img-fluid">
+                    </div>
+                </div>
+            @endif
+        @endforeach
 
     </div>
 </section>
@@ -100,26 +109,15 @@
                     <div class="slider-section">
                         <div class="container-fluid">
                             <div id="owl-demo-5" class="owl-carousel">
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/astha.png') }}" alt="">
-                                    </div>
-                                </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/eco.png') }}" alt="">
-                                    </div>
-                                </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/rrp.png') }}" alt="">
-                                    </div>
-                                </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/buyer.png') }}" alt="">
-                                    </div>
-                                </article>
+                                @foreach($dev_partners as $partner)
+
+                                    <article class="thumbnail item mb-4">
+                                        <div>
+                                            <img class="finance-card-image" src="{{ asset('storage/'.$partner->image) }}"
+                                                 alt="">
+                                        </div>
+                                    </article>
+                                @endforeach
 
                             </div>
                             <!-- #owl-demo-2 -->

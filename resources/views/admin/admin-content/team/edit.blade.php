@@ -6,6 +6,7 @@
     <div>
         <form action="{{ route('team.update',$team->id) }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
+            @method('put')
             <form>
 
                 <div class="form-group">
