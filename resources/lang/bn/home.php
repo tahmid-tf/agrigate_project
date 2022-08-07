@@ -26,4 +26,8 @@ return [
     "Testimonials" => 'প্রশংসাপত্র',
     "View All News" => 'সব খবর দেখুন',
 
+    "Solution For Farmers" => 'কৃষকের জন্য সমাধান',
+    "Agrigate Center" => 'এগ্রিগেট কেন্দ্র',
+
+
 ];

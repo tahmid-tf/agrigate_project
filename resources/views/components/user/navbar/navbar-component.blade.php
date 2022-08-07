@@ -23,10 +23,9 @@
                     @lang('navbar.Solutions')
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="{{ route('solutions') }}">Solution For Farmers</a>
+                    <a class="dropdown-item" href="{{ route('solutions') }}">@lang('home.Solution For Farmers')</a>
                     <div class="dropdown-divider" style="border-color:#38512E;">></div>
-                    <a class="dropdown-item" href="{{ route('agrigate-center') }}">Agrigate
-                        Center</a>
+                    <a class="dropdown-item" href="{{ route('agrigate-center') }}">@lang('home.Agrigate Center')</a>
                 </div>
             </li>
             <li class="nav-item">

@@ -26,4 +26,7 @@ return [
     "Testimonials" => 'Testimonials',
     "View All News" => 'View All News',
 
+    "Solution For Farmers" => 'Solution for farmer',
+    "Agrigate Center" => 'Agrigate Center',
+
 ];
