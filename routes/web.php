@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\TestimonialController;
+use Illuminate\Support\Facades\Artisan;
 
 /*
 |--------------------------------------------------------------------------
@@ -158,3 +159,11 @@ Route::middleware('auth')->group(function () {
 });
 
 // ----------------------------------------------------------------- Auth routes ----------------------------------------------------------------------------------
+
+// ------------------------------- link storage ----------------------------
+
+Route::get('/link-storage', function () {
+    Artisan::call('storage:link');
+});
+
+// ------------------------------- link storage ----------------------------
