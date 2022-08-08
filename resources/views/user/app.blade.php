@@ -63,30 +63,14 @@
                                 <div class="slider-section">
                                     <div class="container-fluid">
                                         <div id="owl-demo-5" class="owl-carousel">
+                                            @foreach($sp_partners as $partner)
                                             <article class="thumbnail item mb-4">
                                                 <div>
                                                     <img class="service-card-image"
-                                                         src="{{ asset('images/services-1.png') }}" alt="">
+                                                         src="{{ asset('storage/'.$partner->image) }}" alt="">
                                                 </div>
                                             </article>
-                                            <article class="thumbnail item mb-4">
-                                                <div>
-                                                    <img class="service-card-image"
-                                                         src="{{ asset('images/services-1.png') }}" alt="">
-                                                </div>
-                                            </article>
-                                            <article class="thumbnail item mb-4">
-                                                <div>
-                                                    <img class="service-card-image"
-                                                         src="{{ asset('images/services-1.png') }}" alt="">
-                                                </div>
-                                            </article>
-                                            <article class="thumbnail item mb-4">
-                                                <div>
-                                                    <img class="service-card-image"
-                                                         src="{{ asset('images/services-1.png') }}" alt="">
-                                                </div>
-                                            </article>
+                                            @endforeach
 
                                         </div>
                                         <!-- #owl-demo-2 -->

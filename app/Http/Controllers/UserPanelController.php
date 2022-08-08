@@ -84,7 +84,8 @@ class UserPanelController extends Controller
 
     public function App()
     {
-        return view('user.app');
+        $sp_partners = Buyer::where('tag','sp')->get();
+        return view('user.app', compact('sp_partners'));
     }
     /*------------------------------- APP  ---------------*/
 
