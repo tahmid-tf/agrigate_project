@@ -93,7 +93,8 @@ class UserPanelController extends Controller
 
     public function FinancialInclusion()
     {
-        return view('user.financial-inclusion');
+        $ip_partners = Buyer::where('tag','i')->get();
+        return view('user.financial-inclusion', compact('ip_partners'));
     }
 
     public function ApplyForBankAccount()

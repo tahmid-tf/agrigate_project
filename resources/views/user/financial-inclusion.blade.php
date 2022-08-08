@@ -81,26 +81,13 @@
                     <div class="slider-section">
                         <div class="container-fluid">
                             <div id="owl-demo-5" class="owl-carousel">
+                                @foreach($ip_partners as $partner)
                                 <article class="thumbnail item mb-4">
                                     <div>
-                                        <img class="finance-card-image" src="{{ asset('images/bank.png') }}" alt="">
+                                        <img class="finance-card-image" src="{{ asset('storage/'.$partner->image) }}" alt="">
                                     </div>
                                 </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/ucb.png') }}" alt="">
-                                    </div>
-                                </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/green.jpg') }}" alt="">
-                                    </div>
-                                </article>
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('images/ucb.png') }}" alt="">
-                                    </div>
-                                </article>
+                                @endforeach
 
                             </div>
                             <!-- #owl-demo-2 -->
