@@ -11,6 +11,7 @@ use App\Testimonial;
 use App\Goal;
 use App\News;
 use App\Crop;
+use App\Career;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -131,12 +132,14 @@ class UserPanelController extends Controller
     {
 
         $careers= Career::all();
-        return view('user.career');
+        return view('user.career',compact('careers'));
     }
 
-    public function ApplyNow()
+    public function ApplyNow($id)
     {
-        return view('user.apply-now');
+        $careers = Career::find($id);
+
+        return view('user.apply-now',compact('careers'));
     }
     /*------------------------------------------ Career ------*/
 

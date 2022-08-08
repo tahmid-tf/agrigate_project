@@ -27,9 +27,11 @@
     <x-user.banner.banner-component></x-user.banner.banner-component>
 </section>
 
+@if($careers != null)
+
 <section>
     <div class="section-dark-green-bg py-2">
-        <p class="subpages-heading">Market Development Officer</p>
+        <p class="subpages-heading">{{ \App\User::language_change($careers->title_en,$careers->title_bn) }}</p>
     </div>
     <div>
         <img src="{{ asset('images/apply-now.png') }}" class="img-fluid" style="width:100%;">
@@ -38,17 +40,13 @@
 
 <section class="section-light-green-bg py-4">
     <div class="container mt-4">
-        <p class="solutions-card-text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
-            qui officia deserunt mollit anim id est laborum.</p>
+        <p class="solutions-card-text-2">{!! \App\User::language_change($careers->content_en,$careers->content_bn) !!}</p>
         <div class="text-center mt-5 mb-5">
             <button type="button" class="apply-now-button">Apply Now</button>
         </div>
     </div>
 </section>
-
+@endif
 <x-user.footer.footer-component></x-user.footer.footer-component>
 
 <script src="{{ asset('js/app.js') }}" defer></script>

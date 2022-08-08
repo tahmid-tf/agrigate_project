@@ -47,8 +47,8 @@
             <div class="col-lg-4 mb-4"mb-4>
                 <div class="card career-card">
                     <div class="container">
-                        <p class="career-heading">Market Development Officer</p>
-                        <a href="{{ route('apply-now') }}"><p class="career-subheading">Read More...</p></a>
+                        <p class="career-heading">{{ \App\User::language_change($career->title_en,$career->title_bn) }}</p>
+                        <a href="{{ route('apply-now', $career->id) }}"><p class="career-subheading">Read More...</p></a>
                     </div>
                 </div>
             </div>

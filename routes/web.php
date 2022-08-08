@@ -78,7 +78,7 @@ Route::get('/team', "UserPanelController@Team")->name('team');
 // ===================== Career ======================
 
 Route::get('/career', "UserPanelController@Career")->name('career');
-Route::get('/apply-now', "UserPanelController@ApplyNow")->name('apply-now');
+Route::get('/apply-now/{id}', "UserPanelController@ApplyNow")->name('apply-now');
 
 
 // ============================== Career ===============
