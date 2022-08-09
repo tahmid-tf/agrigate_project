@@ -39,7 +39,26 @@
         <p class="subpages-heading-2">Features</p>
     </div>
     <div class="section-dark-green-bg">
-
+        <div>
+            <section class="py-4">
+                <div class="slider-section">
+                    <div class="container-fluid">
+                        <div id="owl-demo-3" class="owl-carousel">
+                            <article class="thumbnail item mb-4">
+                                <div>
+                                    <img class=""
+                                         src="{{ asset('images/apps.png') }}" alt="">
+                                    <h4 class="text-center text-white">Feature Title</h4>
+                                    <p class="text-center text-white">Feature Content</p>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- #owl-demo-2 -->
+                    </div>
+                    <!-- .container -->
+                </div>
+            </section>
+        </div>
     </div>
 </section>
 
