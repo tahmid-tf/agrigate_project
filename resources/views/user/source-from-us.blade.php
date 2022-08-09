@@ -64,18 +64,53 @@
         <p class="subpages-heading">Crops</p>
     </div>
     <div>
-        <div class="container">
-            <div class="row">
+        <section class="section-light-green-bg py-4">
+            <div class="slider-section">
+                <div class="container-fluid">
+                    <div id="owl-demo-3" class="owl-carousel">
 
-                @foreach($crops as $crop)
-                    <div class="col-lg-3 mb-4">
-                        <h3 class="crops-text">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h3>
-                        <img src="{{ asset('storage/'.$crop->image) }}" class="crops-image img-fluid d-block mx-auto">
+                        @foreach($crops as $crop)
+                        <article class="thumbnail item mb-4">
+                            <div class="card program-2-card" style="width: 18rem;">
+                                <h5 class="program-2-card-title mt-4">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h5>
+
+                                <img class="card-img-top program-2-card-image d-block mx-auto"
+                                     src="{{asset('storage/'.$crop->image) }}" alt="">
+                                <div class="card-body text-center" style="">
+                                    <button class="crops-box mt-2"></button>
+                                    <button class="crops-box mt-2"></button>
+                                    <button class="crops-box mt-2"></button>
+
+                                </div>
+                            </div>
+                        </article>
+                        @endforeach
+
                     </div>
-                @endforeach
-
+                    <!-- #owl-demo-2 -->
+                </div>
+                <!-- .container -->
             </div>
-        </div>
+        </section>
+    </div>
+    {{--        <div class="container">--}}
+
+    {{--            <div class="row">--}}
+
+    {{--                @foreach($crops as $crop)--}}
+    {{--                    <div class="col-lg-3 mb-4">--}}
+    {{--                        <h3 class="crops-text">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h3>--}}
+    {{--                        <h3 class="crops-text">Maize</h3>--}}
+
+    {{--                        --}}{{--                        <img src="{{ asset('storage/'.$crop->image) }}" class="crops-image img-fluid d-block mx-auto">--}}
+    {{--                        <img src="{{ asset('images/maize.png') }}" class="crops-image img-fluid d-block mx-auto">--}}
+    {{--                        <div class="crops-box"></div>--}}
+
+    {{--                    </div>--}}
+    {{--                @endforeach--}}
+
+    {{--            </div>--}}
+    {{--        </div>--}}
     </div>
 </section>
 
@@ -164,11 +199,12 @@
                             <div id="owl-demo-5" class="owl-carousel">
 
                                 @foreach($buyers as $buyer)
-                                <article class="thumbnail item mb-4">
-                                    <div>
-                                        <img class="finance-card-image" src="{{ asset('storage/'.$buyer->image) }}" alt="">
-                                    </div>
-                                </article>
+                                    <article class="thumbnail item mb-4">
+                                        <div>
+                                            <img class="finance-card-image" src="{{ asset('storage/'.$buyer->image) }}"
+                                                 alt="">
+                                        </div>
+                                    </article>
                                 @endforeach
 
                             </div>
