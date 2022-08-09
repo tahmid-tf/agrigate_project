@@ -125,244 +125,260 @@
                 access our services.)</p>
         </div>
     </div>
-    <div class="container d-flex justify-content-end">
-        <div style="font-weight: 700;">Delivery Channels</div>
-    </div>
-    <div class="section-dark-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text">SERVICES</div>
-                <div class="col delivery-channels-text text-center">APP</div>
-                <div class="col delivery-channels-text text-center">WEB</div>
-                <div class="col delivery-channels-text text-center">AGRIGATE CENTER</div>
-                <div class="col delivery-channels-text text-center">CALL CENTER</div>
-            </div>
-        </div>
-    </div>
-    <div class="section-light-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text-2">Digital Market</div>
-
-            </div>
-        </div>
-    </div>
-    <div class="section-dark-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text-3">
-                    Buy Products
-                    <hr>
-                    Sell Products
-                    <hr>
-                    Market Price Info
-                    <hr>
-                    Input Distribution
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style">✓</div>
-                    <hr class="hr-style">
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section-light-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text-2">Advisory Services</div>
-            </div>
-        </div>
-    </div>
-    <div class="section-dark-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text-3">
-                    Production Technology
-                    <hr>
-                    Advisory Consultation
-                    <hr>
-                    Best Practices
-                    <hr>
-                    Weather Information
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style">✓</div>
-                    <hr class="hr-style">
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                </div>
-            </div>
-        </div>
+    <div class="containers">
+<div>
+    <div id="slidebox">
+        <img src="{{ asset('images/agrigate.png') }}" class="fade-in slide agrigate-image d-block mx-auto img-fluid">
+        <div class="agrigate-text bottom-left"><a href="{{ route('iot-services') }}">IOT Services</a></div>
+        <div class="agrigate-text top"><a href="{{ route('advisory-services') }}">Advisory Services</a></div>
+        <div class="agrigate-text bottom"><a href="{{ route('finance-services') }}">Financial Inclusion</a></div>
+        <div class="agrigate-text bottom-right"><a href="{{ route('services') }}">Digital Market</a></div>
     </div>
 
-    <div class="section-light-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text-2">IOT Based Services</div>
-            </div>
-        </div>
-    </div>
-    <div class="section-dark-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text-3">
-                    Soil Testing
-                    <hr>
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style">✓</div>
-                    <hr class="hr-style">
+</div>
 
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
 
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style">✓</div>
-                    <hr>
-
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-
-                </div>
-            </div>
-        </div>
     </div>
 
-    <div class="section-light-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text-2">Financial Inclusion</div>
-            </div>
-        </div>
-    </div>
-    <div class="section-dark-green-bg">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col delivery-channels-text-3">
-                    Bank A/C Opening
-                    <hr>
-                   Agri Loan for Farmers
-                    <hr>
-                    Crop Insurance
-                    <hr>
 
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style">✓</div>
-                    <hr class="hr-style">
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style">✓</div>
-                    <hr>
+    {{--    <div class="container d-flex justify-content-end">--}}
+{{--        <div style="font-weight: 700;">Delivery Channels</div>--}}
+{{--    </div>--}}
+{{--    <div class="section-dark-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text">SERVICES</div>--}}
+{{--                <div class="col delivery-channels-text text-center">APP</div>--}}
+{{--                <div class="col delivery-channels-text text-center">WEB</div>--}}
+{{--                <div class="col delivery-channels-text text-center">AGRIGATE CENTER</div>--}}
+{{--                <div class="col delivery-channels-text text-center">CALL CENTER</div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="section-light-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text-2">Digital Market</div>--}}
 
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style">✓</div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="section-dark-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text-3">--}}
+{{--                    Buy Products--}}
+{{--                    <hr>--}}
+{{--                    Sell Products--}}
+{{--                    <hr>--}}
+{{--                    Market Price Info--}}
+{{--                    <hr>--}}
+{{--                    Input Distribution--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr class="hr-style">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="section-light-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text-2">Advisory Services</div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="section-dark-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text-3">--}}
+{{--                    Production Technology--}}
+{{--                    <hr>--}}
+{{--                    Advisory Consultation--}}
+{{--                    <hr>--}}
+{{--                    Best Practices--}}
+{{--                    <hr>--}}
+{{--                    Weather Information--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr class="hr-style">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
+{{--    <div class="section-light-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text-2">IOT Based Services</div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="section-dark-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text-3">--}}
+{{--                    Soil Testing--}}
+{{--                    <hr>--}}
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr class="hr-style">--}}
 
-                </div>
-                <div class="col delivery-channels-text">
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
-                    <div class="tick-style"><br></div>
-                    <hr>
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
 
-                </div>
-            </div>
-        </div>
-    </div>
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+
+{{--    <div class="section-light-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text-2">Financial Inclusion</div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--    <div class="section-dark-green-bg">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row py-2">--}}
+{{--                <div class="col delivery-channels-text-3">--}}
+{{--                    Bank A/C Opening--}}
+{{--                    <hr>--}}
+{{--                   Agri Loan for Farmers--}}
+{{--                    <hr>--}}
+{{--                    Crop Insurance--}}
+{{--                    <hr>--}}
+
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr class="hr-style">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style">✓</div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+
+{{--                </div>--}}
+{{--                <div class="col delivery-channels-text">--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+{{--                    <div class="tick-style"><br></div>--}}
+{{--                    <hr>--}}
+
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 </section>
 <section class="section-light-green-bg py-4"></section>
 <section class="section-dark-green-bg">
@@ -390,5 +406,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.0/jquery-migrate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="{{ asset('js/image-slider.js') }}"></script>
+
 </body>
 </html>

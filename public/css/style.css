@@ -735,3 +735,207 @@ hr {
         width:1100px;
     }
 }
+
+.agrigate-image{
+    width:500px;
+    height:400px;
+}
+.agrigate-image-2{
+    width:300px;
+    height:300px;
+}
+/* Container holding the image and the text */
+.containers {
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+
+.bottom-left {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-30%, -4%);
+}
+
+.top {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.bottom {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+    position: absolute;
+    top: 45%;
+    left: 56%;
+    transform: translate(-1%, -1%);
+
+}
+.bottom-right-2 {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    transform: translate(-1%, -1%);
+}
+.agrigate-styles{
+    margin-left: -500px;
+}
+.col-agrigate{
+    margin-top:220px;
+}
+@media only screen and (max-width: 600px) {
+    .bottom-right-2 {
+        position: absolute;
+        top: 45%;
+        left: 30%;
+        transform: translate(-1%, -1%);
+    }
+    .agrigate-styles{
+        margin-left: 10px;
+    }
+    .col-agrigate{
+        margin-top:20px;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px){
+    .bottom-left {
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        transform: translate(-80%, -4%);
+    }
+    .bottom-right-2 {
+        position: absolute;
+        top: 45%;
+        left: 15%;
+        transform: translate(-1%, -1%);
+    }
+    .col-agrigate{
+        margin-top:200px;
+    }
+    .agrigate-styles{
+        margin-left:-80px;
+    }
+
+}
+@media only screen and (min-width:1400px) and (max-width: 1700px){
+    .bottom-left {
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        transform: translate(-1%, -4%);
+    }
+}
+
+@media only screen and (min-width:1700px) and (max-width: 1930px){
+    .bottom-left {
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        transform: translate(60%, -4%);
+    }
+    .bottom-right {
+        position: absolute;
+        top: 45%;
+        left: 56%;
+        transform: translate(-30%, -1%);
+    }
+    .bottom-right-2 {
+        position: absolute;
+        top: 45%;
+        left: 27%;
+        transform: translate(-30%, -1%);
+
+    }
+    .agrigate-styles{
+        margin-left: -1200px;
+    }
+
+}
+/*@media only screen and (max-width: 550px) {*/
+/*    .bottom-left {*/
+/*        position: absolute;*/
+/*        top: 45%;*/
+/*        left: 6%;*/
+/*    }*/
+
+/*    .top {*/
+/*        position: absolute;*/
+/*        top: 15%;*/
+/*        left: 50%;*/
+/*        transform: translate(-50%, -50%);*/
+
+/*    }*/
+
+/*    .bottom {*/
+/*        position: absolute;*/
+/*        top: 80%;*/
+/*        left: 50%;*/
+/*        transform: translate(-50%, -50%);*/
+/*    }*/
+
+/*    .bottom-right {*/
+/*        position: absolute;*/
+/*        top: 45%;*/
+/*        left: 65%;*/
+/*        transform: translate(-50%, -50%);*/
+
+/*    }*/
+/*    .bottom-right-2 {*/
+/*        position: absolute;*/
+/*        top: 45%;*/
+/*        left: 27%;*/
+/*        transform: translate(-50%, -50%);*/
+
+/*    }*/
+/*}*/
+/*@media only screen and (min-width:551px) and (max-width: 1000px) {*/
+/*    .bottom-left {*/
+/*        position: absolute;*/
+/*        top: 45%;*/
+/*        left: 15%;*/
+/*    }*/
+
+/*    .top {*/
+/*        position: absolute;*/
+/*        top: 15%;*/
+/*        left: 50%;*/
+/*        transform: translate(-50%, -50%);*/
+
+/*    }*/
+
+/*    .bottom {*/
+/*        position: absolute;*/
+/*        top: 80%;*/
+/*        left: 50%;*/
+/*        transform: translate(-50%, -50%);*/
+/*    }*/
+
+/*    .bottom-right {*/
+/*        position: absolute;*/
+/*        top: 45%;*/
+/*        left: 65%;*/
+/*    }*/
+/*    .bottom-right-2 {*/
+/*        position: absolute;*/
+/*        top: 45%;*/
+/*        left: 27%;*/
+/*    }*/
+/*}*/
+.agrigate-text{
+    color: #255302;
+    font-size: 20px;
+
+}
+
