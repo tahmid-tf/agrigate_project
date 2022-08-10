@@ -11,6 +11,7 @@ use App\Testimonial;
 use App\Goal;
 use App\News;
 use App\Crop;
+use App\Career;
 use Illuminate\Http\Request;
 
 class UserPanelController extends Controller
@@ -61,6 +62,83 @@ class UserPanelController extends Controller
     {
         return view('user.solutions');
     }
+    public function digitalMarket(){
+
+        return view('user.digital-market');
+    }
+    public function IOTService(){
+
+        return view('user.iot-service');
+    }
+    public function advisoryService(){
+
+        return view('user.advisory-service');
+    }
+    public function financeService(){
+
+        return view('user.finance-service');
+    }
+
+    public function deliveryChannel1(){
+        $var_primary="Digital Market";
+        $var1="Buy Products";
+        return view('user.delivery-channel-1',compact('var_primary','var1'));
+    }
+    public function deliveryChannel2(){
+        $var_primary="Digital Market";
+        $var1="Sell Products";
+        return view('user.delivery-channel-1',compact('var_primary','var1'));
+    }
+    public function deliveryChannel3(){
+        $var_primary="Digital Market";
+        $var1="Market Price Info";
+        return view('user.delivery-channel-2',compact('var_primary','var1'));
+    }
+    public function deliveryChannel4(){
+        $var_primary="Digital Market";
+        $var1="Input Distribution";
+        return view('user.delivery-channel-2',compact('var_primary','var1'));
+    }
+    public function deliveryChannel5(){
+        $var_primary="Advisory Services";
+        $var1="Production Technology";
+        return view('user.delivery-channel-1',compact('var_primary','var1'));
+    }
+    public function deliveryChannel6(){
+        $var_primary="Advisory Services";
+        $var1="Advisory Consultation";
+        return view('user.delivery-channel-3',compact('var_primary','var1'));
+    }
+    public function deliveryChannel7(){
+        $var_primary="Advisory Services";
+        $var1="Best Practices";
+        return view('user.delivery-channel-2',compact('var_primary','var1'));
+    }
+    public function deliveryChannel8(){
+        $var_primary="Advisory Services";
+        $var1="Weather Information";
+        return view('user.delivery-channel-1',compact('var_primary','var1'));
+    }
+    public function deliveryChannel9(){
+        $var_primary="IOT Services";
+        $var1="Soil Testing";
+        return view('user.delivery-channel-2',compact('var_primary','var1'));
+    }
+    public function deliveryChannel10(){
+        $var_primary="Financial Inclusion";
+        $var1="Bank A/C Opening";
+        return view('user.delivery-channel-2',compact('var_primary','var1'));
+    }
+    public function deliveryChannel11(){
+        $var_primary="Financial Inclusion";
+        $var1="Agri Loan for Farmers";
+        return view('user.delivery-channel-1',compact('var_primary','var1'));
+    }
+    public function deliveryChannel12(){
+        $var_primary="Financial Inclusion";
+        $var1="Crop Insurance";
+        return view('user.delivery-channel-1',compact('var_primary','var1'));
+    }
 
     /* Agrigate Center */
     public function AgrigateCenter()
@@ -83,7 +161,8 @@ class UserPanelController extends Controller
 
     public function App()
     {
-        return view('user.app');
+        $sp_partners = Buyer::where('tag','sp')->get();
+        return view('user.app', compact('sp_partners'));
     }
     /*------------------------------- APP  ---------------*/
 
@@ -92,7 +171,8 @@ class UserPanelController extends Controller
 
     public function FinancialInclusion()
     {
-        return view('user.financial-inclusion');
+        $ip_partners = Buyer::where('tag','i')->get();
+        return view('user.financial-inclusion', compact('ip_partners'));
     }
 
     public function ApplyForBankAccount()
@@ -131,12 +211,14 @@ class UserPanelController extends Controller
     {
 
         $careers= Career::all();
-        return view('user.career');
+        return view('user.career',compact('careers'));
     }
 
-    public function ApplyNow()
+    public function ApplyNow($id)
     {
-        return view('user.apply-now');
+        $careers = Career::find($id);
+
+        return view('user.apply-now',compact('careers'));
     }
     /*------------------------------------------ Career ------*/
 
