@@ -395,9 +395,9 @@
     </div>
 </section>
 <style>
-    .contact-bg{
+    .contact-bg {
         background-image: url("{{ asset('images/contact-bg-1.png') }}");
-        background-color:  #255302 ;
+        background-color: #255302;
 
         object-fit: cover;
         background-repeat: no-repeat;

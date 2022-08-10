@@ -50,23 +50,24 @@ Route::get('/single-news/{id}', "UserPanelController@SingleNews")->name('single-
 // ===================== SOLUTION ======================
 
 Route::get('/solutions', "UserPanelController@solutions")->name('solutions');
-Route::get('/services', "UserPanelController@digitalMarket")->name('services');
-Route::get('/iot-services', "UserPanelController@IOTService")->name('iot-services');
-Route::get('/advisory-services', "UserPanelController@advisoryService")->name('advisory-services');
-Route::get('/finance-services', "UserPanelController@financeService")->name('finance-services');
 
-Route::get('/delivery-channel-1', "UserPanelController@deliveryChannel1")->name('delivery-channel-1');
-Route::get('/delivery-channel-2', "UserPanelController@deliveryChannel2")->name('delivery-channel-2');
-Route::get('/delivery-channel-3', "UserPanelController@deliveryChannel3")->name('delivery-channel-3');
-Route::get('/delivery-channel-4', "UserPanelController@deliveryChannel4")->name('delivery-channel-4');
-Route::get('/delivery-channel-5', "UserPanelController@deliveryChannel5")->name('delivery-channel-5');
-Route::get('/delivery-channel-6', "UserPanelController@deliveryChannel6")->name('delivery-channel-6');
-Route::get('/delivery-channel-7', "UserPanelController@deliveryChannel7")->name('delivery-channel-7');
-Route::get('/delivery-channel-8', "UserPanelController@deliveryChannel8")->name('delivery-channel-8');
-Route::get('/delivery-channel-9', "UserPanelController@deliveryChannel9")->name('delivery-channel-9');
-Route::get('/delivery-channel-10', "UserPanelController@deliveryChannel10")->name('delivery-channel-10');
-Route::get('/delivery-channel-11', "UserPanelController@deliveryChannel11")->name('delivery-channel-11');
-Route::get('/delivery-channel-12', "UserPanelController@deliveryChannel12")->name('delivery-channel-12');
+//Route::get('/services', "UserPanelController@digitalMarket")->name('services');
+//Route::get('/iot-services', "UserPanelController@IOTService")->name('iot-services');
+//Route::get('/advisory-services', "UserPanelController@advisoryService")->name('advisory-services');
+//Route::get('/finance-services', "UserPanelController@financeService")->name('finance-services');
+//
+//Route::get('/delivery-channel-1', "UserPanelController@deliveryChannel1")->name('delivery-channel-1');
+//Route::get('/delivery-channel-2', "UserPanelController@deliveryChannel2")->name('delivery-channel-2');
+//Route::get('/delivery-channel-3', "UserPanelController@deliveryChannel3")->name('delivery-channel-3');
+//Route::get('/delivery-channel-4', "UserPanelController@deliveryChannel4")->name('delivery-channel-4');
+//Route::get('/delivery-channel-5', "UserPanelController@deliveryChannel5")->name('delivery-channel-5');
+//Route::get('/delivery-channel-6', "UserPanelController@deliveryChannel6")->name('delivery-channel-6');
+//Route::get('/delivery-channel-7', "UserPanelController@deliveryChannel7")->name('delivery-channel-7');
+//Route::get('/delivery-channel-8', "UserPanelController@deliveryChannel8")->name('delivery-channel-8');
+//Route::get('/delivery-channel-9', "UserPanelController@deliveryChannel9")->name('delivery-channel-9');
+//Route::get('/delivery-channel-10', "UserPanelController@deliveryChannel10")->name('delivery-channel-10');
+//Route::get('/delivery-channel-11', "UserPanelController@deliveryChannel11")->name('delivery-channel-11');
+//Route::get('/delivery-channel-12', "UserPanelController@deliveryChannel12")->name('delivery-channel-12');
 
 
 

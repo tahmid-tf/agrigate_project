@@ -15,6 +15,9 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css"/>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
 
 </head>
 <body>
@@ -125,260 +128,329 @@
                 access our services.)</p>
         </div>
     </div>
-    <div class="containers">
-<div>
-    <div id="slidebox">
-        <img src="{{ asset('images/agrigate.png') }}" class="fade-in slide agrigate-image d-block mx-auto img-fluid">
-        <div class="agrigate-text bottom-left"><a href="{{ route('iot-services') }}">IOT Services</a></div>
-        <div class="agrigate-text top"><a href="{{ route('advisory-services') }}">Advisory Services</a></div>
-        <div class="agrigate-text bottom"><a href="{{ route('finance-services') }}">Financial Inclusion</a></div>
-        <div class="agrigate-text bottom-right"><a href="{{ route('services') }}">Digital Market</a></div>
-    </div>
-
-</div>
 
 
-    </div>
+    {{--  ------------------------------------------------------------------------------------------------------- Flower animation part --------------------------------------------------------------------------------------------------------------- --}}
 
 
-    {{--    <div class="container d-flex justify-content-end">--}}
-{{--        <div style="font-weight: 700;">Delivery Channels</div>--}}
-{{--    </div>--}}
-{{--    <div class="section-dark-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text">SERVICES</div>--}}
-{{--                <div class="col delivery-channels-text text-center">APP</div>--}}
-{{--                <div class="col delivery-channels-text text-center">WEB</div>--}}
-{{--                <div class="col delivery-channels-text text-center">AGRIGATE CENTER</div>--}}
-{{--                <div class="col delivery-channels-text text-center">CALL CENTER</div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="section-light-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text-2">Digital Market</div>--}}
+    <section class="pointer-1">
+        <div class="containers">
+            <div>
+                <div id="slidebox">
+                    <img src="{{ asset('images/agrigate.png') }}"
+                         class="fade-in slide agrigate-image d-block mx-auto img-fluid">
+                    <div class="agrigate-text bottom-left" id="iot" style="cursor: pointer">IOT Services</div>
+                    <div class="agrigate-text top" id="advisory" style="cursor: pointer">Advisory Services</div>
+                    <div class="agrigate-text bottom" id="financial" style="cursor: pointer">Financial Inclusion</a>
+                    </div>
+                    <div class="agrigate-text bottom-right" id="digital" style="cursor: pointer">Digital Market</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="section-dark-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text-3">--}}
-{{--                    Buy Products--}}
-{{--                    <hr>--}}
-{{--                    Sell Products--}}
-{{--                    <hr>--}}
-{{--                    Market Price Info--}}
-{{--                    <hr>--}}
-{{--                    Input Distribution--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr class="hr-style">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="section-light-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text-2">Advisory Services</div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="section-dark-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text-3">--}}
-{{--                    Production Technology--}}
-{{--                    <hr>--}}
-{{--                    Advisory Consultation--}}
-{{--                    <hr>--}}
-{{--                    Best Practices--}}
-{{--                    <hr>--}}
-{{--                    Weather Information--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr class="hr-style">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    {{--  ------------------------- IoT Services ----------------------------------- --}}
 
-{{--    <div class="section-light-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text-2">IOT Based Services</div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="section-dark-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text-3">--}}
-{{--                    Soil Testing--}}
-{{--                    <hr>--}}
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr class="hr-style">--}}
 
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
+    <section class="solution-1" style="display: none">
+        <div class="containers" id="service">
+            <div class="row ml-0 mr-0">
+                <div class="col-lg-4 col-md-6 " id="service">
+                    <img src="{{ asset('images/agrigate-half.png') }}"
+                         class="agrigate-image-2 d-block mr-auto img-fluid">
 
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
+                    <div class="agrigate-text bottom-right-2" style="font-size:18px">IOT Services</div>
+                </div>
+                <div class="col-lg-8 col-md-6  col-agrigate">
+                    <div class="agrigate-styles">
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-soil')"
+                                onmouseout="hideThis('.agrigate-text-soil')">Soil Testing</a></p>
+                        <div class="agrigate-text-soil" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
+            <button class="footer-button px-2 py-2" onclick="back()">Go Back</button>
+        </div>
+    </section>
 
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+    {{--  ------------------------- IoT Services ----------------------------------- --}}
 
-{{--    <div class="section-light-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text-2">Financial Inclusion</div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-{{--    <div class="section-dark-green-bg">--}}
-{{--        <div class="container">--}}
-{{--            <div class="row py-2">--}}
-{{--                <div class="col delivery-channels-text-3">--}}
-{{--                    Bank A/C Opening--}}
-{{--                    <hr>--}}
-{{--                   Agri Loan for Farmers--}}
-{{--                    <hr>--}}
-{{--                    Crop Insurance--}}
-{{--                    <hr>--}}
 
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr class="hr-style">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
 
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style">✓</div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
+    {{--  ------------------------- Advisory ----------------------------------- --}}
 
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
+    <section class="solution-2" style="display: none">
+        <div class="containers" id="service">
+            <div class="row ml-0 mr-0">
+                <div class="col-lg-4 col-md-6 " id="service">
+                    <img src="{{ asset('images/agrigate-half.png') }}"
+                         class="agrigate-image-2 d-block mr-auto img-fluid">
 
-{{--                </div>--}}
-{{--                <div class="col delivery-channels-text">--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
-{{--                    <div class="tick-style"><br></div>--}}
-{{--                    <hr>--}}
+                    <div class="agrigate-text bottom-right-2" style="font-size:18px">Advisory Services</div>
+                </div>
+                <div class="col-lg-8 col-md-6  col-agrigate">
+                    <div class="agrigate-styles">
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-services')"
+                                onmouseout="hideThis('.agrigate-text-services')">Production
+                                Technology</a>
+                        </p>
 
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+                        <div class="agrigate-text-services" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-Consultation')"
+                                onmouseout="hideThis('.agrigate-text-Consultation')">Advisory
+                                Consultation</a>
+                        </p>
+
+                        <div class="agrigate-text-Consultation" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+
+
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-Best-Practices')"
+                                onmouseout="hideThis('.agrigate-text-Best-Practices')">Best Practices</a></p>
+
+                        <div class="agrigate-text-Best-Practices" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-Weather')"
+                                onmouseout="hideThis('.agrigate-text-Weather')">Weather
+                                Information</a></p>
+
+                        <div class="agrigate-text-Weather" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button class="footer-button px-2 py-2" onclick="back()">Go Back</button>
+        </div>
+
+    </section>
+
+    {{--  ------------------------- Advisory ----------------------------------- --}}
+
+
+    {{--  ------------------------- Financial Inclusion ----------------------------------- --}}
+
+
+    <section class="solution-3" style="display: none">
+
+        <div class="containers" id="service">
+            <div class="row ml-0 mr-0">
+                <div class="col-lg-4 col-md-6 " id="service">
+                    <img src="{{ asset('images/agrigate-half.png') }}"
+                         class="agrigate-image-2 d-block mr-auto img-fluid">
+
+                    <div class="agrigate-text bottom-right-2" style="font-size:18px">Financial Inclusion</div>
+                </div>
+                <div class="col-lg-8 col-md-6  col-agrigate">
+                    <div class="agrigate-styles">
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-Opening')"
+                                onmouseout="hideThis('.agrigate-text-Opening')">Bank A/C Opening</a>
+                        </p>
+
+                        <div class="agrigate-text-Opening" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+
+                        </div>
+
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-Farmers')"
+                                onmouseout="hideThis('.agrigate-text-Farmers')">Agri Loan for
+                                Farmers</a>
+                        </p>
+
+                        <div class="agrigate-text-Farmers" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-Insurance')"
+                                onmouseout="hideThis('.agrigate-text-Insurance')">Crop Insurance</a>
+                        </p>
+
+                        <div class="agrigate-text-Insurance" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="footer-button px-2 py-2" onclick="back()">Go Back</button>
+        </div>
+    </section>
+
+    {{--  ------------------------- Financial Inclusion ----------------------------------- --}}
+
+    {{--  ------------------------- Digital Market ----------------------------------- --}}
+
+
+    <section class="solution-4" style="display: none">
+
+        <div class="containers" id="service">
+            <div class="row ml-0 mr-0">
+                <div class="col-lg-4 col-md-6 " id="service">
+                    <img src="{{ asset('images/agrigate-half.png') }}"
+                         class="agrigate-image-2 d-block mr-auto img-fluid">
+
+                    <div class="agrigate-text bottom-right-2" style="font-size:18px">Digital Market</div>
+                </div>
+                <div class="col-lg-8 col-md-6  col-agrigate">
+                    <div class="agrigate-styles">
+                        <p class="agrigate-text" style="cursor: pointer"><a onmouseover="showThis('.agrigate-text-Buy')"
+                                                                            onmouseout="hideThis('.agrigate-text-Buy')">Buy
+                                products</a></p>
+
+                        <div class="agrigate-text-Buy" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-products')"
+                                onmouseout="hideThis('.agrigate-text-products')">Sell products</a></p>
+
+                        <div class="agrigate-text-products" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-Info')"
+                                onmouseout="hideThis('.agrigate-text-Info')">Market Price Info</a></p>
+
+                        <div class="agrigate-text-Info" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+
+                        <p class="agrigate-text" style="cursor: pointer"><a
+                                onmouseover="showThis('.agrigate-text-Distribution')"
+                                onmouseout="hideThis('.agrigate-text-Distribution')">Input Distribution</a></p>
+
+                        <div class="agrigate-text-Distribution" style="display: none">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                            <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
+                                 style="width:30px;height:30px;">
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <button class="footer-button px-2 py-2" onclick="back()">Go Back</button>
+        </div>
+    </section>
+
+    {{--  ------------------------- Digital Market ----------------------------------- --}}
+
+
+
+    {{-- ---------------- script -------------------- --}}
+
+    <script>
+        $("#iot").click(function () {
+            $(".pointer-1").css("display", "none");
+            $(".solution-1").fadeIn(1000);
+        });
+
+        $("#advisory").click(function () {
+            $(".pointer-1").css("display", "none");
+            $(".solution-2").fadeIn(1000);
+        });
+
+
+        $("#financial").click(function () {
+            $(".pointer-1").css("display", "none");
+            $(".solution-3").fadeIn(1000);
+        });
+
+        $("#digital").click(function () {
+            $(".pointer-1").css("display", "none");
+            $(".solution-4").fadeIn(1000);
+        });
+
+        function back() {
+            $(".pointer-1").fadeIn(1000);
+            $(".solution-1").css("display", "none");
+            $(".solution-2").css("display", "none");
+            $(".solution-3").css("display", "none");
+            $(".solution-4").css("display", "none");
+        }
+
+
+        // ------------------------- Hover in and out ----------------------------
+
+        // $('.agrigate-text-soil-hover').hover(function () {
+        //         $('.agrigate-text-soil').fadeIn();
+        //     },
+        //     function () {
+        //         $('.agrigate-text-soil').fadeOut();
+        //     }
+        // );
+
+        function showThis(variable) {
+            $(variable).fadeIn();
+        }
+
+        function hideThis(variable) {
+            $(variable).fadeOut();
+        }
+
+
+        // ------------------------- Hover in and out ----------------------------
+
+
+    </script>
+
+    {{-- ---------------- script -------------------- --}}
+
+
+
+    {{--  ------------------------------------------------------------------------------------------------------- Flower animation part --------------------------------------------------------------------------------------------------------------- --}}
+
+
 </section>
 <section class="section-light-green-bg py-4"></section>
 <section class="section-dark-green-bg">
@@ -391,9 +463,9 @@
     </div>
 </section>
 <style>
-    .contact-bg{
+    .contact-bg {
         background-image: url("{{ asset('images/contact-bg-1.png') }}");
-        background-color:  #255302 ;
+        background-color: #255302;
 
         object-fit: cover;
         background-repeat: no-repeat;

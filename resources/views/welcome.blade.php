@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <p> @lang('home.laravel')</p>
+                    <p>@lang('home.laravel')</p>
                 </div>
 
                 <div class="links">

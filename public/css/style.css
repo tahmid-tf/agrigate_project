@@ -803,6 +803,11 @@ hr {
     left: 27%;
     transform: translate(-1%, -1%);
 }
+
+#iot, #advisory, #financial, #digital{
+    font-weight: bold;
+}
+
 .agrigate-styles{
     margin-left: -500px;
 }
@@ -879,43 +884,63 @@ hr {
     }
 
 }
-/*@media only screen and (max-width: 550px) {*/
-/*    .bottom-left {*/
-/*        position: absolute;*/
-/*        top: 45%;*/
-/*        left: 6%;*/
-/*    }*/
+@media only screen and (max-width: 550px) {
 
-/*    .top {*/
-/*        position: absolute;*/
-/*        top: 15%;*/
-/*        left: 50%;*/
-/*        transform: translate(-50%, -50%);*/
+    .bottom-left {
+        position: absolute;
+        top: 45%;
+        left: 13%;
+    }
 
-/*    }*/
+    .bottom-right{
+        position: absolute;
+        top: 45%;
+        left: 67%;
+    }
 
-/*    .bottom {*/
-/*        position: absolute;*/
-/*        top: 80%;*/
-/*        left: 50%;*/
-/*        transform: translate(-50%, -50%);*/
-/*    }*/
+    #iot, #advisory, #financial, #digital{
+        font-size: 14px;
+    }
 
-/*    .bottom-right {*/
-/*        position: absolute;*/
-/*        top: 45%;*/
-/*        left: 65%;*/
-/*        transform: translate(-50%, -50%);*/
 
-/*    }*/
-/*    .bottom-right-2 {*/
-/*        position: absolute;*/
-/*        top: 45%;*/
-/*        left: 27%;*/
-/*        transform: translate(-50%, -50%);*/
 
-/*    }*/
-/*}*/
+
+    /*.bottom-right {*/
+    /*    position: absolute;*/
+    /*    top: 45%;*/
+    /*    left: 65%;*/
+    /*    transform: translate(-50%, -50%);*/
+
+    /*.top {*/
+    /*    position: absolute;*/
+    /*    top: 15%;*/
+    /*    left: 50%;*/
+    /*    transform: translate(-50%, -50%);*/
+
+    /*}*/
+
+    /*.bottom {*/
+    /*    position: absolute;*/
+    /*    top: 80%;*/
+    /*    left: 50%;*/
+    /*    transform: translate(-50%, -50%);*/
+    /*}*/
+
+    /*.bottom-right {*/
+    /*    position: absolute;*/
+    /*    top: 45%;*/
+    /*    left: 65%;*/
+    /*    transform: translate(-50%, -50%);*/
+
+    /*}*/
+    /*.bottom-right-2 {*/
+    /*    position: absolute;*/
+    /*    top: 45%;*/
+    /*    left: 27%;*/
+    /*    transform: translate(-50%, -50%);*/
+
+    /*}*/
+}
 /*@media only screen and (min-width:551px) and (max-width: 1000px) {*/
 /*    .bottom-left {*/
 /*        position: absolute;*/
@@ -949,9 +974,13 @@ hr {
 /*        left: 27%;*/
 /*    }*/
 /*}*/
+
+
+
 .agrigate-text{
     color: #255302;
     font-size: 20px;
+    font-weight: bold;
 
 }
 
