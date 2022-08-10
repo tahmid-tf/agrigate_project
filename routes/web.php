@@ -195,3 +195,12 @@ Route::get('/link-storage', function () {
 });
 
 // ------------------------------- link storage ----------------------------
+
+// ------------------------------- Clear cache ----------------------------
+
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:cache');
+    return 'DONE'; //Return anything
+});
+
+// ------------------------------- Clear cache ----------------------------
