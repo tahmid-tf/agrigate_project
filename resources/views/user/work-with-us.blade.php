@@ -32,7 +32,8 @@
         <p class="subpages-heading">Work with Us</p>
     </div>
     <div>
-        <img src="{{ asset('images/work-with-us.png') }}" class="img-fluid" style="width:100%;">
+        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+
     </div>
 </section>
 
@@ -41,11 +42,11 @@
         <div class="container">
             <div class="card solutions-card">
                 <p class="solutions-card-text">
-                    Agrigate is a social enterprise that works directly in the field of impoverished communities. We
+                    {{ \App\User::language_change($banner->title_en,$banner->title_bn) ?? ' Agrigate is a social enterprise that works directly in the field of impoverished communities. We
                     delight in seeing households impacted and lives change for the better. In this regard we are always
                     open for partnership and collaboration for multi-facets of our model or parts that feed to it. Below
                     are some of the avenues that we have partnered worked with other partners and opportunities to work
-                    with us. </p>
+                    with us. '}}</p>
             </div>
         </div>
     </div>

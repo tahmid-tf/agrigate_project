@@ -32,7 +32,8 @@
         <p class="subpages-heading">About Us</p>
     </div>
     <div>
-        <img src="{{ asset('images/about-us.png') }}" class="img-fluid" style="width:100%;">
+        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+
     </div>
 </section>
 
@@ -40,21 +41,16 @@
     <div class="section-light-green-bg py-2">
         <div class="container">
             <div class="card solutions-card">
-                <p class="solutions-card-text">
-                    Founded in 2021, Agrigate is a for-profit social enterprise that believes in farmer-centric impact.
-                    We work with Bangladeshi’s most rural small-scale farmers to supply the region with high-quality
-                    commodities. We do this with the aim to move the farmers from poverty and into the middle-class.
-                    Through human-centered design, we have managed to co-create an easy model that answers the farmers
-                    most pressing questions. We are building digital technologies to revolutionize supply chain and
-                    production efficiency in the farm sector. We are passionate to improve the lives of the farmers and
-                    Entrepreneurs. Our vision is bold and most efficient to develop supply chain platform and increase
-                    income of the farmers, retailers, traders. </p>
+                <p class="solutions-card-text">{{ \App\User::language_change($banner->title_en,$banner->title_bn) }}</p>
             </div>
         </div>
     </div>
 </section>
+
 <section class="section-light-green-bg py-4">
-    <img src="{{ asset('images/about-us-2.png') }}" class="img-fluid" style="width:100%;">
+    <div>
+        <img src="{{ asset('images/about-us-2.png') }}" class="img-fluid" style="width:60%; margin: auto; display: block">
+    </div>
 </section>
 
 <section class="section-dark-green-bg">

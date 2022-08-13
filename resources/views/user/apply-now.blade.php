@@ -42,7 +42,9 @@
     <div class="container mt-4">
         <p class="solutions-card-text-2">{!! \App\User::language_change($careers->content_en,$careers->content_bn) !!}</p>
         <div class="text-center mt-5 mb-5">
-            <button type="button" class="apply-now-button">Apply Now</button>
+            <a href="mailto:careers@agrigate.asia">
+                <button type="button" class="apply-now-button">Apply Now</button>
+            </a>
         </div>
     </div>
 </section>

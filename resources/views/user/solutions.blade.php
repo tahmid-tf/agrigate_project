@@ -35,7 +35,7 @@
         <p class="subpages-heading">Our Solution for Farmers</p>
     </div>
     <div>
-        <img src="{{ asset('images/green-red.png') }}" class="img-fluid" style="width:100%;">
+        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
     </div>
 </section>
 
@@ -43,13 +43,13 @@
     <div class="section-light-green-bg py-2">
         <div class="container">
             <div class="card solutions-card">
-                <p class="solutions-card-text">Agrigate works with farmers to increase incomes. Whether they grow seeds
+                <p class="solutions-card-text">{{ \App\User::language_change($banner->title_en,$banner->title_bn) ?? "Agrigate works with farmers to increase incomes. Whether they grow seeds
                     for commodity. We work closely with communities to maximize impact and profitability. Agrigate
                     Source is open to farmers interested in growing cereal, oil and pulses for trade and edible
                     commodity. Farmers will be informed about the right doze of input as well as the best available crop
                     consultation. It also provides the farmers with the flexibility to order input through our App and
                     even sell their output directly to Agrigate through the app at Arot price. Farmers will get advisory
-                    services through messages and voice calls based on real-time information.</p>
+                    services through messages and voice calls based on real-time information."}}</p>
             </div>
         </div>
     </div>
@@ -73,9 +73,9 @@
                     <img src="{{ asset('images/contract-1.png') }}" class="d-block mx-auto img-fluid"
                          style="height: 300px">
                 </div>
-                <div class="text-center">
-                    <button class="image-footer"></button>
-                </div>
+                {{--                <div class="text-center">--}}
+                {{--                    <button class="image-footer"></button>--}}
+                {{--                </div>--}}
             </div>
 
             <div class="col-lg-3 mb-4">
@@ -85,9 +85,9 @@
                     <img src="{{ asset('images/contract-2.png') }}" class="d-block mx-auto img-fluid"
                          style="height: 300px">
                 </div>
-                <div class="text-center">
-                    <button class="image-footer"></button>
-                </div>
+                {{--                <div class="text-center">--}}
+                {{--                    <button class="image-footer"></button>--}}
+                {{--                </div>--}}
             </div>
 
             <div class="col-lg-3 mb-4">
@@ -97,9 +97,9 @@
                     <img src="{{ asset('images/contract-3.png') }}" class="d-block mx-auto img-fluid"
                          style="height: 300px">
                 </div>
-                <div class="text-center">
-                    <button class="image-footer"></button>
-                </div>
+                {{--                <div class="text-center">--}}
+                {{--                    <button class="image-footer"></button>--}}
+                {{--                </div>--}}
             </div>
 
             <div class="col-lg-3 mb-4">
@@ -109,9 +109,9 @@
                     <img src="{{ asset('images/contract-4.png') }}" class="d-block mx-auto img-fluid"
                          style="height: 300px">
                 </div>
-                <div class="text-center">
-                    <button class="image-footer"></button>
-                </div>
+                {{--                <div class="text-center">--}}
+                {{--                    <button class="image-footer"></button>--}}
+                {{--                </div>--}}
             </div>
 
         </div>
@@ -122,10 +122,10 @@
     <div class="section-dark-green-bg py-2 mb-4">
         <p class="subpages-heading">Advisory & Consultation</p>
         <div class="container">
-            <p class="advisory-text">(Agrigate will assist in accessing all emergency services from the field to the
+            <p class="advisory-text">Agrigate will assist in accessing all emergency services from the field to the
                 market to address the identified problems of the country's agricultural sector through its services.
                 Agrigate is a multifaceted service provider on the platform that allows multiple stakeholders to easily
-                access our services.)</p>
+                access our services.</p>
         </div>
     </div>
 
@@ -138,7 +138,7 @@
             <div>
                 <div id="slidebox">
                     <img src="{{ asset('images/agrigate.png') }}"
-                         class="fade-in slide agrigate-image d-block mx-auto img-fluid">
+                         class="fade-in slide agrigate-image rotate-image d-block mx-auto img-fluid">
                     <div class="agrigate-text bottom-left" id="iot" style="cursor: pointer">IOT Services</div>
                     <div class="agrigate-text top" id="advisory" style="cursor: pointer">Advisory Services</div>
                     <div class="agrigate-text bottom" id="financial" style="cursor: pointer">Financial Inclusion</a>
@@ -222,7 +222,6 @@
                             <img src="{{ asset('images/agrigate.png') }}" class="img-fluid"
                                  style="width:30px;height:30px;">
                         </div>
-
 
 
                         <p class="agrigate-text" style="cursor: pointer"><a
@@ -391,28 +390,73 @@
 
     <script>
         $("#iot").click(function () {
-            $(".pointer-1").css("display", "none");
-            $(".solution-1").fadeIn(1000);
+
+            $("#iot").css("display", "none");
+            $("#advisory").css("display", "none");
+            $("#financial").css("display", "none");
+            $("#digital").css("display", "none");
+
+            $(".pointer-1").animate({
+                'margin-right': '30%',
+                'opacity': '0',
+            }, 500).fadeOut(1);
+            $(".solution-1").fadeIn(4500);
         });
 
         $("#advisory").click(function () {
-            $(".pointer-1").css("display", "none");
-            $(".solution-2").fadeIn(1000);
+
+            $("#iot").css("display", "none");
+            $("#advisory").css("display", "none");
+            $("#financial").css("display", "none");
+            $("#digital").css("display", "none");
+
+            $(".pointer-1").animate({
+                'margin-right': '30%',
+                'opacity': '0'
+            }, 500).fadeOut(1);
+            $(".solution-2").fadeIn(4500);
         });
 
 
         $("#financial").click(function () {
-            $(".pointer-1").css("display", "none");
-            $(".solution-3").fadeIn(1000);
+
+            $("#iot").css("display", "none");
+            $("#advisory").css("display", "none");
+            $("#financial").css("display", "none");
+            $("#digital").css("display", "none");
+
+            $(".pointer-1").animate({
+                'margin-right': '30%',
+                'opacity': '0'
+            }, 500).fadeOut(1);
+            $(".solution-3").fadeIn(4500);
         });
 
         $("#digital").click(function () {
-            $(".pointer-1").css("display", "none");
-            $(".solution-4").fadeIn(1000);
+
+            $("#iot").css("display", "none");
+            $("#advisory").css("display", "none");
+            $("#financial").css("display", "none");
+            $("#digital").css("display", "none");
+
+            $(".pointer-1").animate({
+                'margin-right': '30%',
+                'opacity': '0'
+            }, 500).fadeOut(1);
+            $(".solution-4").fadeIn(4500);
         });
 
         function back() {
-            $(".pointer-1").fadeIn(1000);
+
+            $("#iot").css("display", "inline");
+            $("#advisory").css("display", "inline");
+            $("#financial").css("display", "inline");
+            $("#digital").css("display", "inline");
+
+            $(".pointer-1").animate({
+                'margin-right': '0px',
+                'opacity': '1'
+            }).fadeIn(1000);
             $(".solution-1").css("display", "none");
             $(".solution-2").css("display", "none");
             $(".solution-3").css("display", "none");
@@ -422,13 +466,6 @@
 
         // ------------------------- Hover in and out ----------------------------
 
-        // $('.agrigate-text-soil-hover').hover(function () {
-        //         $('.agrigate-text-soil').fadeIn();
-        //     },
-        //     function () {
-        //         $('.agrigate-text-soil').fadeOut();
-        //     }
-        // );
 
         function showThis(variable) {
             $(variable).fadeIn();

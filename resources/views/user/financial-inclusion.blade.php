@@ -32,7 +32,8 @@
         <p class="subpages-heading">Financial Inclusion</p>
     </div>
     <div>
-        <img src="{{ asset('images/financial-inclusion.png') }}" class="img-fluid" style="width:100%;">
+        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+
     </div>
 </section>
 
@@ -40,15 +41,7 @@
     <div class="section-light-green-bg py-2">
         <div class="container">
             <div class="card solutions-card">
-                <p class="solutions-card-text">
-                    For a farmer to produce, farmers need seeds, fertilizers, services and crop protection products,
-                    plus the advisory services that allows there to make good use of the inputs and get a crop that is
-                    marketable. Because when products are sold, farmers get the income that can be re-invested in the
-                    next cycle. Together they should make sure that farmers have what they need to produce: inputs can
-                    be sold on credit and processors can give inputs on credit to secure supply; the larger the company
-                    the less issues they have to obtain financing from a financial institution. Farmers will invest
-                    their saved income from the last season and might need an agricultural insurance to make sure they
-                    can deliver on their commitments to the input companies and off takers. </p>
+                <p class="solutions-card-text">{{ \App\User::language_change($banner->title_en,$banner->title_bn) }}</p>
             </div>
         </div>
     </div>

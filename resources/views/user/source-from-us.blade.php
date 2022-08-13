@@ -32,7 +32,8 @@
         <p class="subpages-heading">Source From Us</p>
     </div>
     <div>
-        <img src="{{ asset('images/source-from-us.png') }}" class="img-fluid" style="width:100%;">
+        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+
     </div>
 </section>
 
@@ -40,20 +41,20 @@
     <div class="section-light-green-bg py-2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="card solutions-card">
-                        <p class="solutions-card-text">
-                            Agrigate produces and sources high-quality seed from small & large-scale farmers. Agrigate
+                        <p class="solutions-card-text">{{\App\User::language_change($banner->title_en,$banner->title_bn) ?? 'Agrigate produces and sources high-quality seed from small & large-scale farmers. Agrigate
                             approach a premium quality supply of Maize, Soybeans, Seasame, Mustard, Lentil, Mungbean and
                             Groundnuts.
                             We supply seeds to a wide range of customers and organizations. You can find our seeds at
                             leading agrodealers across Bangladesh. We are sourcing quality output through direct
-                            purchase. </p>
+                            purchase.'}}
+                        </p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <img src="{{ asset('images/source-2.png') }}" class="source-image img-fluid d-block mx-auto">
-                </div>
+                {{--                <div class="col-lg-6">--}}
+                {{--                    <img src="{{ asset('images/source-2.png') }}" class="source-image img-fluid d-block mx-auto">--}}
+                {{--                </div>--}}
             </div>
 
         </div>
@@ -70,20 +71,18 @@
                     <div id="owl-demo-3" class="owl-carousel">
 
                         @foreach($crops as $crop)
-                        <article class="thumbnail item mb-4">
-                            <div class="card program-2-card" style="width: 18rem;">
-                                <h5 class="program-2-card-title mt-4">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h5>
+                            <article class="thumbnail item mb-4">
+                                <div class="card program-2-card" style="width: 18rem;">
+{{--                                    <h5 class="program-2-card-title mt-4">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h5>--}}
+                                    <br>
+                                    <img class="card-img-top program-2-card-image d-block mx-auto"
+                                         src="{{asset('storage/'.$crop->image) }}" alt="">
+                                    <div class="card-body text-center" style="">
+                                      <span>{!! \App\User::language_change($crop->title_en,$crop->title_bn) !!}</span>
 
-                                <img class="card-img-top program-2-card-image d-block mx-auto"
-                                     src="{{asset('storage/'.$crop->image) }}" alt="">
-                                <div class="card-body text-center" style="">
-                                    <button class="crops-box mt-2"></button>
-                                    <button class="crops-box mt-2"></button>
-                                    <button class="crops-box mt-2"></button>
-
+                                    </div>
                                 </div>
-                            </div>
-                        </article>
+                            </article>
                         @endforeach
 
                     </div>
@@ -92,25 +91,6 @@
                 <!-- .container -->
             </div>
         </section>
-    </div>
-    {{--        <div class="container">--}}
-
-    {{--            <div class="row">--}}
-
-    {{--                @foreach($crops as $crop)--}}
-    {{--                    <div class="col-lg-3 mb-4">--}}
-    {{--                        <h3 class="crops-text">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h3>--}}
-    {{--                        <h3 class="crops-text">Maize</h3>--}}
-
-    {{--                        --}}{{--                        <img src="{{ asset('storage/'.$crop->image) }}" class="crops-image img-fluid d-block mx-auto">--}}
-    {{--                        <img src="{{ asset('images/maize.png') }}" class="crops-image img-fluid d-block mx-auto">--}}
-    {{--                        <div class="crops-box"></div>--}}
-
-    {{--                    </div>--}}
-    {{--                @endforeach--}}
-
-    {{--            </div>--}}
-    {{--        </div>--}}
     </div>
 </section>
 

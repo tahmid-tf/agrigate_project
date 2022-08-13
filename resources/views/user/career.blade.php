@@ -32,7 +32,7 @@
         <p class="subpages-heading">Careers</p>
     </div>
     <div>
-        <img src="{{ asset('images/careers.png') }}" class="img-fluid" style="width:100%;">
+        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
     </div>
 </section>
 

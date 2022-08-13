@@ -1,3 +1,29 @@
+{{-- ------------------------------------------ Banners ------------------------------------------------ --}}
+
+<!-- Heading -->
+<div class="sidebar-heading">
+    Banners
+</div>
+
+
+<!-- Nav Item - Pages Collapse Menu -->
+<li class="nav-item">
+    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Banners"
+       aria-expanded="true" aria-controls="Banners">
+        <i class="fas fa-fw fa-cog"></i>
+        <span>Banners</span>
+    </a>
+    <div id="Banners" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Testimonials</h6>
+{{--            <a class="collapse-item" href="{{ route('banner.create') }}">Create Banners</a>--}}
+            <a class="collapse-item" href="{{ route('banner.index') }}">View All Banners</a>
+        </div>
+    </div>
+</li>
+
+{{-- ------------------------------------------ Banners ------------------------------------------------ --}}
+
 {{-- ------------------------------------------ Testimonial ------------------------------------------------ --}}
 
 <!-- Heading -->

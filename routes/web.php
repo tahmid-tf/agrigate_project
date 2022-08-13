@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Artisan;
 // --------------------------------- language translation ---------------------------------------------
 
 Route::get('lang/{lang}', function ($lang) {
-    session()->put('locale',$lang);
+    session()->put('locale', $lang);
     return redirect()->back();
 })->name('lang');
 
@@ -70,8 +70,6 @@ Route::get('/solutions', "UserPanelController@solutions")->name('solutions');
 //Route::get('/delivery-channel-12', "UserPanelController@deliveryChannel12")->name('delivery-channel-12');
 
 
-
-
 Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->name('agrigate-center');
 
 // ============================== SOLUTION ===============
@@ -112,7 +110,7 @@ Route::get('/apply-now/{id}', "UserPanelController@ApplyNow")->name('apply-now')
 
 Route::middleware('auth')->group(function () {
 
-    Route::get('log_out', function (){
+    Route::get('log_out', function () {
         \auth()->logout();
         return redirect('/');
     })->name('logout');
@@ -121,6 +119,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
         return view('admin.admin-content.dashboard.index');
     })->name('admin.dashboard');
+
+
+// ------------------------------- Banner -----------------------------
+
+    Route::resource('admin/banner', "BannerController")->except(['create']);
+
+// ------------------------------- Banner -----------------------------
+
 
 // ------------------------------- Goal -----------------------------
 
@@ -198,9 +204,9 @@ Route::get('/link-storage', function () {
 
 // ------------------------------- Clear cache ----------------------------
 
-Route::get('/clear-cache', function() {
+Route::get('/clear-cache', function () {
     $exitCode = Artisan::call('config:cache');
-    return 'DONE'; //Return anything
+    return 'Cache cleared'; //Return anything
 });
 
 // ------------------------------- Clear cache ----------------------------

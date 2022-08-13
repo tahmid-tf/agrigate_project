@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Banner;
 use App\Buyer;
 use App\Partner;
 use App\Processing;
@@ -21,30 +22,33 @@ class UserPanelController extends Controller
     {
         $goals= Goal::all();
         $testimonials = Testimonial::all();
-        $news= News::skip(0)->take(2)->get();
+        $news= News::skip(0)->take(2)->orderBy('id','desc')->get();
         return view('user.homepage', compact('testimonials', 'goals','news'));
     }
 
     public function Source()
     {
+        $banner = Banner::where('banner','source_from_us')->first();
+//        $processing_and_trade_banner = Banner::where('banner','processing_and_trade')->first();
         $crops= Crop::all();
         $processings = Processing::all();
         $buyers = Buyer::where('tag','b')->get();
 
-        return view('user.source-from-us',compact('crops','processings','buyers'));
+        return view('user.source-from-us',compact('crops','processings','buyers','banner'));
     }
 
     public function Work()
     {
+        $banner = Banner::where('banner','work_with_us')->first();
         $partners= Partner::all();
         $dev_partners = Buyer::where('tag','dp')->get();
 
-        return view('user.work-with-us',compact('partners','dev_partners'));
+        return view('user.work-with-us',compact('partners','dev_partners','banner'));
     }
 
     public function News()
     {
-        $news = News::all();
+        $news = News::orderBy('id','desc')->get();
         return view('user.news',compact('news'));
     }
 
@@ -60,7 +64,8 @@ class UserPanelController extends Controller
     /* Solution for Farmers */
     public function solutions()
     {
-        return view('user.solutions');
+        $banner = Banner::where('banner','solution_for_farmer')->first();
+        return view('user.solutions',compact('banner'));
     }
 //    public function digitalMarket(){
 //
@@ -143,8 +148,9 @@ class UserPanelController extends Controller
     /* Agrigate Center */
     public function AgrigateCenter()
     {
+        $banner = Banner::where('banner','agrigate_center')->first();
         $programs= Program::all();
-        return view('user.agrigate-center',compact('programs'));
+        return view('user.agrigate-center',compact('programs','banner'));
     }
 
     /*------------------------------- Solutions-----------------*/
@@ -153,7 +159,8 @@ class UserPanelController extends Controller
 
     public function AboutUs()
     {
-        return view('user.about-us');
+        $banner = Banner::where('banner','about')->first();
+        return view('user.about-us',compact('banner'));
     }
     /*------------------------------- About Us  ---------------*/
 
@@ -171,8 +178,9 @@ class UserPanelController extends Controller
 
     public function FinancialInclusion()
     {
+        $banner = Banner::where('banner','financial_inclusion')->first();
         $ip_partners = Buyer::where('tag','i')->get();
-        return view('user.financial-inclusion', compact('ip_partners'));
+        return view('user.financial-inclusion', compact('ip_partners','banner'));
     }
 
     public function ApplyForBankAccount()
@@ -197,11 +205,12 @@ class UserPanelController extends Controller
     public function Team()
     {
 
+        $banner = Banner::where('banner','team')->first();
         $directors=Team::where('tag','d')->get();
         $advisors=Team::where('tag','a')->get();
         $teams=Team::where('tag','t')->get();
 
-        return view('user.team',compact('directors','advisors','teams'));
+        return view('user.team',compact('directors','advisors','teams','banner'));
     }
     /*---------------------------- Team ----------------------*/
 
@@ -209,9 +218,9 @@ class UserPanelController extends Controller
 
     public function Career()
     {
-
+        $banner = Banner::where('banner','career')->first();
         $careers= Career::all();
-        return view('user.career',compact('careers'));
+        return view('user.career',compact('careers','banner'));
     }
 
     public function ApplyNow($id)
