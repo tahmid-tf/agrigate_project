@@ -27,6 +27,8 @@
     <script src="https://cdn.tiny.cloud/1/3jyy1zmqqq1lgcadurv15vtpzdvttvplxnvgtpjqjicmj1h5/tinymce/6/tinymce.min.js"
             referrerpolicy="origin"></script>
 
+
+
 </head>
 
 <body id="page-top">
@@ -382,6 +384,18 @@
         // menubar: 'table',
     });
 </script>
+
+{{-------------------------------- hiding tinymce domain notification ----------------------------- --}}
+
+<style>
+    .tox-notifications-container{
+        display: none !important;
+    }
+</style>
+
+
+{{-------------------------------- hiding tinymce domain notification ----------------------------- --}}
+
 
 </body>
 
