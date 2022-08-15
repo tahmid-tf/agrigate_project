@@ -8,13 +8,16 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        <p>Mail Information Related to {{ $topic }}</p>
-        <p>Mail from : {{ $name }}</p>
-        <p>phone No : {{ $phone }}</p>
-        <br>
-        <p>{{ $message }}</p>
+<div>
+    {{--        <p>Mail Information Related to {{ $topic }}</p>--}}
+    <p>Name : {{ $name }}</p>
+    <p>Mail from : {{ $mail }}</p>
+    <p>phone No : {{ $phone }}</p>
+    <br>
+    -------------------------------------------------
 
-    </div>
+    <p>{{ $message_data }}</p>
+
+</div>
 </body>
 </html>

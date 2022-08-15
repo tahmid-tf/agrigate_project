@@ -44,14 +44,18 @@
                 <div class="slider-section">
                     <div class="container-fluid">
                         <div id="owl-demo-3" class="owl-carousel">
-                            <article class="thumbnail item mb-4">
-                                <div>
-                                    <img class=""
-                                         src="{{ asset('images/apps.png') }}" alt="">
-                                    <h4 class="text-center text-white">Feature Title</h4>
-                                    <p class="text-center text-white">Feature Content</p>
-                                </div>
-                            </article>
+
+                            @foreach($app_slider as $app)
+                                <article class="thumbnail item mb-4">
+                                    <div>
+                                        <img class=""
+                                             src="{{ asset('images/apps.png') }}" alt="">
+                                        <h4 class="text-center text-white">{{ \App\User::language_change($app->title_en, $app->title_bn) }}</h4>
+                                        <p class="text-center text-white">{!! \App\User::language_change($app->content_en, $app->content_bn) !!}</p>
+                                    </div>
+                                </article>
+                            @endforeach
+
                         </div>
                         <!-- #owl-demo-2 -->
                     </div>
@@ -69,7 +73,7 @@
             <div class="col-lg-5">
                 <div class="mt-5 mb-5">
                     <a href="#"><img src="{{ asset('images/app-store.png') }}" style="width:280px;"
-                                    class="d-block mx-auto img-fluid mt-3"></a>
+                                     class="d-block mx-auto img-fluid mt-3"></a>
                     <a href="#"><img src="{{ asset('images/play-store.png') }}" style="width:280px;"
                                      class="d-block mx-auto img-fluid mb-2"></a>
                 </div>
@@ -83,12 +87,12 @@
                                     <div class="container-fluid">
                                         <div id="owl-demo-5" class="owl-carousel">
                                             @foreach($sp_partners as $partner)
-                                            <article class="thumbnail item mb-4">
-                                                <div>
-                                                    <img class="service-card-image"
-                                                         src="{{ asset('storage/'.$partner->image) }}" alt="">
-                                                </div>
-                                            </article>
+                                                <article class="thumbnail item mb-4">
+                                                    <div>
+                                                        <img class="service-card-image"
+                                                             src="{{ asset('storage/'.$partner->image) }}" alt="">
+                                                    </div>
+                                                </article>
                                             @endforeach
 
                                         </div>

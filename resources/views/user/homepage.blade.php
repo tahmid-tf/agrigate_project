@@ -31,15 +31,15 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6">
-                <img src="{{ asset('images/image 2.png') }}" class="d-block mx-auto img-fluid">
+                <a href="{{ route('source') }}"><img src="{{ asset('images/image 2.png') }}" class="d-block mx-auto img-fluid"></a>
                 <a href="{{ route('source') }}"><p class="text-center top-section-text-style">@lang('home.Source from Us')</p></a>
             </div>
             <div class="col-lg-4 col-md-6">
-                <img src="{{ asset('images/image 3.png') }}" class="d-block mx-auto img-fluid">
+                <a href="{{ route('work') }}"><img src="{{ asset('images/image 3.png') }}" class="d-block mx-auto img-fluid"></a>
                 <a href="{{ route('work') }}"><p class="text-center top-section-text-style">@lang('home.Work with Us')</p></a>
             </div>
             <div class="col-lg-4 col-md-6">
-                <img src="{{ asset('images/image 1.png') }}" class="d-block mx-auto img-fluid">
+                <a href="{{ route('solutions') }}"><img src="{{ asset('images/image 1.png') }}" class="d-block mx-auto img-fluid"></a>
                 <a href="{{ route('solutions') }}"><p class="text-center top-section-text-style">@lang('home.Grow with Us')</p></a>
             </div>
         </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\App;
 use App\Banner;
 use App\Buyer;
 use App\Partner;
@@ -169,7 +170,8 @@ class UserPanelController extends Controller
     public function App()
     {
         $sp_partners = Buyer::where('tag','sp')->get();
-        return view('user.app', compact('sp_partners'));
+        $app_slider = App::all();
+        return view('user.app', compact('sp_partners','app_slider'));
     }
     /*------------------------------- APP  ---------------*/
 
