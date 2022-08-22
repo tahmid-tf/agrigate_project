@@ -28,6 +28,7 @@ return [
 
     "Solution For Farmers" => 'কৃষকের জন্য সমাধান',
     "Agrigate Center" => 'এগ্রিগেট কেন্দ্র',
+    "Solution For entrepreneur" => 'উদ্যোক্তার জন্য সমাধান',
 
 
 ];

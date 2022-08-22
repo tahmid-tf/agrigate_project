@@ -28,5 +28,6 @@ return [
 
     "Solution For Farmers" => 'Solution for farmer',
     "Agrigate Center" => 'Agrigate Center',
+    "Solution For entrepreneur" => 'Solution For entrepreneur',
 
 ];
