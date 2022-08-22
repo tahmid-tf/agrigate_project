@@ -86,7 +86,7 @@
     <section class="section-dark-green-bg py-4">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 mb-4">
+                <div class="col-lg-2 mb-4">
                     <div class="card facts-card">
                         <h5 class="card-top-text">@lang('home.Farmers Onboarded')</h5>
 
@@ -96,7 +96,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-4">
+                <div class="col-lg-2 mb-4">
                     <div class="card facts-card">
                         <h5 class="card-top-text">@lang('home.Livestock Farmers Onboarded')</h5>
 
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-4">
+                <div class="col-lg-2 mb-4">
                     <div class="card facts-card">
                         <h5 class="card-top-text">@lang('home.Input Sellers Onboarded')</h5>
 
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-4">
+                <div class="col-lg-2 mb-4">
                     <div class="card facts-card">
                         <h5 class="card-top-text">@lang('home.Advisory service provided')</h5>
 
@@ -126,11 +126,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container mt-4">
-            <div class="row d-flex justify-content-center">
-                <div class="col-lg-3 mb-4">
+
+                <div class="col-lg-2 mb-4">
                     <div class="card facts-card">
                         <h5 class="card-top-text">@lang('home.Soil Testing (pH & Moisture)')</h5>
 
@@ -140,7 +137,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 mb-4">
+
+                <div class="col-lg-2 mb-4">
                     <div class="card facts-card">
                         <h5 class="card-top-text">@lang('home.Grain Moisture Test')</h5>
 
@@ -150,6 +148,33 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row d-flex justify-content-center">
+{{--                <div class="col-lg-3 mb-4">--}}
+{{--                    <div class="card facts-card">--}}
+{{--                        <h5 class="card-top-text">@lang('home.Soil Testing (pH & Moisture)')</h5>--}}
+
+{{--                        <img class="card-image-top img-fluid" src="{{ asset('images/facts-5.png') }}" alt="">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <p class="card-bottom-text">3500</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
+{{--                <div class="col-lg-3 mb-4">--}}
+{{--                    <div class="card facts-card">--}}
+{{--                        <h5 class="card-top-text">@lang('home.Grain Moisture Test')</h5>--}}
+
+{{--                        <img class="card-image-top img-fluid" src="{{ asset('images/facts-6.png') }}" alt="">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <p class="card-bottom-text">1000</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
             </div>
         </div>
 
@@ -175,11 +200,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="container mt-5">
-            <div class="row d-flex justify-content-center">
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
                         <h5 class="card-top-text">@lang('home.Bank Account Opening')</h5>
@@ -190,6 +210,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="col-lg-3 mb-4">
                     <div class="card facts-card">
                         <h5 class="card-top-text">@lang("home.Paid Directly into Farmer's Account")</h5>
@@ -200,6 +221,34 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row d-flex justify-content-center">
+{{--                <div class="col-lg-3 mb-4">--}}
+{{--                    <div class="card facts-card">--}}
+{{--                        <h5 class="card-top-text">@lang('home.Bank Account Opening')</h5>--}}
+
+{{--                        <img class="card-image-top img-fluid" src="{{ asset('images/facts-9.png') }}" alt="">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <p class="card-bottom-text">1400</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
+{{--                <div class="col-lg-3 mb-4">--}}
+{{--                    <div class="card facts-card">--}}
+{{--                        <h5 class="card-top-text">@lang("home.Paid Directly into Farmer's Account")</h5>--}}
+
+{{--                        <img class="card-image-top img-fluid" src="{{ asset('images/facts-10.png') }}" alt="">--}}
+{{--                        <div class="card-body">--}}
+{{--                            <p class="card-bottom-text">1 Cr. BDT</p>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+
 {{--                <div class="col-lg-3 mb-4">--}}
 {{--                    <div class="card facts-card">--}}
 {{--                        <h5 class="card-top-text">Turnover</h5>--}}

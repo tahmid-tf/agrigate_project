@@ -24,7 +24,7 @@
 </header>
 
 <section>
-    <x-user.banner.banner-component></x-user.banner.banner-component>
+{{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
 </section>
 
 <section>

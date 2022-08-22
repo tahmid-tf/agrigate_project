@@ -93,7 +93,7 @@ class BannerController extends Controller
 //            'content_bn' => 'required',
 //            'content_en' => 'required',
             'image' => 'mimes:jpeg,jpg,png',
-            'banner' => 'required',
+//            'banner' => 'required',
         ]);
 
         if (request('image')) {

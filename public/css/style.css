@@ -335,12 +335,12 @@ article card .project-card {
 .facts-card {
     background-color: #E2EFD9 !important;
     border-radius: 42px !important;
-    height: 320px;
+    height: 280px;
 }
 
 .card-image-top {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     display: block;
