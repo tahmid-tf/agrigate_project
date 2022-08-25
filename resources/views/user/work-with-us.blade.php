@@ -15,6 +15,19 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css"/>
 
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"
+        async
+    ></script>
+
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
 
 </head>
 <body class="section-light-green-bg">
@@ -24,7 +37,7 @@
 </header>
 
 <section>
-{{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
+    {{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
 </section>
 
 <section>
@@ -32,7 +45,14 @@
         <p class="subpages-heading">Work with Us</p>
     </div>
     <div>
-        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+        <!-- ----------------------------- optimized image ------------------------ -->
+
+        <a href="{{ asset('storage/' . $banner->image) }}" class="progressive replace">
+            <img src="{{ asset('storage/' . $banner->image) }}" class="preview img-fluid " style="width:100%;"
+                 alt="No image"/>
+        </a>
+
+        <!-- ----------------------------- optimized image ------------------------ -->
 
     </div>
 </section>
@@ -114,7 +134,8 @@
 
                                     <article class="thumbnail item mb-4">
                                         <div>
-                                            <img class="finance-card-image" src="{{ asset('storage/'.$partner->image) }}"
+                                            <img class="finance-card-image"
+                                                 src="{{ asset('storage/'.$partner->image) }}"
                                                  alt="">
                                         </div>
                                     </article>

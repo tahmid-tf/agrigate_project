@@ -19,6 +19,19 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"
+        async
+    ></script>
+
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
 
 </head>
 
@@ -37,7 +50,17 @@
         <p class="subpages-heading">Our Solution for Farmers</p>
     </div>
     <div>
-        <img src="{{ asset('storage/' . $banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+
+
+        <!-- ----------------------------- optimized image ------------------------ -->
+
+        <a href="{{ asset('storage/' . $banner->image) }}" class="progressive replace">
+            <img src="{{ asset('storage/' . $banner->image) }}" class="preview img-fluid " style="width:100%;" alt="No image"/>
+        </a>
+
+        <!-- ----------------------------- optimized image ------------------------ -->
+
+{{--        <img src="{{ asset('storage/' . $banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">--}}
     </div>
 </section>
 

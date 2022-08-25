@@ -15,6 +15,19 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css"/>
 
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"
+        async
+    ></script>
+
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
 
 </head>
 <body class="section-light-green-bg">
@@ -24,7 +37,7 @@
 </header>
 
 <section>
-{{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
+    {{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
 </section>
 
 <section>
@@ -32,7 +45,14 @@
         <p class="subpages-heading">Source From Us</p>
     </div>
     <div>
-        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+        <!-- ----------------------------- optimized image ------------------------ -->
+
+        <a href="{{ asset('storage/' . $banner->image) }}" class="progressive replace">
+            <img src="{{ asset('storage/' . $banner->image) }}" class="preview img-fluid " style="width:100%;"
+                 alt="No image"/>
+        </a>
+
+        <!-- ----------------------------- optimized image ------------------------ -->
 
     </div>
 </section>
@@ -73,12 +93,12 @@
                         @foreach($crops as $crop)
                             <article class="thumbnail item mb-4">
                                 <div class="card program-2-card" style="width: 18rem;">
-{{--                                    <h5 class="program-2-card-title mt-4">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h5>--}}
+                                    {{--                                    <h5 class="program-2-card-title mt-4">{{ \App\User::language_change($crop->title_en,$crop->title_bn) }}</h5>--}}
                                     <br>
                                     <img class="card-img-top program-2-card-image d-block mx-auto"
                                          src="{{asset('storage/'.$crop->image) }}" alt="">
                                     <div class="card-body text-center" style="">
-                                      <span>{!! \App\User::language_change($crop->title_en,$crop->title_bn) !!}</span>
+                                        <span>{!! \App\User::language_change($crop->title_en,$crop->title_bn) !!}</span>
 
                                     </div>
                                 </div>

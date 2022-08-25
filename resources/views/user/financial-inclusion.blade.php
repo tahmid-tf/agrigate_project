@@ -15,6 +15,19 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css"/>
 
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"
+        async
+    ></script>
+
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
 
 </head>
 <body>
@@ -32,7 +45,13 @@
         <p class="subpages-heading">Financial Inclusion</p>
     </div>
     <div>
-        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+        <!-- ----------------------------- optimized image ------------------------ -->
+
+        <a href="{{ asset('storage/' . $banner->image) }}" class="progressive replace">
+            <img src="{{ asset('storage/' . $banner->image) }}" class="preview img-fluid " style="width:100%;" alt="No image"/>
+        </a>
+
+        <!-- ----------------------------- optimized image ------------------------ -->
 
     </div>
 </section>

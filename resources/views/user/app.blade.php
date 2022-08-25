@@ -16,6 +16,19 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css" />
 
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"
+        async
+    ></script>
+
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
     <style>
         ul li {
             color: white
@@ -56,6 +69,7 @@
                                     <article class="thumbnail item mb-4">
                                         <div>
                                             <img class="" src="{{ asset('images/apps.png') }}" alt="">
+
                                             <h4 class="text-center text-white">
                                                 {{ \App\User::language_change($app->title_en, $app->title_bn) }}</h4>
                                             <p class="text-center text-white">{!! \App\User::language_change($app->content_en, $app->content_bn) !!}</p>

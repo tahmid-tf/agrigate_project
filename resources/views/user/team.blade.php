@@ -15,6 +15,19 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.6/assets/owl.theme.default.min.css"/>
 
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+    />
+    <script
+        src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"
+        async
+    ></script>
+
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
 
 </head>
 <body>
@@ -24,7 +37,7 @@
 </header>
 
 <section>
-{{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
+    {{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
 </section>
 
 <section>
@@ -32,7 +45,14 @@
         <p class="subpages-heading">Team</p>
     </div>
     <div>
-        <img src="{{ asset('storage/'.$banner->image) }}" class="img-fluid" style="width:100%;" alt="No image">
+        <!-- ----------------------------- optimized image ------------------------ -->
+
+        <a href="{{ asset('storage/' . $banner->image) }}" class="progressive replace">
+            <img src="{{ asset('storage/' . $banner->image) }}" class="preview img-fluid " style="width:100%;"
+                 alt="No image"/>
+        </a>
+
+        <!-- ----------------------------- optimized image ------------------------ -->
     </div>
 </section>
 
@@ -50,8 +70,19 @@
                 @foreach($directors as $director)
                     <div class="col-lg-4 col-md-6 col-sm-12 mb-4 mt-4">
                         <div class="card program-card mx-auto " style="width: 18rem;">
-                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$director->image) }}"
-                                 alt="">
+
+
+                            <!-- ----------------------------- optimized image ------------------------ -->
+
+                            <a href="{{ asset('storage/'.$director->image) }}" class="progressive replace program-card-image">
+                                <img src="{{ asset('storage/'.$director->image) }}" class="preview img-fluid card-img-top program-card-image"
+                                     alt="No image"/>
+                            </a>
+
+                            <!-- ----------------------------- optimized image ------------------------ -->
+
+{{--                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$director->image) }}"--}}
+{{--                                 alt="">--}}
                             <div class="card-body program-card-bottom section-dark-green-bg" style="">
                                 <h6 class="text-white text-right">{{ \App\User::language_change($director->title_en,$director->title_bn) }}</h6>
                                 <h6 class="text-white text-right mb-3">{{ \App\User::language_change($director->position_en,$director->position_bn) }}</h6>
@@ -87,8 +118,19 @@
                 @foreach($advisors as $advisor)
                     <div class="col-lg-4 col-md-6 mb-4 mt-4">
                         <div class="card program-card mx-auto" style="width: 18rem;">
-                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$advisor->image) }}"
-                                 alt="">
+
+                            <!-- ----------------------------- optimized image ------------------------ -->
+
+                            <a href="{{ asset('storage/'.$advisor->image) }}" class="progressive replace program-card-image">
+                                <img src="{{ asset('storage/'.$advisor->image) }}" class="preview card-img-top program-card-image"
+                                     alt="No image"/>
+                            </a>
+
+                            <!-- ----------------------------- optimized image ------------------------ -->
+
+{{--                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$advisor->image) }}"--}}
+{{--                                 alt="">--}}
+
                             <div class="card-body program-card-bottom section-dark-green-bg" style="">
                                 <h6 class="text-white text-right">{{ \App\User::language_change($advisor->title_en,$advisor->title_bn) }}</h6>
                                 <h6 class="text-white text-right mb-3">{{ \App\User::language_change($advisor->position_en,$advisor->position_bn) }}</h6>
@@ -125,8 +167,19 @@
                 @foreach($teams as $team)
                     <div class="col-lg-4 col-md-6 mb-4 mt-4">
                         <div class="card program-card mx-auto" style="width: 18rem;">
-                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$team->image) }}"
-                                 alt="">
+
+                            <!-- ----------------------------- optimized image ------------------------ -->
+
+                            <a href="{{ asset('storage/'.$team->image) }}" class="progressive replace program-card-image">
+                                <img src="{{ asset('storage/'.$team->image) }}" class="preview img-fluid card-img-top program-card-image"
+                                     alt="No image"/>
+                            </a>
+
+                            <!-- ----------------------------- optimized image ------------------------ -->
+
+{{--                            <img class="card-img-top program-card-image" src="{{ asset('storage/'.$team->image) }}"--}}
+{{--                                 alt="">--}}
+
                             <div class="card-body program-card-bottom section-dark-green-bg" style="">
                                 <h6 class="text-white text-right">{{ \App\User::language_change($team->title_en,$team->title_bn) }}</h6>
                                 <h6 class="text-white text-right mb-3">{{ \App\User::language_change($team->position_en,$team->position_bn) }}</h6>
