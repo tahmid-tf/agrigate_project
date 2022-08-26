@@ -77,13 +77,25 @@
         <p class="subpages-heading">Our Partners</p>
     </div>
     <div>
+
+        <?php $id = 0; ?>
+
         @foreach($partners as $partner)
-            @if($partner->id%2==1)
+
+            <?php $id += 1 ?>
+            @if($id%2==1)
 
                 <div class="row ml-0 mr-0">
                     <div class="col-lg-6 mb-4">
-                        <img src="{{ asset('storage/'.$partner->image) }}"
-                             class="d-sm-block mx-auto processing-image img-fluid">
+                        {{--                        <img src="{{ asset('storage/'.$partner->image) }}"--}}
+                        {{--                             class="d-sm-block mx-auto processing-image img-fluid">--}}
+
+
+                        <a href="{{ asset('storage/'.$partner->image) }}" class="progressive replace">
+                            <img src="{{ asset('storage/'.$partner->image) }}"
+                                 class="preview img-fluid d-sm-block mx-auto processing-image" style="width:100%;"
+                                 alt="No image"/>
+                        </a>
                     </div>
                     <div class="col-lg-6 mt-5">
                         <div class="team-heading mx-auto">
@@ -95,7 +107,10 @@
                         </div>
                     </div>
                 </div>
-            @elseif($partner->id%2==0)
+
+            @elseif($id%2==0)
+
+
 
                 <div class="row ml-0 mr-0">
 
@@ -109,8 +124,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6 mb-4">
-                        <img src="{{ asset('storage/'.$partner->image) }}"
-                             class="d-sm-block mx-auto processing-image img-fluid">
+                        <a href="{{ asset('storage/'.$partner->image) }}" class="progressive replace">
+                            <img src="{{ asset('storage/'.$partner->image) }}"
+                                 class="preview img-fluid d-sm-block mx-auto processing-image" style="width:100%;"
+                                 alt="No image"/>
+                        </a>
                     </div>
                 </div>
             @endif

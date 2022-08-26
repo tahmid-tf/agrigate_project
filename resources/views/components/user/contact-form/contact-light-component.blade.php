@@ -64,9 +64,3 @@
         color: #E2EFD9;
     }
 </style>
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Securi
