@@ -37,7 +37,7 @@
 </header>
 
 <section>
-{{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
+    {{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
 </section>
 
 <section>
@@ -52,16 +52,21 @@
 
         @if($news != null)
 
-        <div class="container mt-5">
-            <h5 class="subtext-style">{{ \App\User::language_change($news->title_en,$news->title_bn) }}</h5>
-            <h6>12 August, 2022 </h6>
-            <div class="mt-3 mb-3">
-                <img src="{{ asset('storage/'.$news->image)  }}" class="img-fluid">
+            <div class="container mt-5">
+                <h5 class="subtext-style">{{ \App\User::language_change($news->title_en,$news->title_bn) }}</h5>
+                <h6>12 August, 2022 </h6>
+                <div class="mt-3 mb-3">
+                    {{--                    <img src="{{ asset('storage/'.$news->image)  }}" class="img-fluid">--}}
+
+                    <a href="{{ asset('storage/'.$news->image) }}" class="progressive replace">
+                        <img src="{{ asset('storage/'.$news->image) }}" class="preview img-fluid"
+                             alt="No image"/>
+                    </a>
+                </div>
+                <div>
+                    <p class="solutions-card-text-2">{!!  \App\User::language_change($news->content_en,$news->content_bn) !!} </p>
+                </div>
             </div>
-            <div>
-                <p class="solutions-card-text-2">{!!  \App\User::language_change($news->content_en,$news->content_bn) !!} </p>
-            </div>
-        </div>
         @endif
     </div>
 </section>
