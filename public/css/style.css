@@ -471,7 +471,7 @@ article card .project-card {
 
 .solutions-card-text {
     color: #fff;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 700;
     text-align: justify;
 }
@@ -601,7 +601,7 @@ hr {
 .finance-buttons {
     background: #255302;
     width: 250px;
-    height: 80px;
+    height: 96px;
     border: none;
     border-radius: 20px;
     color: #fff;
@@ -652,7 +652,7 @@ hr {
 }
 
 .career-card {
-    height: 300px !important;
+    height: 192px !important;
     border-radius: 20px !important;
     background: #255302 !important;
 }
@@ -668,7 +668,7 @@ hr {
 .career-subheading {
     color: #fff;
     font-weight: 700;
-    margin-top: 170px;
+    margin-top: 92px;
     font-size: 20px;
 }
 
@@ -869,7 +869,7 @@ hr {
     .bottom-right {
         position: absolute;
         top: 45%;
-        left: 56%;
+        left: 56.5%;
         transform: translate(-30%, -1%);
     }
     .bottom-right-2 {
@@ -880,7 +880,7 @@ hr {
 
     }
     .agrigate-styles{
-        margin-left: -1200px;
+        /* margin-left: -1200px; */
     }
 
 }
@@ -891,7 +891,7 @@ hr {
     .bottom-left {
         position: absolute;
         top: 45%;
-        left: 20%;
+        left: 15%;
     }
 
     .bottom-right{

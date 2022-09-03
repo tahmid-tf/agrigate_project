@@ -6,7 +6,7 @@ return [
     'Work with Us' => 'Work with Us',
     'Grow with Us' => 'Grow with Us',
     'Our initiative aligns with the Sustainable Development Goals:' => 'Our initiative aligns with the Sustainable Development Goals:',
-    'Facts & Figures/(Our Impact)' => 'Facts & Figures/(Our Impact)',
+    'Facts & Figures/(Our Impact)' => 'Our Impact',
     'Farmers Onboarded' => 'Farmers Onboarded',
     'Livestock Farmers Onboarded' => 'Livestock Farmers Onboarded',
     'Input Sellers Onboarded' => 'Input Sellers Onboarded',
@@ -26,8 +26,8 @@ return [
     "Testimonials" => 'Testimonials',
     "View All News" => 'View All News',
 
-    "Solution For Farmers" => 'Solution for farmer',
+    "Solution For Farmers" => 'Solution for Farmer',
     "Agrigate Center" => 'Agrigate Center',
-    "Solution For entrepreneur" => 'Solution For entrepreneur',
+    "Solution For entrepreneur" => 'Solution For Entrepreneur',
 
 ];
