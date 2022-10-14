@@ -5,21 +5,6 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\TestimonialController;
 use Illuminate\Support\Facades\Artisan;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
-
-
-//Route::get('/tt', function () {
-//    return view('welcome');
-//});
 
 // --------------------------------- language translation ---------------------------------------------
 
@@ -43,6 +28,9 @@ Route::get('/source-from-us', "UserPanelController@Source")->name('source');
 Route::get('/work-with-us', "UserPanelController@Work")->name('work');
 Route::get('/news', "UserPanelController@News")->name('news');
 Route::get('/single-news/{id}', "UserPanelController@SingleNews")->name('single-news');
+
+Route::get('/project', "UserPanelController@project")->name('project');
+Route::get('/single-project/{id}', "UserPanelController@SingleProject")->name('single-project');
 
 
 // ============================== HOMEPAGE ===============
@@ -102,7 +90,6 @@ Route::get('/team', "UserPanelController@Team")->name('team');
 Route::get('/career', "UserPanelController@Career")->name('career');
 Route::get('/apply-now/{id}', "UserPanelController@ApplyNow")->name('apply-now');
 
-
 // ============================== Career ===============
 
 // ----------------------------------------------------------------- Auth routes ----------------------------------------------------------------------------------
@@ -120,6 +107,11 @@ Route::middleware('auth')->group(function () {
         return view('admin.admin-content.dashboard.index');
     })->name('admin.dashboard');
 
+    // ------------------------------- Slider -----------------------------
+
+    Route::resource('admin/slider', "SliderController");
+
+// ------------------------------- Slider -----------------------------
 
 // ------------------------------- Banner -----------------------------
 
@@ -195,6 +187,12 @@ Route::middleware('auth')->group(function () {
     Route::resource('admin/app', "AppController");
 
 // ------------------------------- App -----------------------------
+
+    // ------------------------------- Project -----------------------------
+
+    Route::resource('admin/project', "ProjectController");
+
+// ------------------------------- Project -----------------------------
 
 });
 

@@ -37,37 +37,32 @@
 </header>
 
 <section>
-    {{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
+{{--    <x-user.banner.banner-component></x-user.banner.banner-component>--}}
 </section>
 
 <section>
     <div class="section-dark-green-bg py-2">
         <p class="subpages-heading">Project</p>
     </div>
-
 </section>
 
-<section>
-    <div class="section-light-green-bg py-2">
+<section class="section-dark-green-bg py-4">
 
-        @if($news != null)
-
-            <div class="container mt-5">
-                <h5 class="subtext-style">{{ \App\User::language_change($news->title_en,$news->title_bn) }}</h5>
-                <h6>12 August, 2022 </h6>
-                <div class="mt-3 mb-3">
-
-                    <a href="{{ asset('storage/'.$news->image) }}" class="progressive replace">
-                        <img src="{{ asset('storage/'.$news->image) }}" class="preview img-fluid"
-                             alt="No image"/>
-                    </a>
+    @foreach($news as $news)
+        <div class="mx-auto mb-3" id="news-card-2">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card-body mt-3">
+                        <h5 class="subtext-style">{{ \App\User::language_change($news->title_en,$news->title_bn) }}</h5>
+                        <a href="{{ route('single-project', $news->id) }}" class="read-more"><p>Read more...</p></a>
+                    </div>
                 </div>
-                <div>
-                    <p class="solutions-card-text-2">{!!  \App\User::language_change($news->content_en,$news->content_bn) !!} </p>
+                <div class="col-md-4">
+                    <img src="{{ asset('storage/'.$news->image) }}" class="news-image px-2 mt-4 mb-4 img-fluid">
                 </div>
             </div>
-        @endif
-    </div>
+        </div>
+    @endforeach
 </section>
 
 
