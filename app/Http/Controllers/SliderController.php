@@ -81,7 +81,7 @@ class SliderController extends Controller
     public function update(Request $request, Slider $slider)
     {
         $inputs = \request()->validate([
-            'image' => 'required',
+            'image' => 'nullable',
         ]);
 
         if (request('image')) {
