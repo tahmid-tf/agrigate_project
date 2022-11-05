@@ -10,7 +10,7 @@ body {
 
 .main-section {
   background-image: url(images/image.png);
-  height: 650px;
+  height: 820px;
   width: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,7 +108,7 @@ body {
 @media only screen and (device-width: 1366px) and (device-height: 768px) {
   .main-section {
     background-image: url(images/image.png);
-    height: 400px;
+    height: 550px;
   }
 
   .left-paragraph {
