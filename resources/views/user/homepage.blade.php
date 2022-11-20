@@ -43,7 +43,7 @@
     {{--        <x-user.banner.banner-component></x-user.banner.banner-component>--}}
 
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-interval="false">
         <ol class="carousel-indicators">
             <?php $id_1 = 0; ?>
             @foreach($sliders as $banner)
@@ -69,7 +69,7 @@
 
                             <img class="d-block w-100" src="{{ asset('storage/'.$banner->image) }}" alt="First slide">
                         @else
-                            <video class="img-fluid" autoplay loop muted>
+                            <video class="img-fluid" autoplay loop controls>
                                 <source src="{{ asset('storage/'.$banner->image) }}" type="video/mp4"/>
                             </video>
                         @endif
@@ -84,7 +84,7 @@
 
                             <img class="d-block w-100" src="{{ asset('storage/'.$banner->image) }}" alt="First slide">
                         @else
-                            <video class="img-fluid" autoplay loop muted>
+                            <video class="img-fluid" autoplay loop controls>
                                 <source src="{{ asset('storage/'.$banner->image) }}" type="video/mp4"/>
                             </video>
                         @endif

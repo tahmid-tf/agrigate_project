@@ -27,7 +27,13 @@ class UserPanelController extends Controller
         $goals = Goal::all();
         $testimonials = Testimonial::all();
         $news = News::skip(0)->take(2)->orderBy('id', 'desc')->get();
-        return view('user.homepage', compact('testimonials', 'goals', 'news', 'sliders'));
+        $crops = Crop::all();
+
+//        return view('user.homepage', compact('testimonials', 'goals', 'news', 'sliders'));
+
+        return view('user.v2.front', compact('testimonials', 'goals', 'news', 'sliders','crops'));
+
+
     }
 
     public function Source()
