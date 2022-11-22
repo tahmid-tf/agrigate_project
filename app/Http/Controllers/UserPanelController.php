@@ -73,14 +73,14 @@ class UserPanelController extends Controller
 
     public function Project()
     {
-        $news = Project::orderBy('id', 'desc')->get();
-        return view('user.project', compact('news'));
+        $projects = Project::orderBy('id', 'desc')->get();
+        return view('user.v2.project', compact('projects'));
     }
 
     public function SingleProject($id)
     {
-        $news = Project::find($id);
-        return view('user.single-news', compact('news'));
+        $project_details = Project::find($id);
+        return view('user.v2.project-details', compact('project_details'));
     }
 
 // ---------------------------------- Project ---------------------------------------
@@ -239,7 +239,8 @@ class UserPanelController extends Controller
         $advisors = Team::where('tag', 'a')->get();
         $teams = Team::where('tag', 't')->get();
 
-        return view('user.team', compact('directors', 'advisors', 'teams', 'banner'));
+//        return view('user.team', compact('directors', 'advisors', 'teams', 'banner'));
+        return view('user.v2.team', compact('directors', 'advisors', 'teams', 'banner'));
     }
     /*---------------------------- Team ----------------------*/
 
@@ -249,7 +250,7 @@ class UserPanelController extends Controller
     {
         $banner = Banner::where('banner', 'career')->first();
         $careers = Career::all();
-        return view('user.career', compact('careers', 'banner'));
+        return view('user.v2.career', compact('careers', 'banner'));
     }
 
     public function ApplyNow($id)
