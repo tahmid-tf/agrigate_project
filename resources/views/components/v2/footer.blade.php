@@ -8,7 +8,7 @@
                 <!-- Single Itme -->
                 <div class="col-lg-4 col-md-6 item">
                     <div class="footer-item about">
-                        <img class="logo" src="assets/img/logo-light.png" alt="Logo">
+                        <img class="logo" src="{{ asset('assets/img/logos.png') }}" alt="Logo">
                         <p>
                             Happen active county. Winding morning ambition shyness evident to poor. Because elderly
                             new
@@ -58,7 +58,7 @@
                             <li>
                                 <div class="thumb">
                                     <a href="blog-single-with-sidebar.html">
-                                        <img src="assets/img/thumbs/3.jpg" alt="Thumb">
+                                        <img src="{{ asset('assets/img/thumbs/3.jpg') }}" alt="Thumb">
                                     </a>
                                 </div>
                                 <div class="info">
@@ -72,7 +72,7 @@
                             <li>
                                 <div class="thumb">
                                     <a href="blog-single-with-sidebar.html">
-                                        <img src="assets/img/thumbs/5.jpg" alt="Thumb">
+                                        <img src="{{ asset('assets/img/thumbs/5.jpg') }}" alt="Thumb">
                                     </a>
                                 </div>
                                 <div class="info">
@@ -151,10 +151,10 @@
         <!-- End Footer Bottom -->
     </div>
     <div class="shape-right-bottom">
-        <img src="assets/img/shape/10.png" alt="Image Not Found">
+        <img src="{{ asset('assets/img/shape/10.png') }}" alt="Image Not Found">
     </div>
     <div class="shape-left-bottom">
-        <img src="assets/img/shape/11.png" alt="Image Not Found">
+        <img src="{{ asset('assets/img/shape/11.png') }}" alt="Image Not Found">
     </div>
 </footer>
 <!-- End Footer -->

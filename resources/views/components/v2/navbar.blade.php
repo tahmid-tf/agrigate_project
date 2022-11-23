@@ -94,31 +94,31 @@
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
                         <li class="">
                             <a href="{{ route('homepage') }}" class="dropdown-toggle" data-toggle="dropdown">Home</a>
-                            {{--                            <ul class="dropdown-menu">--}}
-                            {{--                                <li><a href="index.html">Agriculture</a></li>--}}
-                            {{--                                <li><a href="index-3.html">Farm Shop</a></li>--}}
-                            {{--                                <li><a href="index-2.html">Organic Farm</a></li>--}}
-                            {{--                            </ul>--}}
+                            {{--                            <ul class="dropdown-menu"> --}}
+                            {{--                                <li><a href="index.html">Agriculture</a></li> --}}
+                            {{--                                <li><a href="index-3.html">Farm Shop</a></li> --}}
+                            {{--                                <li><a href="index-2.html">Organic Farm</a></li> --}}
+                            {{--                            </ul> --}}
                         </li>
 
                         <li class="">
                             <a href="{{ route('team') }}" class="dropdown-toggle" data-toggle="dropdown">Team</a>
-                            {{--                            <ul class="dropdown-menu">--}}
-                            {{--                                <li><a href="about-us.html">About Us</a></li>--}}
-                            {{--                                <li><a href="team.html">Team</a></li>--}}
-                            {{--                                <li><a href="team-details.html">Team Details</a></li>--}}
-                            {{--                                <li><a href="contact-us.html">Contact Us</a></li>--}}
-                            {{--                                <li><a href="faq.html">Faq</a></li>--}}
-                            {{--                                <li><a href="404.html">Error Page</a></li>--}}
-                            {{--                            </ul>--}}
+                            {{--                            <ul class="dropdown-menu"> --}}
+                            {{--                                <li><a href="about-us.html">About Us</a></li> --}}
+                            {{--                                <li><a href="team.html">Team</a></li> --}}
+                            {{--                                <li><a href="team-details.html">Team Details</a></li> --}}
+                            {{--                                <li><a href="contact-us.html">Contact Us</a></li> --}}
+                            {{--                                <li><a href="faq.html">Faq</a></li> --}}
+                            {{--                                <li><a href="404.html">Error Page</a></li> --}}
+                            {{--                            </ul> --}}
                         </li>
 
                         <li class="">
                             <a href="{{ route('project') }}" class="dropdown-toggle" data-toggle="dropdown">Projects</a>
-                            {{--                            <ul class="dropdown-menu">--}}
-                            {{--                                <li><a href="project.html">Project</a></li>--}}
-                            {{--                                <li><a href="project-details.html">Project Details</a></li>--}}
-                            {{--                            </ul>--}}
+                            {{--                            <ul class="dropdown-menu"> --}}
+                            {{--                                <li><a href="project.html">Project</a></li> --}}
+                            {{--                                <li><a href="project-details.html">Project Details</a></li> --}}
+                            {{--                            </ul> --}}
                         </li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
@@ -128,24 +128,35 @@
                                 <li><a href="services-details.html">Agrigate Center</a></li>
                             </ul>
                         </li>
+
                         <li class="dropdown">
-                            <a href="#" class="" data-toggle="dropdown">About</a>
-{{--                            <ul class="dropdown-menu">--}}
-{{--                                <li><a href="blog-standard.html">Blog Standard</a></li>--}}
-{{--                                <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>--}}
-{{--                                <li><a href="blog-2-colum.html">Blog Grid Two Colum</a></li>--}}
-{{--                                <li><a href="blog-3-colum.html">Blog Grid Three Colum</a></li>--}}
-{{--                                <li><a href="blog-single.html">Blog Single</a></li>--}}
-{{--                                <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li>--}}
-{{--                            </ul>--}}
+                            <a href="{{ route('app') }}" class="" data-toggle="dropdown">Services</a>
+                            {{--                            <ul class="dropdown-menu"> --}}
+                            {{--                                <li><a href="shop.html">Shop</a></li> --}}
+                            {{--                                <li><a href="shop-single.html">Shop Single</a></li> --}}
+                            {{--                                <li><a href="shop-single-thumb-only.html">Shop Single Two</a></li> --}}
+                            {{--                            </ul> --}}
+                        </li>
+
+
+                        <li class="dropdown">
+                            <a href="{{ route('about') }}" class="" data-toggle="dropdown">About</a>
+                            {{--                            <ul class="dropdown-menu"> --}}
+                            {{--                                <li><a href="blog-standard.html">Blog Standard</a></li> --}}
+                            {{--                                <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li> --}}
+                            {{--                                <li><a href="blog-2-colum.html">Blog Grid Two Colum</a></li> --}}
+                            {{--                                <li><a href="blog-3-colum.html">Blog Grid Three Colum</a></li> --}}
+                            {{--                                <li><a href="blog-single.html">Blog Single</a></li> --}}
+                            {{--                                <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li> --}}
+                            {{--                            </ul> --}}
                         </li>
                         <li class="dropdown">
                             <a href="{{ route('career') }}" class="" data-toggle="dropdown">Career</a>
-                            {{--                            <ul class="dropdown-menu">--}}
-                            {{--                                <li><a href="shop.html">Shop</a></li>--}}
-                            {{--                                <li><a href="shop-single.html">Shop Single</a></li>--}}
-                            {{--                                <li><a href="shop-single-thumb-only.html">Shop Single Two</a></li>--}}
-                            {{--                            </ul>--}}
+                            {{--                            <ul class="dropdown-menu"> --}}
+                            {{--                                <li><a href="shop.html">Shop</a></li> --}}
+                            {{--                                <li><a href="shop-single.html">Shop Single</a></li> --}}
+                            {{--                                <li><a href="shop-single-thumb-only.html">Shop Single Two</a></li> --}}
+                            {{--                            </ul> --}}
                         </li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
