@@ -5,15 +5,17 @@
         <div class="row align-center">
             <div class="col-lg-9">
                 <div class="flex-item left">
-                    <p>
-                        That's right, we only sell 100% organic
-                    </p>
+{{--                    <p>--}}
+{{--                        That's right, we only sell 100% organic--}}
+{{--                    </p>--}}
                     <ul>
                         <li>
-                            <i class="fas fa-map-marker-alt"></i> California, TX 70240
+                            <a href="https://www.google.com/maps/place/Agrigate+Network+Limited/@23.790099,90.4073644,17z/data=!3m1!4b1!4m5!3m4!1s0x3755c7896c1a4c3f:0xf0c074963d9ee0cb!8m2!3d23.7900941!4d90.4095531">   <i class="fas fa-map-marker-alt"></i>House 78, Level B3, Road 11, Banani,
+                                Dhaka-1212, Bangladesh</a>
+
                         </li>
                         <li>
-                            <i class="fas fa-phone-alt"></i> +4733378901
+                            <i class="fas fa-phone-alt"></i> +88 013-24-741615
                         </li>
                     </ul>
                 </div>
@@ -75,7 +77,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img src="{{ asset('assets/img/logos.png') }}" class="logo" alt="Logo">
                 </a>
             </div>
@@ -121,12 +123,15 @@
                             {{--                            </ul> --}}
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="services.html">Solution for Farmer</a></li>
-                                <li><a href="services-2.html">Solution for Institutions</a></li>
-                                <li><a href="services-details.html">Agrigate Center</a></li>
-                            </ul>
+
+                            <a href="{{ route('solutions') }}" class="" data-toggle="dropdown">Solutions</a>
+
+                            {{--                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>--}}
+                            {{--                            <ul class="dropdown-menu">--}}
+                            {{--                                <li><a href="services.html">Solution for Farmer</a></li>--}}
+                            {{--                                <li><a href="services-2.html">Solution for Institutions</a></li>--}}
+                            {{--                                <li><a href="services-details.html">Agrigate Center</a></li>--}}
+                            {{--                            </ul>--}}
                         </li>
 
                         <li class="dropdown">

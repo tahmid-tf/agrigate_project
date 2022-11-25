@@ -596,10 +596,10 @@
                     <div class="testimonial-info text-center">
                         <h4>Testimonial</h4>
                         <div class="thumb">
-                            <img src="assets/img/farmers/1.jpg" alt="Image Not Found">
-                            <img src="assets/img/farmers/4.jpg" alt="Image Not Found">
-                            <img src="assets/img/farmers/2.jpg" alt="Image Not Found">
-                            <img src="assets/img/farmers/3.jpg" alt="Image Not Found">
+                            <img src="assets/img/f-1.jpg" alt="Image Not Found">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_i4NkKtAIkdOT97P5DAgPOVflbraaoBJhDxPekD2lWywBMGWgylX4KSmF6WlCJZlieg&usqp=CAU" alt="Image Not Found">
+                            <img src="assets/img/f-2.jpg" alt="Image Not Found">
+                            <img src="https://foodtank.com/wp-content/uploads/2013/06/indian_womanfarmer.jpg" alt="Image Not Found">
                         </div>
                     </div>
                 </div>
@@ -868,9 +868,7 @@
                             </span>
                         </h2>
                         <p>
-                            Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but
-                            why
-                            she shewing.
+
                         </p>
                         <ul>
                             <li class="wow fadeInUp">
@@ -879,7 +877,7 @@
                                 </div>
                                 <div class="content">
                                     <h5 class="title">Hotline</h5>
-                                    <a href="">+4733378901</a>
+                                    <a href="">+88 013-24-741615</a>
                                 </div>
                             </li>
                             <li class="wow fadeInUp" data-wow-delay="300ms">
@@ -889,7 +887,8 @@
                                 <div class="info">
                                     <h5 class="title">Our Location</h5>
                                     <p>
-                                        55 Main Street, The Grand Avenue 2nd Block, <br> New York City
+                                        House 78, Level B3, Road 11, Banani,
+                                        <br> Dhaka-1212, Bangladesh
                                     </p>
                                 </div>
                             </li>
@@ -899,7 +898,7 @@
                                 </div>
                                 <div class="info">
                                     <h5 class="title">Official Email</h5>
-                                    <a href="mailto:info@agrul.com.com">info@agrul.com</a>
+                                    <a href="mailto:info@agrul.com.com">info@agrigate.asia</a>
                                 </div>
                             </li>
                         </ul>
@@ -922,8 +921,9 @@
                     <div class="col-lg-6 col-md-12 mb-30">
                         <div class="blog-style-one">
                             <div class="thumb">
-                                <a href="blog-single-with-sidebar.html"><img src="{{ asset('storage/'.$n->image) }}"
-                                                                             alt="Image Not Found"></a>
+                                <a href="{{ route('single-project',$n->id) }}"><img
+                                        src="{{ asset('storage/'.$n->image) }}"
+                                        alt="Image Not Found"></a>
                                 <div class="date"><strong>{{ $n->created_at->format('d') }}</strong> <span>{{ $n->created_at->format('F') }}, {{ $n->created_at->format('y') }}</span>
                                 </div>
                             </div>
@@ -939,7 +939,7 @@
                                     </ul>
                                 </div>
                                 <h4 class="title">
-                                    <a href="blog-single-with-sidebar.html">{!! \Illuminate\Support\Str::limit($n->content_en,100,'...')  !!}</a>
+                                    <a href="{{ route('single-project',$n->id) }}">{!! \Illuminate\Support\Str::limit($n->content_en,100,'...')  !!}</a>
                                 </h4>
                             </div>
                         </div>
@@ -947,12 +947,142 @@
 
                 @endforeach
 
+
+                {{--                    @foreach($projects as $n)--}}
+                {{--                        <div class="col-lg-6 col-md-12 mb-30">--}}
+                {{--                            <div class="blog-style-one">--}}
+                {{--                                <div class="thumb">--}}
+                {{--                                    <a href="blog-single-with-sidebar.html"><img src="{{ asset('storage/'.$n->image) }}"--}}
+                {{--                                                                                 alt="Image Not Found"></a>--}}
+                {{--                                    <div class="date"><strong>{{ $n->created_at->format('d') }}</strong> <span>{{ $n->created_at->format('F') }}, {{ $n->created_at->format('y') }}</span>--}}
+                {{--                                    </div>--}}
+                {{--                                </div>--}}
+                {{--                                <div class="info">--}}
+                {{--                                    <div class="meta">--}}
+                {{--                                        <ul>--}}
+                {{--                                            <li>--}}
+                {{--                                                <a href="#"><i class="fas fa-user-circle"></i> Agrigate Asia</a>--}}
+                {{--                                            </li>--}}
+                {{--                                            --}}{{--                                    <li>--}}
+                {{--                                            --}}{{--                                        <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>--}}
+                {{--                                            --}}{{--                                    </li>--}}
+                {{--                                        </ul>--}}
+                {{--                                    </div>--}}
+                {{--                                    <h4 class="title">--}}
+                {{--                                        <a href="{{ route('single-project',$n->id) }}">{!! \Illuminate\Support\Str::limit($n->content_en,100,'...')  !!}</a>--}}
+                {{--                                    </h4>--}}
+                {{--                                </div>--}}
+                {{--                            </div>--}}
+                {{--                        </div>--}}
+
+                {{--                    @endforeach--}}
+
             </div>
 
 
         </div>
     </div>
     <!-- End Blog Area -->
+
+
+    {{--  ---------------------------------------- Our Business Partners ---------------------------------------- --}}
+
+    <style>
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-250px * 7));
+            }
+        }
+
+        .slider {
+            height: 100px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+            width: auto;
+        }
+
+        .slider .slide-track {
+            animation: scroll 40s linear infinite;
+            display: flex;
+            width: calc(250px * 14);
+        }
+
+        .slider .slide {
+            height: 100px;
+            width: 250px;
+        }
+    </style>
+
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <h5 class="sub-title">Agrigate</h5>
+                        <h2 class="title">Our Business Parners</h2>
+                        <div class="devider"></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="slider">
+        <div class="slide-track">
+            @foreach($buyers as $buyer)
+                <div class="slide">
+                    <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                         alt=""/>
+                </div>
+            @endforeach
+
+                @foreach($buyers as $buyer)
+                    <div class="slide">
+                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                             alt=""/>
+                    </div>
+                @endforeach
+
+                @foreach($buyers as $buyer)
+                    <div class="slide">
+                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                             alt=""/>
+                    </div>
+                @endforeach
+
+                @foreach($buyers as $buyer)
+                    <div class="slide">
+                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                             alt=""/>
+                    </div>
+                @endforeach
+
+                @foreach($buyers as $buyer)
+                    <div class="slide">
+                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                             alt=""/>
+                    </div>
+                @endforeach
+
+                @foreach($buyers as $buyer)
+                    <div class="slide">
+                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                             alt=""/>
+                    </div>
+                @endforeach
+        </div>
+    </div>
+
+
+    {{--  ---------------------------------------- Our Business Partners ---------------------------------------- --}}
+
+    <br><br><br><br>
 
     <x-v2.footer></x-v2.footer>
     </body>

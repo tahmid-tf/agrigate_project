@@ -4820,7 +4820,7 @@ ul.counter-list li:nth-child(2) {
 
 .farmer-style-one-item .info {
 	display: inline-block;
-	float: right;
+	/*float: right;*/
 	margin-top: 24px;
 }
 

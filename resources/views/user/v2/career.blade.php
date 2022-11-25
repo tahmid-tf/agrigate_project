@@ -59,7 +59,7 @@
                                                     <a href="">{{ $project->title_en }}</a>
                                                 </h4>
                                             </div>
-                                            <a class="link" href=""><i class="fas fa-arrow-right"></i></a>
+                                            <a class="link" href="{{ route('apply-now',$project->id) }}"><i class="fas fa-arrow-right"></i></a>
                                         </div>
                                     </div>
                                     <!-- End Single Item -->

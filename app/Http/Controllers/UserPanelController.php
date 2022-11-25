@@ -26,12 +26,15 @@ class UserPanelController extends Controller
         $sliders = Slider::all();
         $goals = Goal::all();
         $testimonials = Testimonial::all();
-        $news = News::skip(0)->take(2)->orderBy('id', 'desc')->get();
+        $news = Project::orderBy('id', 'desc')->get();
+//        $projects = Project::orderBy('id', 'desc')->get();
         $crops = Crop::all();
+        $buyers = Buyer::all();
+
 
 //        return view('user.homepage', compact('testimonials', 'goals', 'news', 'sliders'));
 
-        return view('user.v2.front', compact('testimonials', 'goals', 'news', 'sliders','crops'));
+        return view('user.v2.front', compact('testimonials', 'goals', 'news', 'sliders','crops','buyers'));
 
 
     }
@@ -93,7 +96,9 @@ class UserPanelController extends Controller
     public function solutions()
     {
         $banner = Banner::where('banner', 'solution_for_farmer')->first();
-        return view('user.solutions', compact('banner'));
+        $processings = Processing::orderBy('id','desc')->get();
+        $partners = Partner::all();
+        return view('user.v2.solution', compact('banner','processings','partners'));
     }
 
 
@@ -179,9 +184,9 @@ class UserPanelController extends Controller
 
     public function ApplyNow($id)
     {
-        $careers = Career::find($id);
+        $project_details = Career::find($id);
 
-        return view('user.apply-now', compact('careers'));
+        return view('user.v2.career-details', compact('project_details'));
     }
     /*------------------------------------------ Career ------*/
 

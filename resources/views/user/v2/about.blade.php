@@ -25,7 +25,7 @@
         <!-- Start Breadcrumb
                                     ============================================= -->
         <div class="breadcrumb-area text-center shadow dark bg-fixed text-light"
-            style="background-image: url(assets/img/banner/5.jpg);">
+            style="background-image: url(assets/img/banner/4.jpg);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
@@ -185,8 +185,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 process-style-one">
-                        <h5 class="sub-title">Order process</h5>
-                        <h2 class="title">Order Now and <br> get pure Organic Food</h2>
+                        <h5 class="sub-title">Agrigate</h5>
+                        <h2 class="title">About our services</h2>
                         <div class="call-to-action mt-45">
                             <div class="icon">
                                 <i class="fas fa-user-headset"></i>
@@ -231,7 +231,7 @@
 
                                     <button class="nav-link" id="nav-id-4" data-bs-toggle="tab" data-bs-target="#tab4"
                                         type="button" role="tab" aria-controls="tab4" aria-selected="false">
-                                        <span>SD Channels</span>
+                                        <span>Service Delivery Channels</span>
 
                                     </button>
                                 </div>
@@ -431,22 +431,22 @@
                 <div class="row align-center">
                     <div class="col-lg-6 choose-us-style-one">
                         <div class="thumb">
-                            <img src="assets/img/about/1.jpg" alt="Image Not Found">
+                            <img src="https://www.researchgate.net/publication/354492168/figure/fig5/AS:1066309089492994@1631239306961/Bangladeshi-farmer-Md-Khalilur-Rahman-with-a-fresh-harvest-of-Bt-brinjal-in-Hijulii-of.ppm" alt="Image Not Found">
                             <div class="shape">
                                 <img class="wow fadeInDown" src="assets/img/shape/22.png" alt="Image not found">
                             </div>
-                            <div class="product-produce">
-                                <div class="icon">
-                                    <i class="flaticon-farmer"></i>
-                                </div>
-                                <div class="fun-fact">
-                                    <div class="counter">
-                                        <div class="timer" data-to="258" data-speed="2000">258</div>
-                                        <div class="operator">K</div>
-                                    </div>
-                                    <span class="medium">Agriculture, Organic Products</span>
-                                </div>
-                            </div>
+{{--                            <div class="product-produce">--}}
+{{--                                <div class="icon">--}}
+{{--                                    <i class="flaticon-farmer"></i>--}}
+{{--                                </div>--}}
+{{--                                <div class="fun-fact">--}}
+{{--                                    <div class="counter">--}}
+{{--                                        <div class="timer" data-to="258" data-speed="2000">258</div>--}}
+{{--                                        <div class="operator">K</div>--}}
+{{--                                    </div>--}}
+{{--                                    <span class="medium">Agriculture, Organic Products</span>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
                         </div>
                     </div>
                     <div class="col-lg-6 choose-us-style-one">
