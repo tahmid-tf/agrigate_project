@@ -193,7 +193,7 @@
                             </div>
                             <div class="info">
                                 <span>Get quick support</span>
-                                <h4><a href="tel:2151234567">+123 34598768</a></h4>
+                                <h4><a href="tel:+88 013-24-741615">+88 013-24-741615</a></h4>
                             </div>
                         </div>
                     </div>

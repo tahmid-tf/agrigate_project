@@ -52,7 +52,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
                         <h5 class="sub-title">Solution for Institutions</h5>
-                        <h2 class="title">Contact Farming</h2>
+                        <h2 class="title">Contract Farming</h2>
                         <div class="devider"></div>
                         <p style="text-align: justify">
                             Achieving the Agrigates’ Goals remains a challenge, and especially in villages. Farmers are
@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-lg-9 choose-us-style-one">
                     <h5 class="sub-title">Agrigate Asia</h5>
-                    <h2 class="title">Contact Farming</h2>
+                    <h2 class="title">Contract Farming</h2>
                     <div class="accordion accordion-regular mt-35" id="faqAccordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">

@@ -58,17 +58,17 @@
                                             <i class="fas fa-share-alt"></i>
                                             <ul>
                                                 <li class="facebook">
-                                                    <a href="#">
+                                                    <a href="{{ $director->fb }}">
                                                         <i class="fab fa-facebook-f"></i>
                                                     </a>
                                                 </li>
                                                 <li class="twitter">
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
+                                                    <a href="{{ $director->g }}">
+                                                        <i class="fab fa-google"></i>
                                                     </a>
                                                 </li>
                                                 <li class="linkedin">
-                                                    <a href="#">
+                                                    <a href="{{ $director->ln }}">
                                                         <i class="fab fa-linkedin-in"></i>
                                                     </a>
                                                 </li>
@@ -97,17 +97,17 @@
                                             <i class="fas fa-share-alt"></i>
                                             <ul>
                                                 <li class="facebook">
-                                                    <a href="#">
+                                                    <a href="{{ $director->fb }}">
                                                         <i class="fab fa-facebook-f"></i>
                                                     </a>
                                                 </li>
                                                 <li class="twitter">
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
+                                                    <a href="{{ $director->g }}">
+                                                        <i class="fab fa-google"></i>
                                                     </a>
                                                 </li>
                                                 <li class="linkedin">
-                                                    <a href="#">
+                                                    <a href="{{ $director->ln }}">
                                                         <i class="fab fa-linkedin-in"></i>
                                                     </a>
                                                 </li>
@@ -136,17 +136,17 @@
                                             <i class="fas fa-share-alt"></i>
                                             <ul>
                                                 <li class="facebook">
-                                                    <a href="#">
+                                                    <a href="{{ $director->fb }}">
                                                         <i class="fab fa-facebook-f"></i>
                                                     </a>
                                                 </li>
                                                 <li class="twitter">
-                                                    <a href="#">
-                                                        <i class="fab fa-twitter"></i>
+                                                    <a href="{{ $director->g }}">
+                                                        <i class="fab fa-google"></i>
                                                     </a>
                                                 </li>
                                                 <li class="linkedin">
-                                                    <a href="#">
+                                                    <a href="{{ $director->ln }}">
                                                         <i class="fab fa-linkedin-in"></i>
                                                     </a>
                                                 </li>
