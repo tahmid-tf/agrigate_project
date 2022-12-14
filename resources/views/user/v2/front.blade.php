@@ -28,10 +28,12 @@
             <div class="swiper-wrapper">
 
 
-            @foreach($sliders as $slider)
+                @foreach($sliders as $slider)
 
-                <!-- Single Item -->
-                    <div class="swiper-slide banner-style-one">
+                    <!-- Single Item -->
+                    {{--        swiper-slide coment kora        --}}
+
+                    <div class="banner-style-one">
                         <div class="banner-thumb bg-cover shadow dark"
                              {{--                         style="background: url(assets/img/banner/17.jpg);"></div>--}}
 
@@ -55,7 +57,6 @@
                         </div>
                     </div>
                     <!-- End Single Item -->
-
 
                 @endforeach
 
@@ -181,15 +182,15 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
 
-                        @foreach($goals as $goal)
+                            @foreach($goals as $goal)
 
-                            <!-- Single Item -->
+                                <!-- Single Item -->
                                 <div class="swiper-slide">
                                     <div class="services-style-one">
                                         <div class="thumb">
                                             <img src="{{ asset('storage/'.$goal->image) }}" alt="Image Not Found">
                                         </div>
-                                        <h5><a href="services-details.html">{{ $goal->title_en }}</a></h5>
+                                        <h5><a href="javascript:void(0)">{{ $goal->title_en }}</a></h5>
                                         <p>
                                             {{--                                        Continue indulged speaking technical out horrible domestic position. Seeing--}}
                                             {{--                                        rather--}}
@@ -222,9 +223,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-10 offset-xl-1 mb-50 mb-xs-30">
-                    <h2 class="mask-text" style="background-image: url(assets/img/banner/3.jpg);">Healthy life with
-                        fresh
-                        products</h2>
+                    <h2 class="mask-text" style="background-image: url(assets/img/banner/3.jpg);">Sourcing quality products with trust</h2>
 
                     <br>
                     <p style="text-align: justify">Agrigate produces and sources high-quality seed from small &
@@ -237,10 +236,9 @@
                 <div class="product-list-box">
 
 
-                @foreach($crops as $crop)
+                    @foreach($crops as $crop)
 
-
-                    <!-- Single Item -->
+                        <!-- Single Item -->
                         <div class="product-list-item">
                             <a href="javascript:void(0)">
                                 <img src="{{ asset('storage/'.$crop->image) }}" alt="Icon">
@@ -308,6 +306,7 @@
                                         <img src="{{ asset('images/facts-1.png') }}" alt="Image Not Found">
                                     </div>
                                     <h5><a href="services-details.html">Farmers Onboarded</a></h5>
+                                    <br>
                                     <p>
                                         12,000
                                     </p>
@@ -340,6 +339,7 @@
                                         <img src="{{ asset('images/facts-3.png') }}" alt="Image Not Found">
                                     </div>
                                     <h5><a href="services-details.html">Input Sellers Onboarded</a></h5>
+                                    <br>
                                     <p>
                                         100
                                     </p>
@@ -350,18 +350,18 @@
 
 
                             <!-- Single Item -->
-                            <div class="swiper-slide">
-                                <div class="services-style-one">
-                                    <div class="thumb">
-                                        <img src="{{ asset('images/facts-4.png') }}" alt="Image Not Found">
-                                    </div>
-                                    <h5><a href="services-details.html">Advisory service provided</a></h5>
-                                    <p>
-                                        4500
-                                    </p>
+{{--                            <div class="swiper-slide">--}}
+{{--                                <div class="services-style-one">--}}
+{{--                                    <div class="thumb">--}}
+{{--                                        <img src="{{ asset('images/facts-4.png') }}" alt="Image Not Found">--}}
+{{--                                    </div>--}}
+{{--                                    <h5><a href="services-details.html">Advisory service provided</a></h5>--}}
+{{--                                    <p>--}}
+{{--                                        4500--}}
+{{--                                    </p>--}}
 
-                                </div>
-                            </div>
+{{--                                </div>--}}
+{{--                            </div>--}}
                             <!-- End Single Item -->
 
 
@@ -388,6 +388,7 @@
                                         <img src="{{ asset('images/facts-6.png') }}" alt="Image Not Found">
                                     </div>
                                     <h5><a href="services-details.html">Grain Moisture Test</a></h5>
+                                    <br>
                                     <p>
                                         1000
                                     </p>
@@ -404,6 +405,7 @@
                                         <img src="{{ asset('images/facts-7.png') }}" alt="Image Not Found">
                                     </div>
                                     <h5><a href="services-details.html">Corn Sourcing</a></h5>
+                                    <br>
                                     <p>
                                         2000
                                     </p>
@@ -420,6 +422,7 @@
                                         <img src="{{ asset('images/facts-8.png') }}" alt="Image Not Found">
                                     </div>
                                     <h5><a href="services-details.html">Soyabean Sourcing</a></h5>
+                                    <br>
                                     <p>
                                         1000 MT
                                     </p>
@@ -436,6 +439,7 @@
                                         <img src="{{ asset('images/facts-9.png') }}" alt="Image Not Found">
                                     </div>
                                     <h5><a href="services-details.html">Bank Account Opening</a></h5>
+                                    <br>
                                     <p>
                                         1400
                                     </p>
@@ -597,9 +601,12 @@
                         <h4>Testimonial</h4>
                         <div class="thumb">
                             <img src="assets/img/f-1.jpg" alt="Image Not Found">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_i4NkKtAIkdOT97P5DAgPOVflbraaoBJhDxPekD2lWywBMGWgylX4KSmF6WlCJZlieg&usqp=CAU" alt="Image Not Found">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQe_i4NkKtAIkdOT97P5DAgPOVflbraaoBJhDxPekD2lWywBMGWgylX4KSmF6WlCJZlieg&usqp=CAU"
+                                alt="Image Not Found">
                             <img src="assets/img/f-2.jpg" alt="Image Not Found">
-                            <img src="https://foodtank.com/wp-content/uploads/2013/06/indian_womanfarmer.jpg" alt="Image Not Found">
+                            <img src="https://foodtank.com/wp-content/uploads/2013/06/indian_womanfarmer.jpg"
+                                 alt="Image Not Found">
                         </div>
                     </div>
                 </div>
@@ -609,10 +616,9 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
 
-                        @foreach($testimonials as $testimonial)
+                            @foreach($testimonials as $testimonial)
 
-
-                            <!-- Single item -->
+                                <!-- Single item -->
                                 <div class="swiper-slide">
 
                                     <div class="testimonial-style-two">
@@ -806,7 +812,8 @@
                     <div class="contact-form-style-one mb-md-50">
                         <h5 class="sub-title">Have Questions?</h5>
                         <h2 class="heading">Send us a Massage</h2>
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form contact-form">
+                        <form action="{{ route('mail.send') }}" method="POST" class="contact-form contact-form">
+                            {{ csrf_field() }}
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group">
@@ -819,7 +826,7 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*"
+                                        <input class="form-control" id="email" name="mail" placeholder="Email*"
                                                type="email">
                                         <span class="alert-error"></span>
                                     </div>
@@ -835,8 +842,8 @@
                             <div class="row">
                                 <div class="col-lg-12">
                                     <div class="form-group comments">
-                                    <textarea class="form-control" id="comments" name="comments"
-                                              placeholder="Tell Us About Project *"></textarea>
+                                    <textarea class="form-control" id="comments" name="message"
+                                              placeholder="Description *"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -931,7 +938,7 @@
                                 <div class="meta">
                                     <ul>
                                         <li>
-                                            <a href="#"><i class="fas fa-user-circle"></i> Agrigate Asia</a>
+                                            <a href="#"><i class="fas fa-user-circle"></i> {{ $n->title_en }}</a>
                                         </li>
                                         {{--                                    <li>--}}
                                         {{--                                        <a href="#"><i class="fas fa-comments"></i> 26 Comments</a>--}}
@@ -1023,7 +1030,7 @@
                 <div class="col-lg-8 offset-lg-2">
                     <div class="site-heading text-center">
                         <h5 class="sub-title">Agrigate</h5>
-                        <h2 class="title">Our Business Parners</h2>
+                        <h2 class="title">Our Business Partners</h2>
                         <div class="devider"></div>
 
                     </div>
@@ -1042,40 +1049,40 @@
                 </div>
             @endforeach
 
-                @foreach($buyers as $buyer)
-                    <div class="slide">
-                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
-                             alt=""/>
-                    </div>
-                @endforeach
+            @foreach($buyers as $buyer)
+                <div class="slide">
+                    <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                         alt=""/>
+                </div>
+            @endforeach
 
-                @foreach($buyers as $buyer)
-                    <div class="slide">
-                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
-                             alt=""/>
-                    </div>
-                @endforeach
+            @foreach($buyers as $buyer)
+                <div class="slide">
+                    <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                         alt=""/>
+                </div>
+            @endforeach
 
-                @foreach($buyers as $buyer)
-                    <div class="slide">
-                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
-                             alt=""/>
-                    </div>
-                @endforeach
+            @foreach($buyers as $buyer)
+                <div class="slide">
+                    <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                         alt=""/>
+                </div>
+            @endforeach
 
-                @foreach($buyers as $buyer)
-                    <div class="slide">
-                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
-                             alt=""/>
-                    </div>
-                @endforeach
+            @foreach($buyers as $buyer)
+                <div class="slide">
+                    <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                         alt=""/>
+                </div>
+            @endforeach
 
-                @foreach($buyers as $buyer)
-                    <div class="slide">
-                        <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
-                             alt=""/>
-                    </div>
-                @endforeach
+            @foreach($buyers as $buyer)
+                <div class="slide">
+                    <img src="{{ asset('storage/'.$buyer->image) }}" height="100" width="200"
+                         alt=""/>
+                </div>
+            @endforeach
         </div>
     </div>
 

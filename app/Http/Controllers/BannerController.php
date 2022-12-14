@@ -41,7 +41,7 @@ class BannerController extends Controller
             'title_en' => 'required',
 //            'content_bn' => 'required',
 //            'content_en' => 'required',
-            'image' => 'mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png,webp',
             'banner' => 'required',
         ]);
 
@@ -92,7 +92,7 @@ class BannerController extends Controller
             'title_en' => 'required',
 //            'content_bn' => 'required',
 //            'content_en' => 'required',
-            'image' => 'mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png,webp',
 //            'banner' => 'required',
         ]);
 

@@ -38,6 +38,9 @@ Route::get('/single-project/{id}', "UserPanelController@SingleProject")->name('s
 // ===================== SOLUTION ======================
 
 Route::get('/solutions', "UserPanelController@solutions")->name('solutions');
+Route::get('/solutions_for_farmers', "UserPanelController@solutionsForFar")->name('solutionsForFar');
+Route::get('/solutions_for_institutions', "UserPanelController@solutionsForIns")->name('solutionsForIns');
+Route::get('/solutions_for_en', "UserPanelController@solutionsForEn")->name('solutionsForEn');
 
 
 Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->name('agrigate-center');
@@ -48,9 +51,18 @@ Route::get('/solutions-agrigate-center', "UserPanelController@AgrigateCenter")->
 Route::get('/about-us', "UserPanelController@AboutUs")->name('about');
 // ================================ ABOUT US ==============
 
+
+// ===================== Agrigate Service  ======================
+Route::get('/services', "UserPanelController@agrigate_service")->name('agrigate_service');
+// ================================ Agrigate Service ==============
+
 // ===================== APP ======================
-Route::get('/services', "UserPanelController@App")->name('app');
+Route::get('/services_app', "UserPanelController@App")->name('app');
 // ================================ APP ==============
+
+// ===================== Agrigate Center ======================
+Route::get('/service_center', "UserPanelController@service_center")->name('agrigate_center');
+// ================================ Agrigate Center ==============
 
 // ===================== FINANCIAL INCLUSION ======================
 

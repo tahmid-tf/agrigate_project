@@ -47,9 +47,11 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="row">
 
-                    @foreach($directors as $director)
+                        <h2>Directors</h2>
+                        <br>
+                        @foreach($directors as $director)
 
-                        <!-- Single Item -->
+                            <!-- Single Item -->
                             <div class="col-lg-4 farmer-stye-one">
                                 <div class="farmer-style-one-item">
                                     <div class="thumb">
@@ -83,12 +85,13 @@
                             </div>
                             <!-- End Single Item -->
 
-                    @endforeach
+                        @endforeach
 
+                        <h2>Advisors</h2>
+                        <br>
+                        @foreach($advisors as $director)
 
-                    @foreach($advisors as $director)
-
-                        <!-- Single Item -->
+                            <!-- Single Item -->
                             <div class="col-lg-4 farmer-stye-one">
                                 <div class="farmer-style-one-item">
                                     <div class="thumb">
@@ -122,12 +125,14 @@
                             </div>
                             <!-- End Single Item -->
 
-                    @endforeach
+                        @endforeach
 
 
+                        <h2>Team Members</h2>
+                        <br>
                     @foreach($teams as $director)
 
-                        <!-- Single Item -->
+                            <!-- Single Item -->
                             <div class="col-lg-4 farmer-stye-one">
                                 <div class="farmer-style-one-item">
                                     <div class="thumb">

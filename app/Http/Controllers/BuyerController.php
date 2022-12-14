@@ -37,7 +37,7 @@ class BuyerController extends Controller
     public function store(Request $request)
     {
         $inputs = \request()->validate([
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'image' => 'required|mimes:jpeg,jpg,png,webp',
             'tag' => 'required',
         ]);
 
@@ -82,7 +82,7 @@ class BuyerController extends Controller
     public function update(Request $request, Buyer $buyer)
     {
         $inputs = \request()->validate([
-            'image' => 'mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png,webp',
             'tag' => 'required',
         ]);
 

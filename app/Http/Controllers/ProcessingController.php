@@ -41,7 +41,7 @@ class ProcessingController extends Controller
             'title_en' => 'required',
             'content_bn' => 'required',
             'content_en' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'image' => 'required|mimes:jpeg,jpg,png,webp',
         ]);
 
         if (request('image')) {
@@ -90,7 +90,7 @@ class ProcessingController extends Controller
             'title_en' => 'required',
             'content_bn' => 'required',
             'content_en' => 'required',
-            'image' => 'mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png,webp',
         ]);
 
         if (request('image')) {

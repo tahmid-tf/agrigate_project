@@ -29,7 +29,7 @@
                     <h1>Projects</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="javascript:void(0)"><i class="fas fa-home"></i> Home</a></li>
                             <li class="active">Projects</li>
                         </ol>
                     </nav>

@@ -9,6 +9,7 @@ class EmailController extends Controller
 {
     public function send()
     {
+
         $data = [
             'name' => \request('name'),
             'mail' => \request('mail'),

@@ -39,7 +39,7 @@ class CropController extends Controller
         $inputs = \request()->validate([
             'title_bn' => 'required',
             'title_en' => 'required',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'image' => 'required|mimes:jpeg,jpg,png,webp',
         ]);
 
         if (request('image')) {
@@ -85,7 +85,7 @@ class CropController extends Controller
         $inputs = \request()->validate([
             'title_bn' => 'required',
             'title_en' => 'required',
-            'image' => 'mimes:jpeg,jpg,png',
+            'image' => 'mimes:jpeg,jpg,png,webp',
         ]);
 
         if (request('image')) {

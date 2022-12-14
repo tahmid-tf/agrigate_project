@@ -5,18 +5,17 @@
         <div class="row align-center">
             <div class="col-lg-9">
                 <div class="flex-item left">
-{{--                    <p>--}}
-{{--                        That's right, we only sell 100% organic--}}
-{{--                    </p>--}}
+                    {{--                    <p>--}}
+                    {{--                        That's right, we only sell 100% organic--}}
+                    {{--                    </p>--}}
                     <ul>
+
                         <li>
-                            <a href="https://www.google.com/maps/place/Agrigate+Network+Limited/@23.790099,90.4073644,17z/data=!3m1!4b1!4m5!3m4!1s0x3755c7896c1a4c3f:0xf0c074963d9ee0cb!8m2!3d23.7900941!4d90.4095531">   <i class="fas fa-map-marker-alt"></i>House 78, Level B3, Road 11, Banani,
-                                Dhaka-1212, Bangladesh</a>
+                            <a href="https://www.google.com/maps/place/Agrigate+Network+Limited/@23.790099,90.4073644,17z/data=!3m1!4b1!4m5!3m4!1s0x3755c7896c1a4c3f:0xf0c074963d9ee0cb!8m2!3d23.7900941!4d90.4095531">
+                                <i class=""></i>Agrigate - Bringing markets to farmers' door steps</a>
 
                         </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i> +88 013-24-741615
-                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -24,22 +23,22 @@
                 <div class="social">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/agrigate.asia/" target="_blank">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
                         </li>
+                        {{--                        <li>--}}
+                        {{--                            <a href="#">--}}
+                        {{--                                <i class="fab fa-twitter"></i>--}}
+                        {{--                            </a>--}}
+                        {{--                        </li>--}}
                         <li>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="https://www.youtube.com/@agrigatenetworklimited3659" target="_blank">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.linkedin.com/company/agrigate-asia/" target="_blank">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
                         </li>
@@ -124,23 +123,24 @@
                         </li>
                         <li class="dropdown">
 
-                            <a href="{{ route('solutions') }}" class="" data-toggle="dropdown">Solutions</a>
+                            {{--                            <a href="{{ route('solutions') }}" class="" data-toggle="dropdown">Solutions</a>--}}
 
-                            {{--                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Solutions</a>--}}
-                            {{--                            <ul class="dropdown-menu">--}}
-                            {{--                                <li><a href="services.html">Solution for Farmer</a></li>--}}
-                            {{--                                <li><a href="services-2.html">Solution for Institutions</a></li>--}}
-                            {{--                                <li><a href="services-details.html">Agrigate Center</a></li>--}}
-                            {{--                            </ul>--}}
+                            <a href="{{ route('solutions') }}" class="dropdown-toggle"
+                               data-toggle="dropdown">Solutions</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ route('solutionsForFar') }}">Solution for Farmer</a></li>
+                                <li><a href="{{ route('solutionsForIns') }}">Solution for Institutions</a></li>
+                                <li><a href="{{ route('solutionsForEn') }}">Solution for Entrepreneurs</a></li>
+                            </ul>
                         </li>
 
                         <li class="dropdown">
-                            <a href="{{ route('app') }}" class="" data-toggle="dropdown">Services</a>
-                            {{--                            <ul class="dropdown-menu"> --}}
-                            {{--                                <li><a href="shop.html">Shop</a></li> --}}
-                            {{--                                <li><a href="shop-single.html">Shop Single</a></li> --}}
-                            {{--                                <li><a href="shop-single-thumb-only.html">Shop Single Two</a></li> --}}
-                            {{--                            </ul> --}}
+                            <a href="{{ route('agrigate_service') }}" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ route('agrigate_center') }}">Agrigate Center</a></li>
+                                <li><a href="{{ route('app') }}">App</a></li>
+
+                            </ul>
                         </li>
 
 
@@ -173,7 +173,7 @@
                             <li class="contact">
                                 <div class="call">
                                     <div class="icon">
-                                        <i class="fas fa-comments-alt-dollar"></i>
+                                        <i class="fas fa-comments"></i>
                                     </div>
                                     <div class="info">
                                         <p>Have any Questions?</p>

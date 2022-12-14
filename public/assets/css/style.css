@@ -6498,7 +6498,7 @@ footer {
 }
 
 .footer-item .logo {
-	height: 60px;
+	height: auto;
 }
 
 .footer-item .widget-title {

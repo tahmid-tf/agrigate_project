@@ -8,16 +8,21 @@
                 <!-- Single Itme -->
                 <div class="col-lg-4 col-md-6 item">
                     <div class="footer-item about">
-                        <img class="logo" src="{{ asset('assets/img/logos.png') }}" alt="Logo">
+                        <img class="logo" src="{{ asset('assets/footer_logo.png') }}" alt="Logo">
                         <p>
                             We supply seeds to a wide range of customers and organizations. You can find our
                             seeds at leading agrodealers across Bangladesh. We are sourcing quality output through
                             direct purchase.
                         </p>
-                        <form action="#">
-                            <input type="email" placeholder="Your Email" class="form-control" name="email">
-                            <button type="submit"> Go</button>
-                        </form>
+{{--                        <form action="mailto:info@agrigate.asia" method="get" enctype="text/plain">--}}
+{{--                            <input type="email" placeholder="Your Email" class="form-control" name="email">--}}
+{{--                            <button type="submit" name="submit" value="Send"> Go</button>--}}
+{{--                        </form>--}}
+
+                        <a href="mailto:info@agrigate.asia"><button type="submit" id="submit" class="btn btn-secondary">
+                                <i class="fa fa-paper-plane"></i> Get in Touch
+                            </button></a>
+
                     </div>
                 </div>
                 <!-- End Single Itme -->
@@ -63,7 +68,7 @@
 
                             <li>
                                 <div class="thumb">
-                                    <a href="blog-single-with-sidebar.html">
+                                    <a href="{{ route('single-project',$n->id) }}">
                                         <img src="{{ asset('storage/'.$n->image) }}" alt="Thumb">
                                     </a>
                                 </div>
@@ -71,7 +76,7 @@
                                     <div class="meta-title">
                                         <span class="post-date">{{ $n->created_at->format('d-F-y') }}</span>
                                     </div>
-                                    <h5><a href="blog-single-with-sidebar.html">{!! \Illuminate\Support\Str::limit($n->content_en,30,'...')  !!} </a></h5>
+                                    <h5><a href="{{ route('single-project',$n->id) }}">{!! \Illuminate\Support\Str::limit($n->content_en,30,'...')  !!} </a></h5>
                                 </div>
                             </li>
 

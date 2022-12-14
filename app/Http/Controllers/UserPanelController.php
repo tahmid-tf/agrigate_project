@@ -102,6 +102,32 @@ class UserPanelController extends Controller
     }
 
 
+    public function solutionsForFar()
+    {
+        $banner = Banner::where('banner', 'solution_for_farmer')->first();
+        $processings = Processing::orderBy('id','desc')->get();
+        $partners = Partner::all();
+        return view('user.v2.solution_far', compact('banner','processings','partners'));
+    }
+
+    public function solutionsForIns()
+    {
+        $banner = Banner::where('banner', 'solution_for_farmer')->first();
+        $processings = Processing::orderBy('id','desc')->get();
+        $partners = Partner::all();
+        return view('user.v2.solution_in', compact('banner','processings','partners'));
+    }
+
+    public function solutionsForEn()
+    {
+        $banner = Banner::where('banner', 'solution_for_farmer')->first();
+        $processings = Processing::orderBy('id','desc')->get();
+        $partners = Partner::all();
+        return view('user.v2.solution_en', compact('banner','processings','partners'));
+    }
+
+
+
     /* Agrigate Center */
     public function AgrigateCenter()
     {
@@ -121,15 +147,36 @@ class UserPanelController extends Controller
     }
     /*------------------------------- About Us  ---------------*/
 
+
+    /*------------------- agrigate_service ----------------------------*/
+
+    public function agrigate_service()
+    {
+        $sp_partners = Buyer::where('tag', 'sp')->get();
+        $app_slider = App::all();
+        return view('user.v2.services', compact('sp_partners', 'app_slider'));
+    }
+    /*------------------------------- agrigate_service  ---------------*/
+
     /*------------------- APP ----------------------------*/
 
     public function App()
     {
         $sp_partners = Buyer::where('tag', 'sp')->get();
         $app_slider = App::all();
-        return view('user.v2.services', compact('sp_partners', 'app_slider'));
+        return view('user.v2.services_app', compact('sp_partners', 'app_slider'));
     }
     /*------------------------------- APP  ---------------*/
+
+    /*------------------- Service center ----------------------------*/
+
+    public function service_center()
+    {
+        $sp_partners = Buyer::where('tag', 'sp')->get();
+        $app_slider = App::all();
+        return view('user.v2.services_agrigate', compact('sp_partners', 'app_slider'));
+    }
+    /*------------------------------- Service center  ---------------*/
 
 
     /*------------------- Financial Inclusion ----------------------------*/
