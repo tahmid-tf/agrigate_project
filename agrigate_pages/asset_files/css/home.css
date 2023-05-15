@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------- section 1 --------------------------  */
+
+.navbar-section-css {
+  /* background-image: url("../images/r.png"); */
+  background-color: #e2e5d9;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-link-itmes-color {
+  font-family: Roboto Condensed;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  color: #283d1f !important;
+  margin: 0 25px;
+}
+
+.nav-link-itmes-number-color {
+  font-family: Roboto Condensed;
+  color: #283d1f !important;
+}
+
+/* ------------- short nav -------------  */
+
+.short-image-logo {
+  width: 30px;
+  margin: 0 5px;
+}
+
+.short-nav-section {
+  display: flex;
+  justify-content: right;
+  margin-right: 48px;
+  padding-top: 10px;
+}
+
+/* ------------- short nav -------------  */
+
+/* -------------------------- section 1 --------------------------  */
+
+/* -------------------------- section 2 --------------------------  */
+
+.our_solutions {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.our_solutions p {
+  border: 3px solid #255302;
+  padding: 10px 30px;
+  border-radius: 45px;
+  font-weight: bold;
+  color: #255302;
+}
+
+/* ------------- our partners -------------  */
+.our_partners {
+  display: flex;
+  justify-content: center;
+}
+
+.our_partners p {
+  border: 3px solid #255302;
+  padding: 10px 30px;
+  border-radius: 45px;
+  font-weight: bold;
+  background-color: #255302;
+  color: white;
+  cursor: pointer;
+  transition: linear 0.5s;
+  width: 250px;
+  text-align: center;
+}
+
+.our_partners p:hover {
+  border: 3px solid #255302;
+  padding: 10px 30px;
+  border-radius: 45px;
+  font-weight: bold;
+  background-color: white;
+  color: #255302;
+}
+
+.partnership-with-us {
+  margin-left: 51px;
+  margin-top: 60px;
+}
+
+.partnership-with-us p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #255302;
+}
+
+.get_in_touch {
+  padding: 10px 30px;
+  border-radius: 45px;
+  font-weight: bold;
+  background-color: #255302;
+  color: white;
+  border: none;
+}
+
+/* ------------- our partners -------------  */
+
+/* -------------------------- section 2 --------------------------  */
+
+/* -------------------------- footer --------------------------  */
+
+.footer {
+  background-color: #255302;
+  padding: 40px;
+}
+
+.footer-second-part p {
+  color: white;
+  line-height: 16px;
+  font-weight: bold;
+}
+
+.footer-second-part p:nth-child(1) {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.footer-third-part p {
+  color: white;
+  line-height: 13px;
+  font-weight: bold;
+}
+
+.footer-third-part p:nth-child(1) {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+
+.third-last-element-margin {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.third-last-element-margin p {
+  margin-top: 15px;
+}
+
+/* -------------------------- footer --------------------------  */
