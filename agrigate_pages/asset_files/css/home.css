@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 /* -------------------------- section 1 --------------------------  */
@@ -46,6 +49,21 @@
 /* -------------------------- section 1 --------------------------  */
 
 /* -------------------------- section 2 --------------------------  */
+
+.agrigate_ecosystem_flower {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.agrigate_ecosystem_flower p {
+  border: 3px solid #255302;
+  padding: 10px 30px;
+  border-radius: 45px;
+  font-weight: bold;
+  color: #255302;
+  /* margin-bottom: -40px; */
+}
 
 .our_solutions {
   display: flex;
@@ -113,6 +131,49 @@
 }
 
 /* ------------- our partners -------------  */
+
+/* ------------- our solutions -------------  */
+
+.border-position {
+  position: relative;
+  border: 3px solid #255302;
+  border-radius: 45px;
+  padding: 30px;
+}
+
+.border-position__solutions {
+  margin-top: -100px;
+}
+
+.solution-margin {
+  margin-bottom: -7px;
+}
+
+.our_solutions__leftside__image {
+  width: 327px;
+  margin-top: 4px;
+  display: block;
+  margin: auto;
+}
+
+.our_solutions__list li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: justify;
+
+  color: #255302;
+}
+
+.our_solutions__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+/* ------------- our solutions -------------  */
 
 /* -------------------------- section 2 --------------------------  */
 

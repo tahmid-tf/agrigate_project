@@ -12,6 +12,31 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="asset_files/css/home.css" />
+
+    <!-- ----------------------------------------------- Agrigate v2-Archived engine -----------------------------------------------  -->
+
+    <link rel="stylesheet" href="asset_files/css/v2_engine.css" />
+
+    <!-- ----------------------------------------------- Agrigate v2-Archived engine -----------------------------------------------  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- -------------------- optimize image linkup --------------------------- -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/progressive-image.js/dist/progressive-image.js"
+      async
+    ></script>
+
+    <!-- -------------------- optimize image linkup --------------------------- -->
   </head>
   <body>
     <!-- ---------------------------------------------- First Section ----------------------------------------------  -->
@@ -216,21 +241,480 @@
 
       <!-- ---------------------------------- navbar ---------------------------------- -->
 
-      <!-- ---------------------------------- our_solutions ---------------------------------- -->
+      <!-- ---------------------------------- Agrigate Ecosystem ---------------------------------- -->
 
-      <div>
-        <div class="our_solutions">
+      <section class="agrigate-ecosystem">
+        <div class="agrigate_ecosystem_flower">
           <p>Agrigate Ecosystem</p>
         </div>
 
-        <br /><br />
+        <!-- {{-- ------------------------------------------------------------------------------------------------------- Flower animation part --------------------------------------------------------------------------------------------------------------- --}} -->
 
-        <div class="d-flex justify-content-center">
-          <img
-            src="./asset_files/images/solutions_component.png"
-            alt=""
-            class="img-fluid"
-          />
+        <style>
+          .modify-col-agrigate {
+            margin-top: 100px;
+          }
+        </style>
+
+        <section class="flower_animation_part" style="background-color: white">
+          <br />
+
+          <section class="pointer-1">
+            <div class="flower_animation_part__padding_first">
+              <div class="row flower_animation_part__padding__first__row">
+                <div class="col"></div>
+                <div class="col-md-6">
+                  <div class="containers">
+                    <div>
+                      <div id="slidebox">
+                        <img
+                          src="asset_files/images/agrigate.png"
+                          class="fade-in slide agrigate-image rotate-image d-block img-fluid"
+                          id="slidebox_image_position"
+                        />
+                        <div
+                          class="agrigate-text bottom-left"
+                          id="iot"
+                          style="cursor: pointer"
+                        >
+                          Services
+                        </div>
+                        <div
+                          class="agrigate-text top"
+                          id="advisory"
+                          style="cursor: pointer"
+                        >
+                          Market Segment
+                        </div>
+                        <div
+                          class="agrigate-text bottom"
+                          id="financial"
+                          style="cursor: pointer"
+                        >
+                          Market Actors
+                        </div>
+                        <div
+                          class="agrigate-text bottom-right"
+                          id="digital"
+                          style="cursor: pointer"
+                        >
+                          SD Channels
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="right-sided-flower-part">
+                    <p>
+                      Agrigate has defined 4 key segments in the agri value
+                      chain that need to coalesce in order to build a network
+                      platform that can facilitate business interactions between
+                      institutional clients (agro-processors, feed millers,
+                      traders, etc.) and producers, to increase their business
+                      potential while receiving services through effective
+                      delivery channels.
+                    </p>
+                  </div>
+                </div>
+                <div class="col"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- {{-- ------------------------- Services ----------------------------------- --}} -->
+
+          <section class="solution-1" style="display: none">
+            <div class="containers service_margin_padding" id="service">
+              <div class="row mr-0">
+                <div class="col-lg-4 col-md-6" id="service">
+                  <img
+                    src="asset_files/images/agrigate-half.png"
+                    class="agrigate-image-2 d-block mr-auto img-fluid"
+                  />
+
+                  <div
+                    class="agrigate-text bottom-right-2"
+                    style="font-size: 18px"
+                  >
+                    Services
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-6 modify-col-agrigate">
+                  <div class="agrigate-styles">
+                    <img
+                      src="asset_files/images/services_flower.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+              <button class="channel-to-previous" onclick="back()">
+                <img
+                  src="asset_files/images/go_back.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </button>
+            </div>
+          </section>
+
+          <!-- {{-- ------------------------- Services ----------------------------------- --}} -->
+
+          <!-- {{-- ------------------------- Market Segment ----------------------------------- --}} -->
+
+          <section class="solution-2" style="display: none">
+            <div class="containers service_margin_padding" id="service">
+              <div class="row mr-0">
+                <div class="col-lg-4 col-md-6" id="service">
+                  <img
+                    src="asset_files/images/agrigate-half.png"
+                    class="agrigate-image-2 d-block mr-auto img-fluid"
+                  />
+
+                  <div
+                    class="agrigate-text bottom-right-2"
+                    style="font-size: 18px"
+                  >
+                    Market Segment
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-6 modify-col-agrigate">
+                  <div class="agrigate-styles">
+                    <img
+                      src="asset_files/images/market_segment.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+              <button class="channel-to-previous" onclick="back()">
+                <img
+                  src="asset_files/images/go_back.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </button>
+            </div>
+          </section>
+
+          <!-- {{-- ------------------------- Market Segment ----------------------------------- --}} -->
+
+          <!-- {{-- ------------------------- Market Actors ----------------------------------- --}} -->
+
+          <section class="solution-3" style="display: none">
+            <div class="containers service_margin_padding" id="service">
+              <div class="row mr-0">
+                <div class="col-lg-4 col-md-6" id="service">
+                  <img
+                    src="asset_files/images/agrigate-half.png"
+                    class="agrigate-image-2 d-block mr-auto img-fluid"
+                  />
+
+                  <div
+                    class="agrigate-text bottom-right-2"
+                    style="font-size: 18px"
+                  >
+                    Market Actors
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-6 modify-col-agrigate">
+                  <div class="agrigate-styles">
+                    <img
+                      src="asset_files/images/market_actors.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <br />
+
+              <button class="channel-to-previous" onclick="back()">
+                <img
+                  src="asset_files/images/go_back.png"
+                  alt=""
+                  class="img-fluid"
+                />
+              </button>
+            </div>
+          </section>
+
+          <!-- {{-- ------------------------- Market Actors ----------------------------------- --}} -->
+
+          <!-- {{-- ------------------------- SD Channels ----------------------------------- --}} -->
+
+          <section class="solution-4" style="display: none">
+            <div class="containers service_margin_padding" id="service">
+              <div class="row mr-0">
+                <div class="col-lg-4 col-md-6" id="service">
+                  <img
+                    src="asset_files/images/agrigate-half.png"
+                    class="agrigate-image-2 d-block mr-auto img-fluid"
+                  />
+
+                  <div
+                    class="agrigate-text bottom-right-2"
+                    style="font-size: 18px"
+                  >
+                    SD Channels
+                  </div>
+                </div>
+                <div class="col-lg-8 col-md-6 modify-col-agrigate">
+                  <div class="agrigate-styles">
+                    <img
+                      src="asset_files/images/sd_flower.jpg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <br />
+                  <button class="channel-to-previous" onclick="back()">
+                    <img
+                      src="asset_files/images/go_back.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </button>
+                </div>
+              </div>
+              <br />
+            </div>
+          </section>
+
+          <!-- {{-- ------------------------- SD Channels ----------------------------------- --}} -->
+
+          <!-- {{-- ---------------- script -------------------- --}} -->
+
+          <script>
+            $("#iot").click(function () {
+              $("#iot").css("display", "none");
+              $("#advisory").css("display", "none");
+              $("#financial").css("display", "none");
+              $("#digital").css("display", "none");
+
+              $(".pointer-1")
+                .animate(
+                  {
+                    "margin-right": "30%",
+                    opacity: "0",
+                  },
+                  500
+                )
+                .fadeOut(1);
+              $(".solution-1").fadeIn(4500);
+            });
+
+            $("#advisory").click(function () {
+              $("#iot").css("display", "none");
+              $("#advisory").css("display", "none");
+              $("#financial").css("display", "none");
+              $("#digital").css("display", "none");
+
+              $(".pointer-1")
+                .animate(
+                  {
+                    "margin-right": "30%",
+                    opacity: "0",
+                  },
+                  500
+                )
+                .fadeOut(1);
+              $(".solution-2").fadeIn(4500);
+            });
+
+            $("#financial").click(function () {
+              $("#iot").css("display", "none");
+              $("#advisory").css("display", "none");
+              $("#financial").css("display", "none");
+              $("#digital").css("display", "none");
+
+              $(".pointer-1")
+                .animate(
+                  {
+                    "margin-right": "30%",
+                    opacity: "0",
+                  },
+                  500
+                )
+                .fadeOut(1);
+              $(".solution-3").fadeIn(4500);
+            });
+
+            $("#digital").click(function () {
+              $("#iot").css("display", "none");
+              $("#advisory").css("display", "none");
+              $("#financial").css("display", "none");
+              $("#digital").css("display", "none");
+
+              $(".pointer-1")
+                .animate(
+                  {
+                    "margin-right": "30%",
+                    opacity: "0",
+                  },
+                  500
+                )
+                .fadeOut(1);
+              $(".solution-4").fadeIn(4500);
+            });
+
+            function back() {
+              $("#iot").css("display", "inline");
+              $("#advisory").css("display", "inline");
+              $("#financial").css("display", "inline");
+              $("#digital").css("display", "inline");
+
+              $(".pointer-1")
+                .animate({
+                  "margin-right": "0px",
+                  opacity: "1",
+                })
+                .fadeIn(1000);
+              $(".solution-1").css("display", "none");
+              $(".solution-2").css("display", "none");
+              $(".solution-3").css("display", "none");
+              $(".solution-4").css("display", "none");
+            }
+
+            // ------------------------- Hover in and out ----------------------------
+
+            function showThis(variable) {
+              $(variable).fadeIn();
+            }
+
+            function hideThis(variable) {
+              $(variable).fadeOut();
+            }
+
+            // ------------------------- Hover in and out ----------------------------
+          </script>
+
+          <!-- {{-- ---------------- script -------------------- --}} -->
+
+          <br />
+        </section>
+
+        <!-- {{-- ------------------------------------------------------------------------------------------------------- Flower animation part --------------------------------------------------------------------------------------------------------------- --}} -->
+
+        <!-- ---------------------------------- Agrigate Ecosystem ---------------------------------- -->
+      </section>
+
+      <!-- ---------------------------------- our_solutions ---------------------------------- -->
+
+      <div>
+        <div class="our_solutions solution-margin">
+          <p>Our Solutions</p>
+        </div>
+
+        <div class="our_solutions__points">
+          <div class="row" style="margin: 0; padding: 0">
+            <div class="col"></div>
+            <div class="col-8">
+              <div class="our_solutions__tabs">
+                <div class="our_solutions">
+                  <p style="background-color: #255302; color: white">Farmer</p>
+                </div>
+                <div class="our_solutions">
+                  <p style="background-color: #255302; color: white">
+                    Retailer
+                  </p>
+                </div>
+                <div class="our_solutions">
+                  <p style="background-color: #255302; color: white">
+                    Institutional Buyers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </div>
+
+        <div class="row" style="margin: 0; padding: 0">
+          <div class="col"></div>
+          <div class="col-md-3">
+            <div>
+              <img
+                src="asset_files/images/solutions/s-1.png"
+                alt=""
+                class="img-fluid our_solutions__leftside__image"
+              />
+            </div>
+            <br />
+            <div>
+              <img
+                src="asset_files/images/solutions/s-2.png"
+                alt=""
+                class="img-fluid our_solutions__leftside__image"
+              />
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="border-position">
+              <div class="border-position__solutions">
+                <div class="row">
+                  <div class="col-3">
+                    <img
+                      src="asset_files/images/solutions/p-1.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="asset_files/images/solutions/p-2.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="asset_files/images/solutions/p-3.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="col-3">
+                    <img
+                      src="asset_files/images/solutions/p-4.png"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="our_solutions">
+                <p style="background-color: #255302; color: white">
+                  Connecting with Stakeholders
+                </p>
+              </div>
+              <div>
+                <ul class="our_solutions__list">
+                  <li>
+                    Facilitate financial inclusion of farmer and rural
+                    stakeholders via bank account opening, transaction record
+                    keeping and facilitation of loans at low interest.
+                  </li>
+                  <br />
+                  <li>
+                    Promotion of insurance adoption through innovative service
+                    bundling.
+                  </li>
+                  <br />
+                  <li>
+                    Facilitates communication with government non government
+                    organization.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col"></div>
         </div>
       </div>
 
@@ -395,11 +879,11 @@
 
     <!-- ----------------------------------------------  footer ----------------------------------------------  -->
   </body>
-  <script
+  <!-- <script
     src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"
-  ></script>
+  ></script> -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"

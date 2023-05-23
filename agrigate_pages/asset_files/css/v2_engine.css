@@ -1,0 +1,316 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/*=============== BASE ===============*/
+
+/* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1254px) {
+  .map-div {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.agrigate-image {
+  width: 500px;
+  height: 400px;
+}
+.agrigate-image-2 {
+  width: 300px;
+  height: 569px;
+  margin-left: -28px;
+}
+/* Container holding the image and the text */
+.containers {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.service_margin_padding {
+  border: 3px solid #255302;
+  padding: 30px;
+  border-radius: 45px;
+}
+
+.bottom-left {
+  position: absolute;
+  top: 45%;
+  left: 36%;
+  transform: translate(-30%, -4%);
+}
+
+.top {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom {
+  position: absolute;
+  top: 80%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-right {
+  position: absolute;
+  top: 45%;
+  left: 56%;
+  transform: translate(-1%, -1%);
+}
+.bottom-right-2 {
+  position: absolute;
+  top: 45%;
+  left: 27%;
+  transform: translate(-1%, -1%);
+}
+
+.channel-to-previous {
+  border: none;
+}
+
+#iot,
+#advisory,
+#financial,
+#digital {
+  font-weight: bold;
+}
+
+.flower_animation_part__padding_first {
+  padding: 60px;
+}
+
+.flower_animation_part__padding__first__row {
+  border: 3px solid #255302;
+  padding: 30px;
+  border-radius: 45px;
+}
+
+.right-sided-flower-part {
+  padding-top: 30px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: justify;
+
+  color: #255302;
+}
+
+.agrigate-styles {
+  margin-left: -500px;
+}
+.col-agrigate {
+  margin-top: 220px;
+}
+@media only screen and (max-width: 600px) {
+  .bottom-right-2 {
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    transform: translate(-1%, -1%);
+  }
+  .agrigate-styles {
+    margin-left: 10px;
+  }
+  .col-agrigate {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  .bottom-left {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-80%, -4%);
+  }
+  .bottom-right-2 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    transform: translate(-1%, -1%);
+  }
+  .col-agrigate {
+    margin-top: 200px;
+  }
+  .agrigate-styles {
+    margin-left: -80px;
+  }
+}
+@media only screen and (min-width: 1400px) and (max-width: 1700px) {
+  .bottom-left {
+    position: absolute;
+    top: 45%;
+    left: 35%;
+    transform: translate(-1%, -4%);
+  }
+}
+
+@media only screen and (min-width: 1700px) and (max-width: 1930px) {
+  .bottom-left {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    transform: translate(60%, -4%);
+  }
+  .bottom-right {
+    position: absolute;
+    top: 45%;
+    left: 45.5%;
+    transform: translate(-30%, -1%);
+  }
+  .bottom-right-2 {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+    transform: translate(-30%, -1%);
+  }
+  .agrigate-styles {
+    /* margin-left: -1200px; */
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .flower_animation_part__padding_first {
+    padding: 0px;
+  }
+
+  .flower_animation_part__padding__first__row {
+    border: none;
+    padding: 0px;
+  }
+
+  .top {
+    position: absolute;
+    top: 15%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottom-left {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+  }
+
+  .bottom-right {
+    position: absolute;
+    top: 45%;
+    left: 67%;
+  }
+
+  .bottom {
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+
+  #iot,
+  #advisory,
+  #financial,
+  #digital {
+    font-size: 14px;
+  }
+}
+
+/* ------------------------- ipad pro ----------------------------------- */
+
+@media only screen and (min-width: 551px) and (max-width: 1000px) {
+  .flower_animation_part__padding_first {
+    padding: 0px;
+  }
+
+  .flower_animation_part__padding__first__row {
+    border: none;
+    padding: 0px;
+  }
+
+  .bottom-left {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+  }
+
+  .top {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #slidebox_image_position {
+    display: block;
+    margin: auto;
+  }
+
+  .bottom {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottom-right {
+    position: absolute;
+    top: 45%;
+    left: 61%;
+  }
+  .bottom-right-2 {
+    position: absolute;
+    top: 45%;
+    left: 27%;
+  }
+}
+
+.agrigate-text {
+  color: #255302;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.crops-box {
+  background-color: #e2efd9;
+  width: 200px;
+  height: 40px;
+  border: none;
+}
+
+/* ---------------------------------------- media screen for 1366 x 768 desktop screens ---------------------------------------- */
+
+@media only screen and (max-width: 1366px) and (device-height: 768px) {
+  .top {
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottom {
+    position: absolute;
+    top: 80%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+  }
+
+  .bottom-left {
+    position: absolute;
+    top: 45%;
+    left: 14%;
+    transform: translate(-30%, -4%);
+  }
+
+  .bottom-right {
+    position: absolute;
+    top: 45%;
+    left: 59%;
+    transform: translate(-1%, -1%);
+  }
+}
+
+/* --------------------------------------------------------------------------- end - media screen for 1366 x 768 desktop screens */
