@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 /* -------------------------- section 1 --------------------------  */
@@ -16,13 +16,20 @@
   background-size: cover;
 }
 
+.nav-link {
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #283d1f !important;
+}
+
 .nav-link-itmes-color {
   font-family: Roboto Condensed;
   font-size: 22px;
   font-weight: 700;
   text-align: left;
   color: #283d1f !important;
-  margin: 0 25px;
+  margin: 0 45px;
 }
 
 .nav-link-itmes-number-color {
@@ -32,7 +39,18 @@
 
 /* ------------- short nav -------------  */
 
-.short-image-logo {
+.short-image-logo-1 {
+  width: 37px;
+  margin-top: 6px;
+  /* margin: 0 5px; */
+}
+
+.short-image-logo-2 {
+  width: 39px;
+  margin: 0 5px;
+}
+
+.short-image-logo-3 {
   width: 30px;
   margin: 0 5px;
 }
@@ -50,6 +68,10 @@
 
 /* -------------------------- section 2 --------------------------  */
 
+.second_section {
+  background-color: #eaf3e4;
+}
+
 .agrigate_ecosystem_flower {
   display: flex;
   justify-content: center;
@@ -62,7 +84,9 @@
   border-radius: 45px;
   font-weight: bold;
   color: #255302;
-  /* margin-bottom: -40px; */
+  text-align: center;
+  width: 400px;
+  margin-bottom: -40px;
 }
 
 .our_solutions {
@@ -77,6 +101,8 @@
   border-radius: 45px;
   font-weight: bold;
   color: #255302;
+  text-align: center;
+  width: 400px;
 }
 
 /* ------------- our partners -------------  */
@@ -123,7 +149,7 @@
 
 .get_in_touch {
   padding: 10px 30px;
-  border-radius: 45px;
+  border-radius: 10px;
   font-weight: bold;
   background-color: #255302;
   color: white;
@@ -171,6 +197,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 120px;
+}
+
+.our_solutions__leftside__image__responsive {
+  display: block;
+  margin: auto;
 }
 
 /* ------------- our solutions -------------  */

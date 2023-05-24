@@ -1,0 +1,101 @@
+/* --------------------------------------------- media screen for tab ( portrait ) ------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* ------------------------------------------------------------------------------------ end - media screen for tab ( portrait )  */
+
+/* ------------------------------------------ media screen for tab (landscape) ------------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For landscape layouts only */
+}
+
+/* -------------------------------------------------------------------------------------- end - media screen for tab (landscape) */
+
+/* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* ---------------------------------------------------------------------------------- end - media screen for tab (pro) portrait */
+
+/* ---------------------------------------------- media screen for tab ( pro ) landscape --------------------------------------- */
+
+@media only screen and (min-device-width: 1366px) and (min-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ------------------------------------------------------------------------------- end - media screen for tab ( pro ) landscape  */
+
+/* ------------------------------------------------------- media screen for mobile devices ------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .right-sided-flower-part p {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .our_solutions__tabs {
+    /* padding-bottom: -200px; */
+    padding-bottom: 18px;
+  }
+
+  .border-div-responsive-state {
+    padding-top: 96px;
+  }
+
+  .border-position__solutions {
+    margin-top: -61px;
+  }
+
+  .partnership-with-us {
+    display: none;
+  }
+
+  .footer-second-part {
+    padding-top: 20px;
+  }
+
+  .footer-third-part {
+    padding-top: 20px;
+  }
+
+  .footer-third-part p {
+    line-height: 1;
+  }
+
+  .agrigate_ecosystem_flower p {
+    margin-bottom: 0px;
+  }
+
+  .our_solutions p {
+    width: auto;
+  }
+
+  .nav-link-itmes-color {
+    margin: 0 30px;
+  }
+
+  .responsive-partners-logo {
+    width: 80px;
+  }
+
+  .agrigate_ecosystem_flower p {
+    width: auto;
+  }
+}
+
+/* --------------------------------------------------------------------------------------  end - media screen for mobile devices */
+
+/* ---------------------------------------- media screen for 1366 x 768 desktop screens ---------------------------------------- */
+
+@media only screen and (max-width: 1366px) {
+  .nav-link-itmes-color {
+    margin: 0 30px;
+  }
+
+  .our_solutions p {
+    width: 200px;
+  }
+}
+
+/* --------------------------------------------------------------------------- end - media screen for 1366 x 768 desktop screens */
