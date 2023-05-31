@@ -1,0 +1,140 @@
+/* ----------------------- Flower Section -----------------------  */
+
+/* ---------- main section ----------  */
+
+.flower-section {
+  border: 3px solid #255302;
+  border-radius: 45px;
+  margin: 30px;
+  padding: 20px;
+}
+
+.flower-area {
+  display: block;
+  margin: auto;
+}
+
+.flower-background {
+  background-image: url("images/flower-logo.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flower-area {
+  position: relative;
+}
+
+.top-column-alignment {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.top {
+  position: absolute;
+  top: 12%;
+  left: 42.5%;
+}
+
+.left {
+  position: absolute;
+  top: 45%;
+  left: 13%;
+}
+
+.right {
+  position: absolute;
+  top: 42%;
+  right: 12%;
+}
+
+.bottom {
+  position: absolute;
+  top: 80%;
+  left: 42.5%;
+}
+
+.top p,
+.left p,
+.right p,
+.bottom p {
+  color: #255302;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.flower-right-side-area {
+  display: block;
+  margin: auto;
+}
+
+.flower-right-side-area p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 35px;
+  text-align: justify;
+  color: #255302;
+}
+
+/* ---------- main section ----------  */
+
+/* ---------- sub section ----------  */
+/* ---------- sub section ----------  */
+
+/* ----------------------- Flower Section -----------------------  */
+
+/* --------------------------------------------- media screen for tab ( portrait ) ------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+}
+
+/* ------------------------------------------------------------------------------------ end - media screen for tab ( portrait )  */
+
+/* ------------------------------------------ media screen for tab (landscape) ------------------------------------------------- */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For landscape layouts only */
+}
+
+/* -------------------------------------------------------------------------------------- end - media screen for tab (landscape) */
+
+/* --------------------------------------------- media screen for tab (pro) portrait ------------------------------------------- */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+}
+
+/* ---------------------------------------------------------------------------------- end - media screen for tab (pro) portrait */
+
+/* ---------------------------------------------- media screen for tab ( pro ) landscape --------------------------------------- */
+
+@media only screen and (min-device-width: 1366px) and (min-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+}
+
+/* ------------------------------------------------------------------------------- end - media screen for tab ( pro ) landscape  */
+
+/* ------------------------------------------------------- media screen for mobile devices ------------------------------------- */
+@media only screen and (max-width: 600px) {
+  .top p,
+  .left p,
+  .right p,
+  .bottom p {
+    color: #255302;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+  }
+
+  .flower-right-side-area p {
+    padding-top: 10px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+    text-align: justify;
+    color: #255302;
+  }
+}
+
+/* --------------------------------------------------------------------------------------  end - media screen for mobile devices */
