@@ -82,6 +82,22 @@
   .agrigate_ecosystem_flower p {
     width: auto;
   }
+
+  .nav-link-itmes-color {
+    margin: 0 30px;
+  }
+
+  .responsive-partners-logo {
+    width: 80px;
+  }
+
+  .agrigate_ecosystem_flower p {
+    width: auto;
+  }
+
+  .carousel .navbar {
+    background-color: #e2e5d9;
+  }
 }
 
 /* --------------------------------------------------------------------------------------  end - media screen for mobile devices */
@@ -89,6 +105,14 @@
 /* ---------------------------------------- media screen for 1366 x 768 desktop screens ---------------------------------------- */
 
 @media only screen and (max-width: 1366px) {
+  /* .nav-link-itmes-color {
+    margin: 0 30px;
+  } */
+
+  .our_solutions p {
+    width: 200px;
+  }
+
   .nav-link-itmes-color {
     margin: 0 30px;
   }

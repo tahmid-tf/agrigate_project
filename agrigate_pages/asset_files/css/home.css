@@ -8,6 +8,34 @@
 
 /* -------------------------- section 1 --------------------------  */
 
+/* .navbar-section-css {
+  background-color: #e2e5d9;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-link {
+  font-family: "Roboto Condensed", sans-serif !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #283d1f !important;
+}
+
+.nav-link-itmes-color {
+  font-family: Roboto Condensed;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+  color: #283d1f !important;
+  margin: 0 45px;
+}
+
+.nav-link-itmes-number-color {
+  font-family: Roboto Condensed;
+  color: #283d1f !important;
+} */
+
 .navbar-section-css {
   /* background-image: url("../images/r.png"); */
   background-color: #e2e5d9;
@@ -35,6 +63,23 @@
 .nav-link-itmes-number-color {
   font-family: Roboto Condensed;
   color: #283d1f !important;
+}
+
+.carousel .navbar {
+  background-color: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+}
+
+.carousel .navbar-nav .nav-link {
+  /* color: white; */
+}
+
+.carousel .navbar-toggler-icon {
+  /* background-color: white; */
 }
 
 /* ------------- short nav -------------  */
@@ -70,6 +115,7 @@
 
 .second_section {
   background-color: #eaf3e4;
+  padding: 30px;
 }
 
 .agrigate_ecosystem_flower {
