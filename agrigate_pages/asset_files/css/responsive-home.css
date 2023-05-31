@@ -98,6 +98,10 @@
   .carousel .navbar {
     background-color: #e2e5d9;
   }
+
+  .left-side-short-nav {
+    display: none;
+  }
 }
 
 /* --------------------------------------------------------------------------------------  end - media screen for mobile devices */
