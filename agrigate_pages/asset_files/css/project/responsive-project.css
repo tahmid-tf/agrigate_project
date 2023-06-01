@@ -1,0 +1,19 @@
+/* --------------------------- project page media query --------------------------- */
+
+@media only screen and (max-width: 600px) {
+  .projects-hr {
+    width: auto;
+    height: 0px;
+  }
+
+  .third-section-flex {
+    display: block;
+    margin: auto;
+  }
+
+  .mobile-responsive-state {
+    margin-top: 10px;
+  }
+}
+
+/* --------------------------- project page media query --------------------------- */

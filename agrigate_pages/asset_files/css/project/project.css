@@ -31,3 +31,54 @@
 }
 
 /* ------------------- second section -------------------  */
+
+/* ------------------- third section -------------------  */
+
+.third-section {
+  background-color: #255302;
+  padding: 30px;
+}
+
+.third-section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.third-section__first__input {
+  width: 300px;
+  border: none;
+  outline: none;
+  background-color: #e2efd9;
+}
+
+.third-section__first__input::placeholder {
+  color: #255302;
+  font-weight: bold;
+}
+
+.third-section__first {
+  width: auto;
+  padding: 10px;
+  background-color: #e2efd9;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.third-section__second {
+  width: auto;
+  padding: 15px;
+  background-color: #e2efd9;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.third-section__first__submit {
+  padding: 10px;
+  background-color: #255302;
+  color: white;
+}
+
+/* ------------------- third section -------------------  */
