@@ -50,9 +50,16 @@
   border: none;
   outline: none;
   background-color: #e2efd9;
+  color: #255302;
+  font-weight: bold;
 }
 
 .third-section__first__input::placeholder {
+  color: #255302;
+  font-weight: bold;
+}
+
+.third-section__second__options::placeholder {
   color: #255302;
   font-weight: bold;
 }
@@ -82,3 +89,52 @@
 }
 
 /* ------------------- third section -------------------  */
+
+/* ------------------- forth section -------------------  */
+
+.project-row-padding {
+  background-color: #e2efd9;
+  margin: 40px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.project-list-alignment {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.project-name__p {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  /* identical to box height */
+  text-align: justify;
+
+  color: #38512e;
+}
+
+.project-name__p,
+.project-content__p {
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+}
+
+.project-content__p {
+  background: #255302;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.second-col-padding {
+  display: block;
+  margin: auto;
+}
+
+/* ------------------- forth section -------------------  */
