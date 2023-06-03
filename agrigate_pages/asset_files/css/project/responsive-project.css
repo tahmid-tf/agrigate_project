@@ -23,6 +23,20 @@
     width: 200px;
     color: #ffffff;
   }
+
+  .dropdown-toggle::after {
+    margin-left: auto;
+  }
+
+  .bootstrap-button-modification {
+    border: 4px solid #38512e;
+    border-radius: 10px;
+    width: 332px;
+  }
+
+  .app-feature-text {
+    margin-left: 20px;
+  }
 }
 
 /* --------------------------- project page media query --------------------------- */
