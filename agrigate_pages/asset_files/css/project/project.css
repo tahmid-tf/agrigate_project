@@ -138,3 +138,43 @@
 }
 
 /* ------------------- forth section -------------------  */
+
+/* ------------------- fifth section -------------------  */
+
+.blog-card-date {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 41px;
+  /* identical to box height */
+
+  text-align: justify;
+
+  color: #38512e;
+}
+
+.blog-main-div {
+  margin: 40px;
+}
+
+.blog-card-padding {
+  width: auto;
+  background: #e2efd9;
+  border-radius: 20px;
+  padding: 20px;
+  border: none;
+}
+
+.card-text-content {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  color: #38512e;
+}
+
+.card-learn-more {
+  background-color: #38512e !important;
+  border: none;
+}
+
+/* ------------------- fifth section -------------------  */
