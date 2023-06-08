@@ -305,3 +305,25 @@
   width: 50%;
 }
 /* ------------------- Agrigate APP ------------------- */
+
+/* ------------------- Team ------------------- */
+
+.team-social-icon-spacing {
+  text-align: center;
+  margin-top: -62px;
+}
+
+.team-social-media-icons {
+  color: #255302;
+}
+
+.click-to-learn-more {
+  display: inline;
+  margin: auto;
+  background: #255302;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 65px;
+}
+
+/* ------------------- Team ------------------- */
