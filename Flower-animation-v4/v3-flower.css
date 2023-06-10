@@ -80,8 +80,22 @@
 
 /* ---------- main section ----------  */
 
-/* ---------- sub section ----------  */
-/* ---------- sub section ----------  */
+/* --------------- update 8/6/22 --------------- */
+
+.flower-iamge-secondary {
+  border-radius: 35px;
+}
+
+.flower-left-side-image {
+  margin-left: -19px;
+}
+
+.flower-right-side-menu {
+  display: block;
+  margin: auto;
+}
+
+/* --------------- update 8/6/22 --------------- */
 
 /* ----------------------- Flower Section -----------------------  */
 
@@ -135,6 +149,10 @@
     text-align: justify;
     color: #255302;
   }
+
+  /* --------------- update 8/6/22 --------------- */
+
+  /* --------------- update 8/6/22 --------------- */
 }
 
 /* --------------------------------------------------------------------------------------  end - media screen for mobile devices */

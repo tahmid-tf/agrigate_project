@@ -12,13 +12,31 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ----------------------- new jqury cdn ----------------------- -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ----------------------- new jqury cdn ----------------------- -->
   </head>
   <body>
     <!-- ----------------------------------------------- Flower Section ----------------------------------------------- -->
 
     <!-- -------------------- main section --------------------  -->
 
-    <section class="flower-section">
+    <section class="flower-section fl-main">
       <div class="row" style="margin: 0; padding: 0">
         <div class="col"></div>
         <div class="col-md-5 top-column-alignment">
@@ -27,20 +45,26 @@
               <img src="images/flower-logo.png" alt="" class="img-fluid" />
             </div>
             <div class="top">
-              <p style="text-align: center">Market <br />Segment</p>
+              <p style="text-align: center; cursor: pointer" id="iot">
+                APP/ <br />Website
+              </p>
             </div>
             <div class="left">
-              <p style="text-align: center">Market <br />Actors</p>
+              <p style="text-align: center; cursor: pointer" id="advisory">
+                Market <br />Actors
+              </p>
             </div>
 
             <div class="right">
-              <p style="text-align: center">
+              <p style="text-align: center; cursor: pointer" id="financial">
                 Service <br />Delivery <br />Channels
               </p>
             </div>
 
             <div class="bottom">
-              <p style="text-align: center">Services</p>
+              <p style="text-align: center; cursor: pointer" id="digital">
+                Services
+              </p>
             </div>
           </div>
         </div>
@@ -62,13 +86,257 @@
 
     <!-- -------------------- main section --------------------  -->
 
+    <!-- -------------------- extended section --------------------  -->
+
+    <section
+      class="flower-section flower-iamge-secondary solution-2"
+      style="display: none"
+    >
+      <div class="row" style="margin: 0; padding: 0">
+        <div class="col-md-3" style="margin: 0; padding: 0">
+          <img
+            src="images/market-actors.png"
+            alt=""
+            class="img-fluid flower-left-side-image"
+          />
+        </div>
+
+        <div class="col-md-9 flower-right-side-menu">
+          <img src="images/side-1.png" alt="" class="img-fluid" />
+        </div>
+
+        <div class="col-md-12">
+          <div style="display: flex; justify-content: right">
+            <i
+              class="fa-solid fa-square-caret-left fa-2xl"
+              style="color: #255302"
+              onclick="back()"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- extended section --------------------  -->
+
+    <!-- -------------------- extended section  - part 2 [ sd Channels ] --------------------  -->
+
+    <section
+      class="flower-section flower-iamge-secondary solution-3"
+      style="display: none"
+    >
+      <div class="row" style="margin: 0; padding: 0">
+        <div class="col-md-3" style="margin: 0; padding: 0">
+          <img
+            src="images/sd-channels.png"
+            alt=""
+            class="img-fluid flower-left-side-image"
+          />
+        </div>
+
+        <div class="col-md-9 flower-right-side-menu">
+          <img src="images/sd-channels-2.png" alt="" class="img-fluid" />
+        </div>
+
+        <div class="col-md-12">
+          <div style="display: flex; justify-content: right">
+            <i
+              class="fa-solid fa-square-caret-left fa-2xl"
+              style="color: #255302"
+              onclick="back()"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- extended section - part 2 [ sd Channels ] --------------------  -->
+
+    <!-- -------------------- extended section  - part 3 [APP] --------------------  -->
+
+    <section
+      class="flower-section flower-iamge-secondary solution-1"
+      style="display: none"
+    >
+      <div class="row" style="margin: 0; padding: 0">
+        <div class="col-md-3" style="margin: 0; padding: 0">
+          <img
+            src="images/app_service.png"
+            alt=""
+            class="img-fluid flower-left-side-image"
+          />
+        </div>
+
+        <div class="col-md-9 flower-right-side-menu">
+          <img src="images/app-right-module.png" alt="" class="img-fluid" />
+        </div>
+
+        <div class="col-md-12">
+          <div style="display: flex; justify-content: right">
+            <i
+              class="fa-solid fa-square-caret-left fa-2xl"
+              style="color: #255302"
+              onclick="back()"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- extended section - part 3 [APP] --------------------  -->
+
+    <!-- -------------------- extended section  - part 4 [SERVICES] --------------------  -->
+
+    <section
+      class="flower-section flower-iamge-secondary solution-4"
+      style="display: none"
+    >
+      <div class="row" style="margin: 0; padding: 0">
+        <div class="col-md-3" style="margin: 0; padding: 0">
+          <img
+            src="images/services-left.png"
+            alt=""
+            class="img-fluid flower-left-side-image"
+          />
+        </div>
+
+        <div class="col-md-9 flower-right-side-menu">
+          <img src="images/services-right.png" alt="" class="img-fluid" />
+        </div>
+
+        <div class="col-md-12">
+          <div style="display: flex; justify-content: right">
+            <i
+              class="fa-solid fa-square-caret-left fa-2xl"
+              style="color: #255302"
+              onclick="back()"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- extended section - part 4 [SERVICES] --------------------  -->
+
+    <!-- ----------------------------------------- Flower Section JS -----------------------------------------  -->
+    <script>
+      $("#iot").click(function () {
+        // $("#iot").css("display", "none");
+        // $("#advisory").css("display", "none");
+        // $("#financial").css("display", "none");
+        // $("#digital").css("display", "none");
+
+        $(".fl-main")
+          .animate(
+            {
+              // "margin-right": "30%",
+              opacity: "0",
+            },
+            500
+          )
+          .fadeOut(1);
+        $(".solution-1").fadeIn(4500);
+      });
+
+      $("#advisory").click(function () {
+        // $("#iot").css("display", "none");
+        // $("#advisory").css("display", "none");
+        // $("#financial").css("display", "none");
+        // $("#digital").css("display", "none");
+
+        $(".fl-main")
+          .animate(
+            {
+              // "margin-right": "30%",
+              opacity: "0",
+            },
+            500
+          )
+          .fadeOut(1);
+        $(".solution-2").fadeIn(4500);
+      });
+
+      $("#financial").click(function () {
+        // $("#iot").css("display", "none");
+        // $("#advisory").css("display", "none");
+        // $("#financial").css("display", "none");
+        // $("#digital").css("display", "none");
+
+        $(".fl-main")
+          .animate(
+            {
+              // "margin-right": "30%",
+              opacity: "0",
+            },
+            500
+          )
+          .fadeOut(1);
+        $(".solution-3").fadeIn(4500);
+      });
+
+      $("#digital").click(function () {
+        // $("#iot").css("display", "none");
+        // $("#advisory").css("display", "none");
+        // $("#financial").css("display", "none");
+        // $("#digital").css("display", "none");
+
+        $(".fl-main")
+          .animate(
+            {
+              // "margin-right": "30%",
+              opacity: "0",
+            },
+            500
+          )
+          .fadeOut(1);
+        $(".solution-4").fadeIn(4500);
+      });
+
+      function back() {
+        // $("#iot").css("display", "inline");
+        // $("#advisory").css("display", "inline");
+        // $("#financial").css("display", "inline");
+        // $("#digital").css("display", "inline");
+
+        $(".fl-main")
+          .animate({
+            // "margin-right": "0px",
+            opacity: "1",
+          })
+          .fadeIn(1000);
+        $(".solution-1").css("display", "none");
+        $(".solution-2").css("display", "none");
+        $(".solution-3").css("display", "none");
+        $(".solution-4").css("display", "none");
+      }
+
+      // ------------------------- Hover in and out ----------------------------
+
+      function showThis(variable) {
+        $(variable).fadeIn();
+      }
+
+      function hideThis(variable) {
+        $(variable).fadeOut();
+      }
+    </script>
+    <!-- ----------------------------------------- Flower Section JS -----------------------------------------  -->
+
     <!-- ----------------------------------------------- Flower Section ----------------------------------------------- -->
   </body>
+
   <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+    integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+  <!-- <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"
-  ></script>
+  ></script> -->
   <script
     src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
