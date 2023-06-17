@@ -151,11 +151,28 @@
                   >About <span class="sr-only">(current)</span></a
                 >
               </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link nav-link-itmes-color" href="#"
-                  >Solutions</a
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle nav-link nav-link-itmes-color"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
+                  Solutions
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Solution For Farmers</a>
+                  <a class="dropdown-item" href="#">Solution For Retailers</a>
+                  <a class="dropdown-item" href="#"
+                    >Solution For Institutional Buyers</a
+                  >
+                </div>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link nav-link nav-link-itmes-color" href="#"
                   >Projects</a
@@ -203,50 +220,284 @@
 
       <!-- {{-- ------------------------------------------------------------------------------------------------------- Flower animation part --------------------------------------------------------------------------------------------------------------- --}} -->
 
-      <section class="flower-section">
-        <div class="row" style="margin: 0; padding: 0">
-          <div class="col"></div>
-          <div class="col-md-5 top-column-alignment">
-            <div class="flower-area">
-              <div>
-                <img
-                  src="asset_files/images/agrigate.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </div>
-              <div class="top">
-                <p style="text-align: center">Market <br />Segment</p>
-              </div>
-              <div class="left">
-                <p style="text-align: center">Market <br />Actors</p>
-              </div>
+      <section class="total-flower-section">
+        <!-- -------------------- main section --------------------  -->
 
-              <div class="right">
-                <p style="text-align: center">
-                  Service <br />Delivery <br />Channels
+        <section class="flower-section fl-main">
+          <div class="row" style="margin: 0; padding: 0">
+            <div class="col"></div>
+            <div class="col-md-5 top-column-alignment">
+              <div class="flower-area">
+                <div>
+                  <img
+                    src="asset_files/images/flower-logo.png"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="top">
+                  <p style="text-align: center; cursor: pointer" id="iot">
+                    APP/ <br />Website
+                  </p>
+                </div>
+                <div class="left">
+                  <p style="text-align: center; cursor: pointer" id="advisory">
+                    Market <br />Actors
+                  </p>
+                </div>
+
+                <div class="right">
+                  <p style="text-align: center; cursor: pointer" id="financial">
+                    Service <br />Delivery <br />Channels
+                  </p>
+                </div>
+
+                <div class="bottom">
+                  <p style="text-align: center; cursor: pointer" id="digital">
+                    Services
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 flower-right-side-area">
+              <div>
+                <p>
+                  Agrigate has defined 4 key segments in the agri value chain
+                  that need to coalesce in order to build a network platform
+                  that can facilitate business interactions between
+                  institutional clients (agro-processors, feed millers, traders,
+                  etc.) and producers, to increase their business potential
+                  while receiving services through effective delivery channels.
                 </p>
               </div>
+            </div>
+            <div class="col"></div>
+          </div>
+        </section>
 
-              <div class="bottom">
-                <p style="text-align: center">Services</p>
+        <!-- -------------------- main section --------------------  -->
+
+        <!-- -------------------- extended section --------------------  -->
+
+        <section
+          class="flower-section flower-iamge-secondary solution-2"
+          style="display: none"
+        >
+          <div class="row" style="margin: 0; padding: 0">
+            <div class="col-md-3" style="margin: 0; padding: 0">
+              <img
+                src="asset_files/images/market-actors.png"
+                alt=""
+                class="img-fluid flower-left-side-image"
+              />
+            </div>
+
+            <div class="col-md-9 flower-right-side-menu">
+              <img
+                src="asset_files/images/side-1.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="col-md-12">
+              <div style="display: flex; justify-content: right">
+                <i
+                  class="fa-solid fa-square-caret-left fa-2xl"
+                  style="color: #255302; cursor: pointer"
+                  onclick="back()"
+                ></i>
               </div>
             </div>
           </div>
-          <div class="col-md-5 flower-right-side-area">
-            <div>
-              <p class="flower-right-side-p-content">
-                Agrigate has defined 4 key segments in the agri value chain that
-                need to coalesce in order to build a network platform that can
-                facilitate business interactions between institutional clients
-                (agro-processors, feed millers, traders, etc.) and producers, to
-                increase their business potential while receiving services
-                through effective delivery channels.
-              </p>
+        </section>
+
+        <!-- -------------------- extended section --------------------  -->
+
+        <!-- -------------------- extended section  - part 2 [ sd Channels ] --------------------  -->
+
+        <section
+          class="flower-section flower-iamge-secondary solution-3"
+          style="display: none"
+        >
+          <div class="row" style="margin: 0; padding: 0">
+            <div class="col-md-3" style="margin: 0; padding: 0">
+              <img
+                src="asset_files/images/sd-channels.png"
+                alt=""
+                class="img-fluid flower-left-side-image"
+              />
+            </div>
+
+            <div class="col-md-9 flower-right-side-menu">
+              <img
+                src="asset_files/images/sd-channels-2.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="col-md-12">
+              <div style="display: flex; justify-content: right">
+                <i
+                  class="fa-solid fa-square-caret-left fa-2xl"
+                  style="color: #255302; cursor: pointer"
+                  onclick="back() "
+                ></i>
+              </div>
             </div>
           </div>
-          <div class="col"></div>
-        </div>
+        </section>
+
+        <!-- -------------------- extended section - part 2 [ sd Channels ] --------------------  -->
+
+        <!-- -------------------- extended section  - part 3 [APP] --------------------  -->
+
+        <section
+          class="flower-section flower-iamge-secondary solution-1"
+          style="display: none"
+        >
+          <div class="row" style="margin: 0; padding: 0">
+            <div class="col-md-3" style="margin: 0; padding: 0">
+              <img
+                src="asset_files/images/app_service.png"
+                alt=""
+                class="img-fluid flower-left-side-image"
+              />
+            </div>
+
+            <div class="col-md-9 flower-right-side-menu">
+              <img
+                src="asset_files/images/app-right-module.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="col-md-12">
+              <div style="display: flex; justify-content: right">
+                <i
+                  class="fa-solid fa-square-caret-left fa-2xl"
+                  style="color: #255302; cursor: pointer"
+                  onclick="back()"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------------- extended section - part 3 [APP] --------------------  -->
+
+        <!-- -------------------- extended section  - part 4 [SERVICES] --------------------  -->
+
+        <section
+          class="flower-section flower-iamge-secondary solution-4"
+          style="display: none"
+        >
+          <div class="row" style="margin: 0; padding: 0">
+            <div class="col-md-3" style="margin: 0; padding: 0">
+              <img
+                src="asset_files/images/services-left.png"
+                alt=""
+                class="img-fluid flower-left-side-image"
+              />
+            </div>
+
+            <div class="col-md-9 flower-right-side-menu">
+              <img
+                src="asset_files/images/services-right.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+
+            <div class="col-md-12">
+              <div style="display: flex; justify-content: right">
+                <i
+                  class="fa-solid fa-square-caret-left fa-2xl"
+                  style="color: #255302; cursor: pointer"
+                  onclick="back()"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------------- extended section - part 4 [SERVICES] --------------------  -->
+
+        <!-- ----------------------------------------- Flower Section JS -----------------------------------------  -->
+        <script>
+          $("#iot").click(function () {
+            $(".fl-main")
+              .animate(
+                {
+                  opacity: "0",
+                },
+                500
+              )
+              .fadeOut(1);
+            $(".solution-1").fadeIn(4500);
+          });
+
+          $("#advisory").click(function () {
+            $(".fl-main")
+              .animate(
+                {
+                  opacity: "0",
+                },
+                500
+              )
+              .fadeOut(1);
+            $(".solution-2").fadeIn(4500);
+          });
+
+          $("#financial").click(function () {
+            $(".fl-main")
+              .animate(
+                {
+                  opacity: "0",
+                },
+                500
+              )
+              .fadeOut(1);
+            $(".solution-3").fadeIn(4500);
+          });
+
+          $("#digital").click(function () {
+            $(".fl-main")
+              .animate(
+                {
+                  opacity: "0",
+                },
+                500
+              )
+              .fadeOut(1);
+            $(".solution-4").fadeIn(4500);
+          });
+
+          function back() {
+            $(".fl-main")
+              .animate({
+                opacity: "1",
+              })
+              .fadeIn(1000);
+            $(".solution-1").css("display", "none");
+            $(".solution-2").css("display", "none");
+            $(".solution-3").css("display", "none");
+            $(".solution-4").css("display", "none");
+          }
+
+          // ------------------------- Hover in and out ----------------------------
+
+          function showThis(variable) {
+            $(variable).fadeIn();
+          }
+
+          function hideThis(variable) {
+            $(variable).fadeOut();
+          }
+        </script>
+        <!-- ----------------------------------------- Flower Section JS -----------------------------------------  -->
       </section>
 
       <!-- {{-- ------------------------------------------------------------------------------------------------------- Flower animation part --------------------------------------------------------------------------------------------------------------- --}} -->

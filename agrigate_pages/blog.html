@@ -29,6 +29,12 @@
       href="asset_files/css/project/responsive-project.css"
     />
 
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
     <!-- ----------------------------------------------- Agrigate v3 engine -----------------------------------------------  -->
 
     <link rel="stylesheet" href="asset_files/css/v3-flower.css" />
@@ -91,11 +97,28 @@
                 >About <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link nav-link-itmes-color" href="#"
-                >Solutions</a
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link nav-link-itmes-color"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Solutions
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Solution For Farmers</a>
+                <a class="dropdown-item" href="#">Solution For Retailers</a>
+                <a class="dropdown-item" href="#"
+                  >Solution For Institutional Buyers</a
+                >
+              </div>
             </li>
+
             <li class="nav-item">
               <a class="nav-link nav-link nav-link-itmes-color" href="#"
                 >Projects</a
