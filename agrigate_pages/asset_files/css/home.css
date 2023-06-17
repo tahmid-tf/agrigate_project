@@ -6,6 +6,16 @@
   font-family: "Roboto Condensed" !important;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
 /* -------------------------- section 1 --------------------------  */
 
 .navbar-section-css {

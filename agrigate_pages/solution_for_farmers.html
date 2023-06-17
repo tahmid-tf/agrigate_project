@@ -34,42 +34,44 @@
     <link rel="stylesheet" href="asset_files/css/v3-flower.css" />
 
     <!-- ----------------------------------------------- Agrigate v3 engine -----------------------------------------------  -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- ---------------------------- Navbar ----------------------------  -->
 
     <section class="short-nav-section">
       <div>
-        <!-- <p class="icon-color left-side-short-nav">
-          Address - House 78, Road No.11, block M, Banani, Dhaka-1213 | Email:
-          info@agrigate.asia | Calling Hours: Sat -Thurs, 10am-6pm
-        </p> -->
+        <p class="icon-color left-side-short-nav"></p>
       </div>
       <div>
-        <a href=""
+        <a href="https://www.facebook.com/agrigate.asia"
           ><i class="fa-brands fa-square-facebook fa-2xl icon-color"></i
         ></a>
-        <a href="">
+        <a href="https://www.youtube.com/@agrigatenetworklimited3659">
           <i class="fa-brands fa-square-youtube fa-2xl icon-color icon-mid"></i
         ></a>
-        <a href=""> <i class="fa-brands fa-linkedin fa-2xl icon-color"></i></a>
+        <a href="https://www.linkedin.com/company/agrigate-asia/">
+          <i class="fa-brands fa-linkedin fa-2xl icon-color"></i
+        ></a>
 
         <span class="icon-color">|</span>
 
-        <a href=""
-          ><i class="fa-solid fa-square-phone-flip fa-2xl icon-color"></i
-        ></a>
+        <i class="fa-solid fa-square-phone-flip fa-2xl icon-color"></i>
 
         <span class="icon-color"> &nbsp; +8801324741615</span>
       </div>
     </section>
-
     <section class="secondary-navbar">
       <nav
         class="navbar navbar-expand-lg navbar-light"
         style="background-color: #e2efd9"
       >
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="./index.html"
           ><img src="asset_files/images/logo.png" alt=""
         /></a>
         <button
@@ -87,34 +89,92 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link nav-link nav-link-itmes-color" href="#"
+              <a
+                class="nav-link nav-link nav-link-itmes-color"
+                href="./about.html"
                 >About <span class="sr-only">(current)</span></a
               >
             </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link nav-link-itmes-color" href="#"
-                >Solutions</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link nav-link-itmes-color"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                Solutions
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  href="./solution_for_farmers.html"
+                  style="text-transform: uppercase"
+                  >Solution For Farmers</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="./solution_for_retailers.html"
+                  style="text-transform: uppercase"
+                  >Solution For Retailers</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="./solution_for_institutional_buyers.html"
+                  style="text-transform: uppercase"
+                  >Solution For Institutional Buyers</a
+                >
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link nav-link-itmes-color" href="#"
+              <a
+                class="nav-link nav-link nav-link-itmes-color"
+                href="./project.html"
                 >Projects</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link nav-link-itmes-color" href="#"
+              <a
+                class="nav-link nav-link nav-link-itmes-color"
+                href="./impact.html"
                 >Impact</a
               >
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link nav-link nav-link-itmes-color" href="#"
-                >SD Channels</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle nav-link nav-link-itmes-color"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
               >
+                SD Channels
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a
+                  class="dropdown-item"
+                  href="./agrigate_app.html"
+                  style="text-transform: uppercase"
+                  >Agrigate App</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="./agrigate_center.html"
+                  style="text-transform: uppercase"
+                  >Agrigate Center</a
+                >
+              </div>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link nav-link nav-link-itmes-color" href="#"
+              <a
+                class="nav-link nav-link nav-link-itmes-color"
+                href="./blog.html"
                 >Blog</a
               >
             </li>
@@ -268,7 +328,6 @@
     <!-- ---------------------------- Forth Section ----------------------------  -->
 
     <!-- ----------------------------------------------  footer ----------------------------------------------  -->
-
     <footer class="footer">
       <div>
         <div class="row" style="margin: 0; padding: 0">
@@ -284,13 +343,12 @@
           <div class="col-md-3">
             <div class="footer-second-part">
               <p>Navigation</p>
-              <p>About Us</p>
-              <p>Solutions</p>
-              <p>Team</p>
-              <p>Projects</p>
-              <p>Impact</p>
-              <p>Blog</p>
-              <p>Careers</p>
+              <p><a href="./about.html">About Us</a></p>
+              <p><a href="./solution_for_farmers.html">Solutions</a></p>
+              <p><a href="./about.html">Team</a></p>
+              <p><a href="./project.html">Projects</a></p>
+              <p><a href="./impact.html">Impact</a></p>
+              <p><a href="./blog.html">Blog</a></p>
             </div>
           </div>
           <div class="col-md-4">
@@ -305,22 +363,28 @@
                 <p>Contact With Us &nbsp;</p>
                 <section class="">
                   <div>
-                    <img
-                      src="asset_files/logo/fb_white.png"
-                      alt=""
-                      class="short-image-logo"
-                    />
-                    <img
-                      src="asset_files/logo/youtube_white.png"
-                      class="short-image-logo"
-                      alt=""
-                    />
+                    <a href="https://www.facebook.com/agrigate.asia">
+                      <img
+                        src="asset_files/logo/fb_white.png"
+                        alt=""
+                        class="short-image-logo"
+                    /></a>
 
-                    <img
-                      src="asset_files/logo/linkedin.png"
-                      alt=""
-                      class="short-image-logo"
-                    />
+                    <a
+                      href="https://www.youtube.com/@agrigatenetworklimited3659"
+                    >
+                      <img
+                        src="asset_files/logo/youtube_white.png"
+                        class="short-image-logo"
+                        alt=""
+                    /></a>
+
+                    <a href="https://www.linkedin.com/company/agrigate-asia/">
+                      <img
+                        src="asset_files/logo/linkedin.png"
+                        alt=""
+                        class="short-image-logo"
+                    /></a>
                   </div>
                 </section>
               </div>
@@ -329,7 +393,6 @@
         </div>
       </div>
     </footer>
-
     <!-- ----------------------------------------------  footer ----------------------------------------------  -->
   </body>
 
